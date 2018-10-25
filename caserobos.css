@@ -1,0 +1,170 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #F8F8F8;
+}
+
+.case_wrap{
+	width: 100%;
+	height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+	background-image: url('./Assets/img/Case-Capa-Robo@2x.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.buttons_wrap{
+	width: 50%;
+  height: 100px;
+  align-self: flex-start;
+}
+
+.container_principal{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container_principal-intro{
+	width: 34%;
+  height: 320px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.intro-title{
+	width: 100%;
+	height: 100%;
+	font-size: 25px;
+	color: #000;
+  font-family: Introdução;
+}
+
+.intro-paragraph{
+  width: 90%;	
+  height: 100%;
+  display: flex;
+  align-items: center;
+	font-size: 18px;
+	color: #000;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.cases_wrap-description{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  background-color: #fff;
+}
+
+.wrap_description-infos{
+	width: 100%;
+	height: 100%;
+	padding: 3%;
+	display: flex;
+  align-items: flex-start;
+	flex-direction: column;
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.description_infos-title{
+	background-color: #ffde3b;
+}
+
+.case_wrap-content{
+	width: 100%;
+	height: 100%;
+}
+
+.wrap_content{
+	width: 100%;
+  height: 100%;
+	display: flex;
+}
+
+.wrap_box-paragraphs{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.box-paragraphs_content{
+	width: 36%;
+	height: 100%;
+	display: flex;
+  justify-content: center;
+	flex-direction: column;
+	font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.paragraphs_content{
+	width: 100%;
+  height: 100%;
+  margin: 15px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container_final_description{
+  width: 100%;
+  height: 100%;
+  padding: 70px 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.container_final_description-buttons{
+  width: 46%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.final_description{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-family: SkyhookMonoRegular;
+}
+
+.final_description-paragraph{
+  width: 7%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container_final_description-items{
+	width: 100%;
+	height: 100%;
+	padding: 10px 0;
+	display: flex;
+	justify-content: flex-start;
+	font-size: 13px;
+}
+
+.final_description-items{
+	height: 100%;
+	margin: 0 5px;
+	display: flex;
+	justify-content: center;
+	background-color: #ffde3b;
+}
