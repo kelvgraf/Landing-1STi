@@ -2,173 +2,213 @@
 <html lang="pt-br">
 <head>
 	<title>1STi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="apple-touch-icon" sizes="180x180" href="./Assets/img/Favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./Assets/img/Favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./Assets/img/Favicon/favicon-16x16.png">
   <link rel="manifest" href="./Assets/img/Favicon/site.webmanifest">
   <link rel="mask-icon" href="/Assets/img/Favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta charset="utf-8">
-	<link rel="stylesheet "href="style.css">
+	<link rel="stylesheet "href="./Assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 	<link rel="stylesheet" href="Assets/css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="./Assets/css/animation.css"/>
 </head>
 <body>
 	<header>
 		<section class="header-container">
 			<div class="wrapper-header">	
-				<div class="logo-box">
+				<div class="header-logoBox ">
 					<img class="header-logo" src="./Assets/img/Logo-1sti.svg">
-					<img class="header-logo-hover" src="">
+					<img class="header-logo-hover" src="./Assets/img/1STi-Transformacao.svg">
 				</div>
 				<nav class="menu">
+					<img src="Assets/img/Mobile-Icon-Menu.png" class="menu-icon-mobile" id="menu-icon-mobile" alt="Icone Menu">
+					<ul class="menu-list" id="menu-list">
+						<a href="#WORK">
+							<li class="menu-item" id="menu-item">trabalho</li>
+						</a>
+						<a href="#APPROACH">
+							<li class="menu-item" id="menu-item2">abordagem</li>
+						</a>
+						<a href="#CASE">
+							<li class="menu-item" id="menu-item3">cases</li>
+						</a>
+						<a href="#TIME">
+							<li class="menu-item" id="menu-item4">time</li>
+						</a>
+						<a href="#CONTACT">
+							<li class="menu-item" id="menu-item5">contato</li>
+						</a>
+					</ul>
 					<ul class="menu-list">
-						<li class="menu-item">trabalho</li>
-						<li class="menu-item">abordagem</li>
-						<li class="menu-item">cases</li>
-						<li class="menu-item">contato</li>
+						<li class="menu-item">EN</li>
+						<li class="menu-item">PT</li>
 					</ul>
 				</nav>
-				<div class="header-lang">
-					<p class="lang-item">EN</p>
-					<p class="lang-item">PT</p>
-				</div>
 			</div>
 		</section>
 	</header>
 	<main>
 		<section class="home">
 			<div class="home-wrapper">
-				<div class="home-content-eco">
-					<div class="home-info">
+				<div class="home-content">
+					<div class="home-info-eco ">					
 						<p class="info-title">Dívida ecológica</p>
 						<span>↓</span>
 						<p class="info-description">Atualmente nossa economia consome os recursos de 1,5 planetas.</p>
 					</div>
 					<h2 class="home-title">1.5</h2>
 				</div>
-				<div class="home-content-test2">
-					<span class="home-info">
+				<div class="home-content">
+					<div class="home-info-social">
 						<p class="info-title">Dívida ecológica</p>
 						<span>↓</span>
 						<p class="info-description">Atualmente nossa economia consome os recursos de 1,5 planetas.</p>
-					</span>
+					</div>
 					<h2 class="home-title">2.5</h2>
 				</div>
-				<div class="home-content-test3">
-					<span class="home-info">
+				<div class="home-content">
+					<div class="home-info-lixo">
 						<p class="info-title">Dívida ecológica</p>
 						<span>↓</span>
 						<p class="info-description">Atualmente nossa economia consome os recursos de 1,5 planetas.</p>
-					</span>
+					</div>
 					<h2 class="home-title">3</h2>
 				</div>
 				<div class="home-more">
-					<span>
-						<p>Ajudamos organizações a criarem impacto social positivo através de tecnologias digitais avançadas.</p>
+					<span class="more-span">
+						<p class="more-description">Ajudamos organizações a criarem <u>impacto social positivo</u> através de <u>tecnologias digitais</u> avançadas.</p>
 					</span>
-					<span>↓</span>
+					<span class="more-seta">↓</span>
 				</div>
 			</div>
 		</section>
-		<section class="work">
-			<div class="container">
-				<span class="work-span">trabalho
-					 <span>Resultados de curto e longo prazo.</span>
-        </span>
-			</div>
-			<div class="wrapper-work">
-				<div class="wrapper-topic">
-					<div class="work-topic">
-						<h2 class="topic-title">Inteligência</h2>
-						<p class="topic-description">Exploração e descoberta de inovações digitais</p>
+		<section class="work" id="WORK">
+			<div class="work-box">
+				<div class="container">
+					<h2 class="container-title">trabalho</h2>
+				  <p class="container-description">Resultados de curto e longo prazo.</p>
+				</div>
+				<div class="work-content">
+					<div class="wrapper-work">
+						<div class="wrapper-topic">
+							<div class="work-topic  work-topic--is-selected">
+								<h2 class="topic-titleIntelligent">
+									<span class="span-intelligent">_</span>
+								Inteligência</h2>
+								<p class="topic-description">Exploração e descoberta de inovações digitais</p>
+							</div>
+							<div class="work-topic  work-topic--is-selected">
+								<h2 class="topic-titleTech">
+									<span class="span-tech">_</span>
+								Tecnologia</h2>
+								<p class="topic-description">Desenho e entrega ágil</p>
+							</div>
+							<div class="work-topic  work-topic--is-selected">
+								<h2 class="topic-titlePurpose">
+									<span class="span-purpose">_</span>
+								Propósito</h2>
+								<p class="topic-description">Conexão e compartilhamento de valor</p>
+							</div>
+						</div>
+						<div class="work-results work-results--is-showing">
+							<span class="work-boxDescription">
+								<p class="work-description">Concebemos e nutrimos projetos estratégicos de valor compartilhado utilizando a tecnologia como ponto de conexão e aceleração. Aplicamos a cocriação com uma rede potente de inovadores sociais, empresas e ONGs que já compreendem e praticam essa poderosa abordagem que será a próxima onda de inovação, crescimento e produtividade.</p>
+								<ul class="work-item">
+									<li>– Discovery and research</li>
+									<li>– Ideation</li>
+									<li>– Web and mobile design</li>
+									<li>– User experience</li>
+									<li>– Interaction design</li>
+								</ul>
+							</span>
+							<span class="work-imgBox">
+								<img class="work-img" src="./Assets/img/Icone-Proposito.svg">
+							</span>
+						</div>
 					</div>
-					<div class="work-topic">
-						<h2 class="topic-title">Tecnologia</h2>
-						<p class="topic-description">Desenho e entrega ágil</p>
-					</div>
-					<div class="work-topic">
-						<h2 class="topic-title">Propósito</h2>
-						<p class="topic-description">Conexão e compartilhamento de valor</p>
-					</div>
-				</div>
-				<div class="work-results">
-					<p class="work-description">Concebemos e nutrimos projetos estratégicos de valor compartilhado utilizando a tecnologia como ponto de conexão e aceleração. Aplicamos a cocriação com uma rede potente de inovadores sociais, empresas e ONGs que já compreendem e praticam essa poderosa abordagem que será a próxima onda de inovação, crescimento e produtividade.</p>
-					<ul class="work-item">
-						<li>– Discovery and research</li>
-						<li>– Ideation</li>
-						<li>– Web and mobile design</li>
-						<li>– User experience</li>
-						<li>– Interaction design</li>
-					</ul>
-				</div>
-				<img src="">
-			</div>			
-		</section>
-		<section class="approach">
-			<div class="container">
-				<span class="approach-span">Abordagem
-					 <span>Ágil, escalável e disruptivo.</span>
-        </span>
-			</div>
-			<div>
-				<div>
-					<img src="">
-					<p>lead</p>
-					<p>_Mergulho</p>
-					<p>_Grupo de intenção comum</p>
-					<p>_Protótipo</p>
-				</div>
-				<div>
-					<img src="">
-					<p>learn</p>
-					<p>_Validação de hipóteses</p>
-					<p>_Desenho de produto</p>
-					<p>_MVP</p>
-				</div>
-				<div>
-					<img src="">
-					<p>scale</p>
-					<p>_Escalada ágil</p>
-				</div>
+				</div>			
 			</div>
 		</section>
-		<section class="cases">
+		<section class="approach" id="APPROACH">
 			<div class="container">
-				<span class="cases-span">Abordagem
-					 <span>Ágil, escalável e disruptivo.</span>
-        </span>
+				<h2 class="container-title">Abordagem</h2>
+				<p class="container-description">Ágil, escalável e disruptivo.</p>
 			</div>
-			<div>
-				<img src="">
-				<p>Ajudando uma startup a fortalecer a democracia participativa em Portugal.</p>
-				<span>ver case</span>
-			</div>
-			<div>
-				<span>
-					<ul class="cases-list">
-						<li class="cases-item">K360</li>
-						<li class="cases-item">Robôs digitais</li>
-						<li class="cases-item">StartupIN MyPolis</li>
-						<li class="cases-item">Arquitetura Furnas</li>
-						<li class="cases-item">Vai na Web</li>
-					</ul>
+			<div class="approach-wrapper">
+				<span class="approach-wrapperBox">
+					<div class="approach-box">
+						<img class="approach-img" src="./Assets/img/Icone-Lead.svg">
+						<h2 class="approach-title"><span class="approach-span">⁰¹</span>lead</h2>
+						<ul class="approach-list">
+							<li class="approach-item">_Mergulho</li>
+							<li class="approach-item">_Grupo de intenção comum</li>
+							<li class="approach-item">_Protótipo</li>
+						</ul>
+					</div>
+					<div class="approach-box">
+						<img class="approach-img" src="./Assets/img/Icone-Learn.svg">
+						<h2 class="approach-title"><span class="approach-span">⁰²</span>learn</h2>
+						<ul class="approach-list">
+							<li class="approach-item">_Validação de hipóteses</li>
+							<li class="approach-item">_Desenho de produto</li>
+							<li class="approach-item">_MVP</li>
+						</ul>
+					</div>
+					<div class="approach-box">
+						<img class="approach-img" src="./Assets/img/Icone-Scale.svg">
+						<h2 class="approach-title"><span class="approach-span">⁰³</span>scale</h2>
+						<ul class="approach-list">
+							<li class="approach-item">_Escalada ágil</li>
+						</ul>
+					</div>
 				</span>
-				<span>Um sprint de um mês para desenvolver uma nova forma de fazer política.</span>
 			</div>
 		</section>
-		<section class="time">
+		<section class="case" id="CASE">
 			<div class="container">
-				<span class="time-span">Abordagem
-					 <span>Ágil, escalável e disruptivo.</span>
-        </span>
+				<h2 class="container-case-title">cases</h2>
+				<p class="container-description">Trabalhos selecionados dos quais nos orgulhamos.</p>
 			</div>
+			<div class="case-content">
+				<div class="case-info">
+					<p class="case-description">Ajudando uma startup a fortalecer a democracia participativa em Portugal.</p>
+					<span>ver case</span>
+				</div>
+				<div class="case-box">
+					<span>
+						<ul class="case-list">
+							<li class="case-item">K360</li>
+							<li class="case-item">Robôs digitais</li>
+							<li class="case-item">StartupIN MyPolis</li>
+							<li class="case-item">Arquitetura Furnas</li>
+							<li class="case-item">Vai na Web</li>
+						</ul>
+					</span>
+					<span>Um sprint de um mês para desenvolver uma nova forma de fazer política.</span>
+				</div>
+			</div>
+		</section>
+		<section class="time" id="TIME">
+			<div class="container">
+				<h2 class="container-title">time</h2>
+				<p class="container-description">Somos uma equipe descentralizada de inovadores, desenvolvedores, engenheiros, empreendedores, designers e cientistas de dados comprometidos com a crença de que nosso trabalho é uma síntese de arte, humanidade e ciência.</p>
+			</div>
+		</section>
+		<section>
+			<canvas class="scene scene--full" id="scene"></canvas>
 		</section>
 	</main>
-	<footer class="contact" id="contact">
-    <section class="container">
+	<footer class="contact" id="CONTACT">
+    <section class="contact-container">
+    	<div class="container">
+				<h2 class="container-title">contato</h2>
+				<p class="container-description">fale conosco.</p>
+			</div>
       <div class="contact-box">
         <div class="contact-description">
-          <p class="contact-description-text">Want to find out<br>how your industry is set to change?<br>Drop us a line and let’s talk.</p>
+          <p class="contact-text">Want to find out<br>how your industry is set to change?<br>Drop us a line and let’s talk.</p>
         </div>
         <div class="contact-address">
           <p class="contact-address-text">ola@1sti.com.br</p>
@@ -186,6 +226,13 @@
         </div>
     </section>
    </footer>
+  <script src="smoothscroll.js" type="text/javascript"></script>
+  <script src="./Assets/js/work.js"></script>
+  <script src="./Assets//js/animation.js" "></script>
+  <script src="./Assets/js/main.js"></script>
+  <script src="./Assets/js/three.min.js"></script>
+  <script src="./Assets/js/perlin.js"></script>
+  <script src="./Assets/js/TweenMax.min.js"></script>
 </body>
 </html>
 
