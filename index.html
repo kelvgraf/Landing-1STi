@@ -11,7 +11,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet "href="./Assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-	<link rel="stylesheet" href="Assets/css/fonts.css">
+	<link rel="stylesheet" href="./Assets/css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="./Assets/css/animation.css"/>
 </head>
 <body>
@@ -46,34 +46,30 @@
 						<li class="menu-item">PT</li>
 					</ul>
 				</nav>
+				<div class="header-social">
+        <a href="https://web.facebook.com/ola1STi/" target="_blank">
+          <img src="Assets/img/GoDeeper-Landing-Facebookd.svg" alt="Facebook 1STi" class="social-icon">
+        </a>
+        <a href="https://medium.com/1sti" target="_blank">
+          <img src="Assets/img/GoDeeper-Landing-Medium.svg" alt="Medium 1STi" class="social-icon">
+        </a>
+        <a href="https://www.linkedin.com/company/1sti" target="_blank">
+          <img src="Assets/img/GoDeeper-Landing-Linkedin.svg" alt="Linkedin 1STi" class="social-icon">
+        </a>
+      </div>
 			</div>
 		</section>
 	</header>
 	<main>
-		<section class="home">
+		<section class="home" id="home">
 			<div class="home-wrapper">
-				<div class="home-content">
-					<div class="home-info-eco ">					
-						<p class="info-title">Dívida ecológica</p>
-						<span>↓</span>
-						<p class="info-description">Atualmente nossa economia consome os recursos de 1,5 planetas.</p>
-					</div>
+				<div class="home-content-eco">
 					<h2 class="home-title">1.5</h2>
 				</div>
-				<div class="home-content">
-					<div class="home-info-social">
-						<p class="info-title">Dívida ecológica</p>
-						<span>↓</span>
-						<p class="info-description">Atualmente nossa economia consome os recursos de 1,5 planetas.</p>
-					</div>
+				<div class="home-content-social">		
 					<h2 class="home-title">2.5</h2>
 				</div>
-				<div class="home-content">
-					<div class="home-info-lixo">
-						<p class="info-title">Dívida ecológica</p>
-						<span>↓</span>
-						<p class="info-description">Atualmente nossa economia consome os recursos de 1,5 planetas.</p>
-					</div>
+				<div class="home-content-lixo">					
 					<h2 class="home-title">3</h2>
 				</div>
 				<div class="home-more">
@@ -87,10 +83,9 @@
 		<section class="work" id="WORK">
 			<div class="work-box">
 				<div class="container">
-					<h2 class="container-title">trabalho</h2>
+					<h2 class="container-title-work">trabalho</h2>
 				  <p class="container-description">Resultados de curto e longo prazo.</p>
 				</div>
-				<div class="work-content">
 					<div class="wrapper-work">
 						<div class="wrapper-topic">
 							<div class="work-topic  work-topic--is-selected">
@@ -128,17 +123,17 @@
 							</span>
 						</div>
 					</div>
-				</div>			
+							
 			</div>
 		</section>
 		<section class="approach" id="APPROACH">
-			<div class="container">
-				<h2 class="container-title">Abordagem</h2>
-				<p class="container-description">Ágil, escalável e disruptivo.</p>
-			</div>
-			<div class="approach-wrapper">
-				<span class="approach-wrapperBox">
-					<div class="approach-box">
+			<div class="approach-box">
+				<div class="container">
+					<h2 class="container-title-approach">Abordagem</h2>
+					<p class="container-description">Ágil, escalável e disruptivo.</p>
+				</div>
+				<div class="approach-wrapper">
+					<div class="approach-info">
 						<img class="approach-img" src="./Assets/img/Icone-Lead.svg">
 						<h2 class="approach-title"><span class="approach-span">⁰¹</span>lead</h2>
 						<ul class="approach-list">
@@ -147,7 +142,7 @@
 							<li class="approach-item">_Protótipo</li>
 						</ul>
 					</div>
-					<div class="approach-box">
+					<div class="approach-info">
 						<img class="approach-img" src="./Assets/img/Icone-Learn.svg">
 						<h2 class="approach-title"><span class="approach-span">⁰²</span>learn</h2>
 						<ul class="approach-list">
@@ -156,65 +151,68 @@
 							<li class="approach-item">_MVP</li>
 						</ul>
 					</div>
-					<div class="approach-box">
+					<div class="approach-info">
 						<img class="approach-img" src="./Assets/img/Icone-Scale.svg">
 						<h2 class="approach-title"><span class="approach-span">⁰³</span>scale</h2>
 						<ul class="approach-list">
 							<li class="approach-item">_Escalada ágil</li>
 						</ul>
 					</div>
-				</span>
+				</div>
 			</div>
 		</section>
 		<section class="case" id="CASE">
-			<div class="container">
-				<h2 class="container-case-title">cases</h2>
-				<p class="container-description">Trabalhos selecionados dos quais nos orgulhamos.</p>
-			</div>
-			<div class="case-content">
-				<div class="case-info">
-					<p class="case-description">Ajudando uma startup a fortalecer a democracia participativa em Portugal.</p>
-					<span>ver case</span>
+			<div class="case-box">
+				<div class="container">
+					<h2 class="container-title-case">cases</h2>
+					<p class="container-description-case">Trabalhos selecionados dos quais nos orgulhamos.</p>
 				</div>
-				<div class="case-box">
-					<span>
-						<ul class="case-list">
-							<a href="Assets/pages/casek360.html"><li class="case-item">K360</li></a>
-							<a href="Assets/pages/caserobos.html"><li class="case-item">Robôs digitais</li></a>
-							<li class="case-item">StartupIN MyPolis</li>
-							<li class="case-item">Arquitetura Furnas</li>
-							<li class="case-item">Vai na Web</li>
-						</ul>
-					</span>
-					<span>Um sprint de um mês para desenvolver uma nova forma de fazer política.</span>
+				<div class="case-content">
+					<div class="case-info">
+						<p class="case-description">Ajudando uma startup a fortalecer a democracia participativa em Portugal.</p>
+						<span class="more-case">ver case</span>
+						<span class="more-case-seta">→</span>
+					</div>
+					<div class="case-wrapper">
+						<span>
+							<ul class="case-list">
+								<a href="Assets/pages/casek360.html"><li class="case-item">K360</li></a>
+								<a href="Assets/pages/caserobos.html"><li class="case-item">Robôs digitais</li></a>
+								<li class="case-item">StartupIN MyPolis</li>
+								<li class="case-item">Arquitetura Furnas</li>
+								<li class="case-item">Vai na Web</li>
+							</ul>
+						</span>
+						<span>Um sprint de um mês para desenvolver uma nova forma de fazer política.</span>
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="time" id="TIME">
-			<div class="container">
-				<h2 class="container-title">time</h2>
-				<p class="container-description">Somos uma equipe descentralizada de inovadores, desenvolvedores, engenheiros, empreendedores, designers e cientistas de dados comprometidos com a crença de que nosso trabalho é uma síntese de arte, humanidade e ciência.</p>
+			<div class="time-box">
+				<div class="container">
+					<h2 class="container-title-time">time</h2>
+					<p class="container-description-time">Somos uma equipe descentralizada de inovadores, desenvolvedores, engenheiros, empreendedores, designers e cientistas de dados comprometidos com a crença de que nosso trabalho é uma síntese de arte, humanidade e ciência.</p>
+				</div>
 			</div>
-		</section>
-		<section>
-			<canvas class="scene scene--full" id="scene"></canvas>
 		</section>
 	</main>
 	<footer class="contact" id="CONTACT">
     <section class="contact-container">
-    	<div class="container">
-				<h2 class="container-title">contato</h2>
-				<p class="container-description">fale conosco.</p>
-			</div>
-      <div class="contact-box">
-        <div class="contact-description">
-          <p class="contact-text">Want to find out<br>how your industry is set to change?<br>Drop us a line and let’s talk.</p>
-        </div>
-        <div class="contact-address">
-          <p class="contact-address-text">ola@1sti.com.br</p>
-          <p class="contact-address-text">Rio • São Paulo • Lisboa</p>
-        </div>
-      </div>
+    	<div>
+	    	<div class="container">
+					<h2 class="container-title-contact">contato</h2>
+					<p class="container-description">fale conosco.</p>
+				</div>
+	      <div class="contact-box">
+	        <div class="contact-description">
+	          <p class="contact-text">Want to find out<br>how your industry is set to change?<br>Drop us a line and let’s talk.</p>
+	        </div>
+	        <div class="contact-address">
+	          <p class="contact-address-text">ola@1sti.com.br</p>
+	          <p class="contact-address-text">Rio • São Paulo • Lisboa</p>
+	        </div>
+	      </div>
         <div class="contact-social">
           <a href="https://web.facebook.com/ola1STi/" target="_blank">
             <p class="contact-social-text">Facebook</p></a>
@@ -224,6 +222,7 @@
             <p class="contact-social-text">LinkedIn</p></a>
           <p class="contact-development">developed by <a href="https://www.facebook.com/vainaweb" class="contact-development-link" target="_blank">Estúdio Vai na Web</a></p>
         </div>
+	    </div>
     </section>
    </footer>
   <script src="smoothscroll.js" type="text/javascript"></script>
