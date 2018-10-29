@@ -58,7 +58,7 @@ body {
   background-color: #F2F2F2;
    margin: 0;
   position: fixed;
-  width: 6vw;
+  width: 7vw;
   font-family: SkyhookMonoRegular;
 }
   @media (max-width: 768px) {
@@ -74,7 +74,7 @@ body {
 
 
 .header-logoBox {
-  height: 15%;
+  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,7 +89,7 @@ body {
 }
 
 .header-logo {
-  width: 3.75rem; 
+  width: 5vw; 
 }
 @media (max-width: 768px){
   .header-logo {
@@ -105,6 +105,10 @@ body {
   .header-logo-hover{
     width: 100%;
   }
+}
+
+.header-social {
+  display: none;
 }
 
 .menu {
@@ -137,6 +141,7 @@ body {
 }
 
 .menu-list {
+  width: 40vh;
   display: flex;
   flex-direction: row-reverse;
   list-style: none;
@@ -165,6 +170,33 @@ body {
 
 .menu-list a {
   text-decoration: none;
+  position: relative;
+  color: #000;
+}
+
+.menu-list a:hover {
+  color: #000;
+}
+
+.menu-list a:before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 2px;
+  bottom: 0;
+  left: 20px;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.menu-list a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .menu-item {
@@ -172,25 +204,32 @@ body {
   font-size: 1rem;
   color: #000;
   font-family: SkyhookMonoRegular;
+  position: relative;
+  text-decoration: none;
 }
 
-@media ( max-width: 1400px) {
-  .menu-item {
-    margin-right: 25px
-  }
-}
+
 
 @media (max-width: 768px) {
   .menu-item {
     display: none;
     margin-right: 25px; 
   }
-}
+
   .menu-item.--drop-item {
     display: block;
     font-family: SkyhookMonoBold;
     color: rgb(256,256,256);
   }
+}
+
+.menu-lang {
+  width: 15vw;
+  display: flex;
+  flex-direction: row-reverse;
+  list-style: none;
+  transform: rotate(-90deg);
+  color: #000;
 }
 
 
@@ -235,7 +274,8 @@ body {
   display: flex;
   align-items: center;
   background-image: url(../img/Imagem1@2x.jpg);
-  background-size: cover;
+  background-size: cover;  
+  background-position: center
 }
 
 .home-content-social {
@@ -246,7 +286,9 @@ body {
   display: flex;
   align-items: center;
   background-image: url(../img/Imagem2@2x.jpg);
-  background-size: cover;
+  background-size: cover; 
+  background-position: center
+
 }
 
 .home-content-lixo {
@@ -257,7 +299,8 @@ body {
   display: flex;
   align-items: center;
   background-image: url(../img/Imagem3@2x.jpg);
-  background-size: cover;
+  background-size: cover; 
+  background-position: center
 }
 
 
@@ -398,9 +441,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   height: 80vh;
-  width: 45vw;
+  width: 40vw;
   font-size: 2.5rem;
   font-family: Introdução, Black Caps;
 }
@@ -444,19 +487,38 @@ body {
   color: #742698;
 }
 
+@media (max-width: 1100px) {
+  .topic-titleIntelligent{
+    font-size: 2.7rem;
+  }
+}
+@media (max-width: 1100px) {
+  .topic-titleTech{
+    font-size: 2.7rem;
+  }
+}
+@media (max-width: 1100px) {
+  .topic-titlePurpose{
+    font-size: 2.7rem;
+  }
+}
+
 .work-item {
   list-style: none;
   width: 100%;
   font-size: 1.25rem;
   color: #fff;
-  margin: 80px 0 0 80px;
+  margin-left: 80px;
   letter-spacing: 1px;
   line-height: 25px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
 .work-boxDescription {
-    height: 80vh;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 @media (max-width: 768px) {
   .container {
@@ -478,8 +540,8 @@ body {
 } 
 
 .work-img {
-  width: 125px;
-  margin: 50px;
+  width: 100%;
+  padding:30px; 
 }
 
 .topic-title {
@@ -510,7 +572,7 @@ body {
 .work-description {
   font-size: 1.25rem;
   color: #fff;
-  margin: 80px 0 0 80px;
+  margin-left: 80px;
   line-height: 1.75rem;
   font-family: 'Source Sans Pro', sans-serif;
   width: 24vw;
@@ -575,6 +637,21 @@ body {
   }
 }
 
+.approach-content {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+@media (max-width: 768px) {
+  .approach-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .container-title-approach {
   width: 100%;
   font-size: 1.65rem;
@@ -619,7 +696,7 @@ body {
   -moz-transition: all 200ms ease-in;
   -moz-transform: scale(1.5);
   transition: all 200ms ease-in;
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 @media (max-width: 768px) {
   .approach-img {
@@ -758,26 +835,20 @@ body {
   background-image: url("../img/contato-ruido.gif");
 }
 
-/*.contact canvas {
-  width: 100vw;
-  height: 100vh;
-}
-*/
-/*.contact::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgb(255, 221, 0);
-  opacity: 0.8;
-}*/
 
 .contact-container {
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100%;
+}
+
+.contact-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .contact-box {
@@ -792,7 +863,7 @@ body {
   }*/
 
   .contact-description {
-    width: 280px;
+    width: 100%;
   }
 }
 

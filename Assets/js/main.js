@@ -1,33 +1,4 @@
-  var menuItem = document.querySelectorAll('.menu-item');
-  var menuList = document.querySelector('.menu-list');
-  
-  document.getElementById("menu-icon-mobile").addEventListener("click", myFunction);
-  document.getElementById("menu-item").addEventListener("click", myFunction2);
-  document.getElementById("menu-item2").addEventListener("click", myFunction2);
-  document.getElementById("menu-item3").addEventListener("click", myFunction2);
-  document.getElementById("menu-item4").addEventListener("click", myFunction2);
-  document.getElementById("menu-item5").addEventListener("click", myFunction2);
-
-  const home = document.getElementsByClassName("home-content")
- 
-  function myFunction() {
-    menuList.classList.toggle('--drop-menu')
-    menuItem.forEach((element) => {
-      element.classList.add('--drop-item')
-    });
-  }
-
-  function myFunction2() {
-    menuList.classList.remove('--drop-menu')
-  };
-
-console.log('home', home)
-
-function isShow() {
-
-}
-
-function animateTitles() {
+  function animateTitles() {
     let counter = 0;
     const specialChars = ['$','%','#','@','&','(',')','=','*','/'];
     const totalSpecialChars = specialChars.length;
@@ -35,21 +6,19 @@ function animateTitles() {
 
     const work = document.querySelector('.container-title-work');
     const approach = document.querySelector('.container-title-approach');
-    const cases = document.querySelector('.container-title-cases');
+    const cases = document.querySelector('.container-title-case');
     const time = document.querySelector('.container-title-time');
-    const conatct = document.querySelector('.container-title-contact');
+    const contact = document.querySelector('.container-title-contact');
 
     generateLetters(work)
     generateLetters(approach)
     generateLetters(cases)
     generateLetters(time)
-    generateLetters(conatct)
-
-
+    generateLetters(contact)
 
     const workLetters = document.querySelectorAll('.container-title-work .title__letter');
     const approachLetters = document.querySelectorAll('.container-title-approach .title__letter');
-    const casesLetters = document.querySelectorAll('.container-title-cases .title__letter');
+    const casesLetters = document.querySelectorAll('.container-title-case .title__letter');
     const timeLetters = document.querySelectorAll('.container-title-time .title__letter');
     const contactLetters = document.querySelectorAll('.container-title-contact .title__letter');
     
@@ -87,11 +56,12 @@ function animateTitles() {
     writeLetters(timeLetters)
     writeLetters(contactLetters)
 
-    loopLetters(workLetters, 5000)
-    loopLetters(approachLetters, 5000)
+    loopLetters(workLetters, 4000)
+    loopLetters(approachLetters, 4000)
     loopLetters(casesLetters, 4000)
     loopLetters(timeLetters, 4000)
     loopLetters(contactLetters, 4000)
   }
 
   animateTitles();
+;
