@@ -12,7 +12,8 @@
 	<link rel="stylesheet "href="./Assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 	<link rel="stylesheet" href="./Assets/css/fonts.css">
-	<link rel="stylesheet" type="text/css" href="./Assets/css/animation.css"/>
+	<link rel="stylesheet" type="text/css" href="Assets/css/base.css" />
+		<link rel="stylesheet" type="text/css" href=" Assets/css/demo6.css" />
 </head>
 <body>
 	<header>
@@ -176,16 +177,14 @@
 						<span class="more-case-seta">→</span>
 					</div>
 					<div class="case-wrapper">
-						<span>
 							<ul class="case-list">
-								<a href="Assets/pages/casek360.html"><li class="case-item">K360</li></a>
-								<a href="Assets/pages/caserobos.html"><li class="case-item">Robôs digitais</li></a>
-								<li class="case-item">StartupIN MyPolis</li>
-								<li class="case-item">Arquitetura Furnas</li>
-								<li class="case-item">Vai na Web</li>
+								<a href="Assets/pages/casek360.html"><li class="case-item"><span class="case-itemNumber">01</span>K360</li></a>
+								<a href="Assets/pages/caserobos.html"><li class="case-item"><span class="case-itemNumber">02</span>Robôs digitais</li></a>
+								<li class="case-item"><span class="case-itemNumber">03</span>StartupIN MyPolis</li>
+								<li class="case-item"><span class="case-itemNumber">04</span>Arquitetura Furnas</li>
+								<li class="case-item"><span class="case-itemNumber">05</span>Vai na Web</li>
 							</ul>
-						</span>
-						<span>Um sprint de um mês para desenvolver uma nova forma de fazer política.</span>
+						<p class="span-caseDescription">Um <i>sprint</i> de um mês para desenvolver uma nova forma de fazer política.</p>
 					</div>
 				</div>
 			</div>
@@ -195,6 +194,9 @@
 				<div class="container">
 					<span class="container-title-time">time</span>
 					<p class="container-description-time">Somos uma equipe descentralizada de inovadores, desenvolvedores, engenheiros, empreendedores, designers e cientistas de dados comprometidos com a crença de que nosso trabalho é uma síntese de arte, humanidade e ciência.</p>
+				</div>
+				<div class="content">
+					<canvas class="scene scene--full" id="scene"></canvas>
 				</div>
 			</div>
 		</section>
@@ -227,7 +229,10 @@
 	    </div>
     </section>
    </footer>
-  <script src="Assets/js/main.js"></script>
+  <script src="Assets/js/main.js"></script>	
+	<script src="Assets/js/demo.js"></script>
+	<script src="Assets/js/three.min.js"></script>
+	<script src="Assets/js/demo6.js"></script>
 </body>
 </html>
 

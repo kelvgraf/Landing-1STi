@@ -40,7 +40,7 @@
           setTimeout(() => {
             letter.innerHTML = letter.getAttribute('data-letter');
           }, 100)
-        }, index * 200)
+        }, index * 250)
       });
     }
 
@@ -56,11 +56,11 @@
     writeLetters(timeLetters)
     writeLetters(contactLetters)
 
-    loopLetters(workLetters, 4000)
-    loopLetters(approachLetters, 4000)
+    loopLetters(workLetters, 5000)
+    loopLetters(approachLetters, 5000)
     loopLetters(casesLetters, 4000)
     loopLetters(timeLetters, 4000)
-    loopLetters(contactLetters, 4000)
+    loopLetters(contactLetters, 5000)
   }
 
   animateTitles();

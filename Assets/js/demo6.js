@@ -8,7 +8,7 @@ var renderer = new THREE.WebGLRenderer({
 });
 renderer.setPixelRatio(window.devicePixelRatio > 1 ? 2 : 1);
 renderer.setSize(width, height);
-renderer.setClearColor(0x191919);
+renderer.setClearColor(0xffffff);
 
 var scene = new THREE.Scene();
 
@@ -18,11 +18,12 @@ camera.position.set(0, 0, 280);
 var sphere = new THREE.Group();
 scene.add(sphere);
 var mat1 = new THREE.LineBasicMaterial({
-    color:0x4a4a4a
+    color:0x742698
 });
 var mat2 = new THREE.LineBasicMaterial({
-    color:0x3F51B5
+    color:0xFF0070
 });
+
 
 var radius = 100;
 var lines = 50;
