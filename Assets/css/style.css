@@ -25,10 +25,9 @@ body {
 }
 
 @media (max-width: 768px) {
-.container {
- width: 100%;
- height: 20%;
- top: 60px;
+  .container {
+    width: 90%;
+    height: 30%;
   }
 }
 
@@ -45,6 +44,11 @@ body {
   width: 20vw;
   font-family: SkyhookMonoBold;
   font-size: .95rem;
+}@media(max-width: 768px) {
+  .container-description {
+    width: 90vw;
+  }
+  
 }
 
 /*  Menu  */
@@ -67,7 +71,7 @@ body {
   @media (max-width: 768px) {
   .wrapper-header {
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     background-color: #F2F2F2;
     position: relative;
     display: flex;
@@ -139,7 +143,7 @@ body {
   .menu-icon-mobile {
     display: block;
     width: 26px;
-    margin: 15px 10px;
+    margin: 20px 30px;
   }
 }
 
@@ -264,7 +268,7 @@ body {
   @media (max-width: 768px) {
   .home-wrapper {
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
   }
@@ -317,8 +321,10 @@ body {
 @media (max-width: 768px) {
   .home-more{
     width: 100%;
+    height: 50%;
     display: flex;
     justify-content: center;
+    position: relative;
   }
 }
 
@@ -335,12 +341,12 @@ body {
 
 @media (max-width: 768px) {
   .more-span {
-    width: 50%;
-    height: 10vh;
+    width: 80vw;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
   }
 }
 
@@ -401,7 +407,7 @@ body {
 }
 @media (max-width: 768px) {
   .work-box{
-    width: 90%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -424,8 +430,8 @@ body {
 
 @media (max-width: 768px) {
   .wrapper-work{
-    width: 100%;
-    height: 100%;
+    width: 90vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -457,7 +463,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  height: 50%;
+  height: 65%;
   width: 100%;
   font-size: 2.5rem;
   font-family: Introdução, Black Caps;
@@ -492,20 +498,17 @@ body {
 }
 
 @media (max-width: 1100px) {
-  .topic-titleIntelligent{
+  .topic-titleIntelligent, .topic-titleTech, .topic-titlePurpose {
     font-size: 2.7rem;
   }
 }
-@media (max-width: 1100px) {
-  .topic-titleTech{
-    font-size: 2.7rem;
+
+@media (max-width: 375px) {
+  .topic-titleIntelligent, .topic-titleTech, .topic-titlePurpose{
+    font-size: 2.19rem;
   }
 }
-@media (max-width: 1100px) {
-  .topic-titlePurpose{
-    font-size: 2.7rem;
-  }
-}
+
 
 .work-item {
   list-style: none;
@@ -524,16 +527,12 @@ body {
   flex-direction: column;
   justify-content: space-around;
 }
-@media (max-width: 768px) {
-  .container {
-    width: 100%;
-    height: 20%;
-  }
-}
+
 
 @media (max-width: 768px) {
   .work-topic {
     font-size: 0.85rem;
+    margin-top: auto;
   }
 }
 
@@ -584,9 +583,8 @@ body {
 @media (max-width: 768px) {
 .work-description  {
   width: 100%;
-  ont-size: 1.25rem;
+  font-size: 1.25rem;
   color: #fff;
-  margin: 0;
   line-height: 1.75rem;
   font-family: 'Source Sans Pro', sans-serif;
   }
@@ -605,6 +603,7 @@ body {
     height: 100%;
     display: flex;
     justify-content: flex-end;
+    padding-bottom: 65vh;
     }
   }
 
@@ -617,7 +616,7 @@ body {
 }
 @media (max-width: 768px) {
   .approach-box{
-    width: 90%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -634,10 +633,12 @@ body {
 
 @media (max-width: 768px) {
   .approach-wrapper {
-    width: 100%;
+    width: 100vw;
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
+    margin-top: 5vh;
+    flex-direction: column;
   }
 }
 
@@ -653,6 +654,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .approach-info{
+    width: 30vw;
   }
 }
 
@@ -720,17 +728,29 @@ body {
 .case {
   width: 100vw;
   height: 100vh;
+  background-image: url(../img/Case-Capa-Mypolis@2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  .case {
+    /*display: flex;
+    justify-content: flex-end;*/
+    display: none;
+  }
 }
 
 .case-box {
   width: 100vw;
   height: 100vh;
-  background-image: url(../img/Case-Capa-Mypolis@2x.jpg);
-  background-size: cover;
-  background-position: center;
   display: flex;    
   flex-direction: column;
   align-items: flex-end;
+}
+@media (max-width: 768px) {
+  .case-box {
+    width: 90vw;
+  }
 }
 
 .case-content {
@@ -756,12 +776,23 @@ body {
   flex-direction: column;
 }
 
+@media (max-width: 768px) {
+  .case-info {
+    width: 40vw;
+  }
+}
+
 .container-title-case {
   font-size: 1.65rem;
   color: #fff;
   letter-spacing: 0.25rem;
   opacity: .7;
   font-family: Introdução, Black Caps;
+}
+@media (max-width: 768px) {
+  .container-description-case {
+    width: 30vw;
+  }
 }
 
 .container-description-case {
@@ -797,6 +828,11 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   width: 18vw;
 }
+@media( max-width: 1024px) {
+  .span-caseDescription{
+    width: 30vw;
+  }
+}
 
 .case-itemNumber{
   margin-right: 3rem;
@@ -823,16 +859,33 @@ body {
   flex-direction: column;
   list-style: none;
 }
+@media( max-width: 1024px) {
+  .case-list{
+    width: 35vw;
+  }
+}
 /* Time */
 .time{
   width: 100vw;
   height: 100vh;
 }
+@media (max-width: 768px) {
+  .time {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
 .time-box {
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+@media (max-width: 768px) {
+  .time-box {
+    width: 100vw;
+  }
 }
 
 .container-title-time {
@@ -850,7 +903,11 @@ body {
   font-family: SkyhookMonoBold;
   font-size: .95rem;
 }
-
+@media (max-width: 768px) {
+  .container-description-time {
+    width: 85vw;
+  }  
+}
 
 /*  Contact  */
 
@@ -881,8 +938,8 @@ body {
 
 .contact-box {
   position: relative;
-  width: 50%;
-  margin: auto;
+  width: 65vw;
+  margin-top: 15vh;
 }
 
 /*@media (max-width: 768px) {
@@ -890,16 +947,16 @@ body {
     height: 100vh;
   }*/
 
-  .contact-description {
+ /* .contact-description {
     width: 100%;
   }
-}
-
-/*@media (max-width: 425px) {
-  .contact-box {
-    width: auto;
-  }
 }*/
+
+@media (max-width: 768px) {
+  .contact-box {
+    width: 90vw;
+  }
+}
 .container-title-contact {
   width: 100%;
   font-size: 1.65rem;
@@ -955,11 +1012,11 @@ body {
 }
 
 .contact-social {
+  width: 65vw;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  margin-left: 25%;
-  margin-top: 35px;
+  margin-top: 4vh;
 }
 
 @media (max-width: 768px) {
@@ -1010,6 +1067,12 @@ body {
     padding: 6px;
     box-shadow: 6px 0 0 0 rgb(255, 221, 0), -6px 0 0 0 rgb(255, 221, 0);
   }
+}
+
+.development-box {
+  width: 65vw;
+  display: flex;
+  margin-top: 4vh;
 }
 
 .contact-development {
