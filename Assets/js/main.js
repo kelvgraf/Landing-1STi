@@ -46,8 +46,8 @@
   document.getElementById("menu-item3").addEventListener("click", myFunction2);
   document.getElementById("menu-item4").addEventListener("click", myFunction2);
   document.getElementById("menu-item5").addEventListener("click", myFunction2);
-  document.getElementById("menu-item6").addEventListener("click", myFunction2);
-  document.getElementById("menu-item7").addEventListener("click", myFunction2);
+  // // document.getElementById("menu-item6").addEventListener("click", myFunction2);
+  // document.getElementById("menu-item7").addEventListener("click", myFunction2);
 
   const home = document.getElementsByClassName("home-content")
  
@@ -63,10 +63,7 @@
     menuList.classList.remove('--drop-menu')
     socialIcon.classList.toggle('--drop-social')
   }
-  };
-   
-
-
+};
 
   function animateTitles() {
     let counter = 0;
@@ -134,5 +131,22 @@
     
   }
 
+  function toggleServices() {
+    var buttons = [].slice.call(document.querySelectorAll('.work-topic'));
+    var services = [].slice.call(document.querySelectorAll('.work-alt'));
+    buttons.map(function(button, index) {
+      button.addEventListener('click', function() {
+        var buttonSelected = document.querySelector('.work-topic--is-selected');
+        var serviceShowing = document.querySelector('.work-alt--is-showing');
+        console.log("serviceShowing", serviceShowing);
+        buttonSelected.classList.remove('work-topic--is-selected');
+        button.classList.add('work-topic--is-selected');
+        serviceShowing.classList.remove('work-alt--is-showing');
+        services[index].classList.add('work-alt--is-showing');
+      });
+    });
+  }
+
+  toggleServices();
   animateTitles();
 })();

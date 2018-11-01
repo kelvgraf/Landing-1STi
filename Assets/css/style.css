@@ -15,8 +15,8 @@ body {
 }
 
 .container {
-  width: 90vw;
-  height: 15vh;
+  width: 90%;
+  height: 15%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -25,27 +25,27 @@ body {
 }
 
 .container-time {
-  width: 90vw;
-  height: 20vh;
+  width: 90%;
+  height: 22%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  position: relative;
-  z-index: 99;
 }
 
 @media (min-width: 768px) {
   .container {
-    width: 90vw;
-    height: 13vh;
+    width: 90%;
+    height: 15%;
   }
 
   .container-time {
-    width: 90vw;
-    height: 20vh;
+    width: 90%;
+    height: 25%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
+    z-index: 99;
   }
 }
 
@@ -99,7 +99,7 @@ body {
 
 
 .header-logoBox {
-  height: 20vh;
+  height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,7 +114,7 @@ body {
 }
 
 .header-logo {
-  width: 5vw; 
+  width: 60%; 
 }
 @media (max-width: 768px){
   .header-logo {
@@ -137,10 +137,10 @@ body {
 }
 
 .menu {
+  height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
   flex-direction: column;
 }
   @media (max-width: 768px){
@@ -166,7 +166,7 @@ body {
 }
 
 .menu-list {
-  width: 40vh;
+  width: 80vh;
   display: flex;
   flex-direction: row-reverse;
   list-style: none;
@@ -253,7 +253,7 @@ body {
 
 .menu-lang {
   width: 15vw;
-  display: flex;
+  display: none;
   flex-direction: row-reverse;
   list-style: none;
   transform: rotate(-90deg);
@@ -262,7 +262,7 @@ body {
 
 @media (max-width: 768px) {
   .menu-lang .--drop-menu {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
@@ -350,7 +350,7 @@ body {
 
 
 .home-more {
-  width: 65%;
+  width: 70%;
   position: absolute;
   display: flex;
   justify-content: flex-end;
@@ -405,6 +405,7 @@ body {
   position: absolute;
   margin-left: 2rem;
   color: #FFDD00;
+  font-family: SkyhookMonoRegular;
 }
 @keyframes MoveUpDown {
   0%, 100% {
@@ -493,8 +494,6 @@ body {
   align-items: flex-start;
   height: 80vh;
   width: 40vw;
-  font-size: 2.5rem;
-  font-family: Introdução, Black Caps;
 }
 @media (max-width: 768px) {
   .wrapper-topic {
@@ -510,26 +509,71 @@ body {
   }
 }
 
-.work-results {
+.work-intelligent {
+  width: 45vw;
+  height: 80vh;
+  display: flex;
+  align-items: flex-end;
+  background-color: #FF0070;
+  cursor: pointer;
+}
+  @media (max-width: 768px) {
+    .work-intelligent {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      margin-top: 5vh;
+    }
+  }
+
+.work-tech{
+  width: 45vw;
+  height: 80vh;
+  display: flex;
+  align-items: flex-end;
+  background-color: #00C8DB;
+  cursor: pointer;
+}
+  @media (max-width: 768px) {
+    .work-tech {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      margin-top: 5vh;
+    }
+  }
+
+.work-purpose{
   width: 45vw;
   height: 80vh;
   display: flex;
   align-items: flex-end;
   background-color: #742698;
+  cursor: pointer;
 }
-@media (max-width: 768px) {
-  .work-results {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    margin-top: 5vh;
+  @media (max-width: 768px) {
+    .work-purpose {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      margin-top: 5vh;
+    }
   }
+.work-alt {
+  display: none;
+}
+.work-alt--is-showing {
+  display: flex;
 }
 
 .topic-titleIntelligent:hover {
-  color: #FF0070
+  color: #FF0070;
 }
 .topic-titleTech:hover {
   color: #00C8DB;
@@ -576,6 +620,28 @@ body {
   justify-content: space-around;
 }
 
+.work-topic {
+  font-size: 2.5rem;
+  font-family: Introdução, Black Caps;
+  cursor: pointer;
+
+}
+.work-topic--is-selected .topic-titleIntelligent{
+  color: #FF0070;
+}
+
+.work-topic--is-selected .topic-titleTech{
+  color: #00C8DB;
+}
+
+.work-topic--is-selected .topic-purpose{
+  color: #742698;
+}
+
+.work-topic--is-selected .topic-description{
+  color: #000;
+  font-weight: bold;
+}
 
 @media (max-width: 768px) {
   .work-topic {
@@ -602,7 +668,7 @@ body {
 }
 
 .span-intelligent {
-  color: #FF0070
+  color: #FF0070;
 }
 
 .span-tech {
@@ -951,6 +1017,7 @@ body {
   width: 28%;
   font-family: SkyhookMonoBold;
   font-size: .95rem;
+  line-height: 1.25rem;
 }
 @media (max-width: 768px) {
   .container-description-time {
@@ -1068,6 +1135,7 @@ body {
   margin-top: 4vh;
 }
 
+
 @media (max-width: 768px) {
   .contact-social{
     justify-content: space-between;
@@ -1099,6 +1167,12 @@ body {
   background: rgb(255, 221, 0);
   display: inline;
 }
+
+.contact-social-text:hover {
+  transform: translateY(-100%);
+}
+
+
 
 @media (max-width: 768px) {
   .contact-social-text {
@@ -1156,4 +1230,54 @@ body {
     background-color: white;
     padding: 5px 0;
   }
+}
+
+
+
+
+
+.wrapper-topic {
+-webkit-animation-delay: 2.5s;
+-moz-animation-delay: 2.5s;
+animation-delay: 2.5s;
+}
+
+.wrapper-topic {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/*=== FADE IN LEFT ===*/
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.wrapper-topic {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
 }
