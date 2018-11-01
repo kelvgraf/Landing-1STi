@@ -373,7 +373,10 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  bottom: 40px;
+  bottom: 60px;
+  border: black;
+  border-width: 1px;
+  border-style: solid;
 }
 
 @media (max-width: 768px) {
@@ -400,12 +403,13 @@ body {
 }
 
 .more-seta {
-  font-size: 1.85rem;
+  font-size: 2.85rem;
   animation: MoveUpDown 1s linear infinite;
   position: absolute;
   margin-left: 2rem;
   color: #FFDD00;
   font-family: SkyhookMonoRegular;
+  padding-bottom: 15px;
 }
 @keyframes MoveUpDown {
   0%, 100% {
@@ -461,8 +465,8 @@ body {
 }
 
 .wrapper-work {
-  height: 90%;
-  width: 100%;
+  height: 85%;
+  width: 90%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -492,7 +496,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  height: 80vh;
+  height: 75vh;
   width: 40vw;
 }
 @media (max-width: 768px) {
@@ -514,12 +518,13 @@ body {
   height: 80vh;
   display: flex;
   align-items: flex-end;
+  flex-direction: column;
   background-color: #FF0070;
   cursor: pointer;
 }
   @media (max-width: 768px) {
     .work-intelligent {
-      width: 100%;
+      width: 90%;
       height: 100%;
       display: flex;
       align-items: flex-end;
@@ -597,10 +602,10 @@ body {
 
 .work-item {
   list-style: none;
-  width: 100%;
+  width: 90%;
   font-size: 1.25rem;
   color: #fff;
-  margin-left: 80px;
+  margin-left: 40px;
   letter-spacing: 1px;
   line-height: 25px;
   font-family: 'Source Sans Pro', sans-serif;
@@ -617,13 +622,13 @@ body {
   height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 .work-topic {
-  font-size: 2.5rem;
+  font-size: 1.85rem;
   font-family: Introdução, Black Caps;
   cursor: pointer;
+  margin-top: 65px;
 
 }
 .work-topic--is-selected .topic-titleIntelligent{
@@ -689,10 +694,10 @@ body {
 .work-description {
   font-size: 1.25rem;
   color: #fff;
-  margin: 80px 0 0 40px;
+  padding: 40px;
   line-height: 1.75rem;
   font-family: 'Source Sans Pro', sans-serif;
-  width: 24vw;
+  width: 85%;
 }
 @media (max-width: 768px) {
 .work-description  {
@@ -741,8 +746,8 @@ body {
 
 .approach-wrapper {
   display: flex;
-  align-items: baseline;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
   width: 90%;
   height: 100%;
 }
@@ -756,6 +761,15 @@ body {
     margin-top: 5vh;
     padding-bottom: 5vh;
   }
+}
+
+.box-info{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  width: 90%;
+  height: 50%;
+
 }
 
 .approach-content {
@@ -773,7 +787,6 @@ body {
     margin-top: 10vh;
   }
 }
-
 
 .container-title-approach {
   width: 100%;
@@ -795,7 +808,7 @@ body {
   font-size: 1rem;
 }
 
-.approach-img {
+.approach-imgLead {
   width: 175px;
   display:inline-block;
   border:0;
@@ -810,7 +823,7 @@ body {
   transform: scale(1); 
 }
 
-.approach-img:hover {
+.approach img:hover {
   z-index: 2;
   -webkit-transition: all 200ms ease-in;
   -webkit-transform: scale(1.5);
@@ -877,11 +890,11 @@ body {
   width: 100%;
   height: 40%;
   display: flex;
-  padding: 3.43rem;
+  padding: 2.5rem;
 }
 
 .case-info{
-  width: 25%;
+  width: 33%;
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -930,14 +943,15 @@ body {
 .more-case-seta {
   color: #ffdd00;
   font-family: SkyhookMonoRegular;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding-left: 20px;
 }
 
 .span-caseDescription{
   font-size: 1.25rem;
   font-family: 'Source Sans Pro', sans-serif;
-  width: 18vw;
+  width: 30%;
+  margin-top: 13px
 }
 @media( max-width: 1024px) {
   .span-caseDescription{
@@ -964,7 +978,7 @@ body {
 }
 
 .case-list {
-  width: 20%;
+  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
