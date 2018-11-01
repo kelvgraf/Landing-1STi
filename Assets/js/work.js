@@ -14,8 +14,6 @@ function toggleWork() {
 }
 
 
-
-
 var fadein_tween = TweenMax.to('.container-title-work > h2', .375,{ opacity: 1 });
 var fadeout_tween = TweenMax.to('.container-title-work > h2', .375,{ opacity: 0 });
 

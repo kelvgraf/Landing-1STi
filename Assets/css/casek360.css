@@ -8,68 +8,86 @@ body{
 	background-color: #F8F8F8;
 }
 
-.case_wrap{
-	width: 100%;
-	height: 100%;
+.case_wrapper{
+	width: 100vw;
+	height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 	background-image: url('../img/Case-Capa-K360@2x.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-position: center;
+	background-size: cover;
 }
 
-.buttons_wrap{
-  width: 50%;
-  height: 100px;
-  align-self: flex-start;
+.case-navigation{
+  width: 20vw;
+  height: 15vh;
+  display: flex;
+  align-items: flex-end;
+  align-self: flex-start; 
+  justify-content: space-around;
 }
 
-.container_principal{
+.arrow-back {
+  width: 3vw;
+  height: 6vh;
+}
+
+.arrow-next {
+  width: 3vw;
+  height: 6vh;
+  transform: rotate(180deg);
+}
+
+.container-home{
   width: 90%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
 }
 
-.container_principal-intro{
+.home-description{
   width: 34%;
   height: 320px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   flex-direction: column;
 }
 
-.intro-title{
-  width: 100%;
+.home-title{
+  width: 24vw;
   height: 100%;
-  font-size: 25px;
+  font-size: 2rem;
+  line-height: 3rem;
   color: #fff;
-  font-family: Introdução;
+  font-family: Introdução, Black Caps;
 }
 
-.intro-paragraph{
-  width: 90%; 
+.home-paragraph{
+  width: 25vw; 
   height: 100%;
   display: flex;
   align-items: center;
   font-size: 18px;
   color: #000;
   font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;  
+  line-height: 2rem;
 }
 
 .cases_wrap-description{
-  width: 100%;
-  height: 250px;
+  width: 100vw;
+  height: 40vh;
   display: flex;
-  background-color: #fff;
+  justify-content: space-around;
+  background-color: #f8f8f8;
 }
 
 .wrap_description-infos{
-  width: 100%;
-  height: 100%;
-  padding: 3%;
+  width: 16vw;
+  height: 100vh;
+  padding-top: 5vh;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -79,6 +97,7 @@ body{
 
 .description_infos-title{
   background-color: #ffde3b;
+  font-family: SkyhookMonoBold;
 }
 
 .case_wrap-content{
@@ -101,13 +120,11 @@ body{
 }
 
 .box-paragraphs_content{
-  width: 36%;
+  width: 37vw;
   height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-size: 16px;
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .paragraphs_content{
@@ -117,13 +134,13 @@ body{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-size: 16px;
+  font-size: 1.25rem;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
 .box_content-phrase{
   margin: 6px 0;
-  font-size: 16px;
+  font-size: 1.25rem;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -135,42 +152,41 @@ body{
   align-items: flex-end;
 }
 
-.container_final_description-buttons{
-  width: 46%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.final_description{
-  width: 100%;
-  height: 100%;
+.footer-box{
+  width: 58vw;
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
-  font-family: SkyhookMonoRegular;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
 }
 
 .final_description-paragraph{
-  width: 7%;
-  height: 100%;
   display: flex;
   justify-content: center;
+  font-family: SkyhookMonoRegular;
+  font-size: .85rem;
+  font-weight: 600;
 }
 
 .container_final_description-items{
-  width: 100%;
-  height: 100%;
-  padding: 10px 0;
   display: flex;
-  justify-content: flex-start;
+  padding: 10px 0;
   font-size: 13px;
 }
 
 .final_description-items{
-  height: 100%;
+  height: 25%;
   margin: 0 5px;
   display: flex;
   justify-content: center;
   background-color: #ffde3b;
+  font-family: SkyhookMonoRegular;
+  font-size: .85rem;
+}
+
+.wrapper-footer {
+  display: flex;
+  width: 100vw;
+  height: 20vh;
 }
