@@ -147,6 +147,20 @@
     });
   }
 
+  function showHome() {
+    var showEco = document.querySelectorAll('.home-content-eco');
+    for(var x=0; x<showEco.length; x++){
+      showEco[x].onmouseenter = function(){
+        this.querySelector('isShow').style.display = 'inline-block';
+      }
+      showEco[x].onmouseleave = function(){
+      this.querySelector('isShow').style.display = 'none'; 
+      }
+    }
+  }
+
   toggleServices();
   animateTitles();
+  showHome();
 })();
+

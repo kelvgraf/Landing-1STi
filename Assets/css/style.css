@@ -12,6 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   min-height: 100vh;
+  background-color: #F8F8F8;
 }
 
 .container {
@@ -399,6 +400,45 @@ body {
   font-family: Introdução, Black Caps;
   color: #fff;
   margin-left: 4rem;
+}
+
+.home-content-eco .isShow {
+  width:  100%;
+  height: 40%;
+  position: absolute;
+  top: 0;
+  background-color: #FFDD00;
+  opacity: .85;
+  color: #000;
+  font-family: SkyhookMonoRegular;
+}
+
+.isShow-title {
+  font-size: 1rem;
+  font-weight: 900;
+  margin: 60px 0 0 60px;
+}
+
+.isShow-seta{
+  margin: 10px 0 0 60px;
+}
+
+.isShow-descriptionEco {
+  width: 40%;
+  margin: 10px 0 0 60px;
+  line-height: 1.35rem;
+}
+
+.isShow-descriptionSocial {
+  width: 50%;
+  margin: 10px 0 0 60px;
+  line-height: 1.35rem;
+}
+
+.isShow-descriptionPessoal {
+  width: 53%;
+  margin: 10px 0 0 60px;
+  line-height: 1.35rem;
 }
 
 .more-seta {
@@ -861,9 +901,8 @@ body {
 }
 @media (max-width: 768px) {
   .case {
-    /*display: flex;
-    justify-content: flex-end;*/
-    display: none;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -889,12 +928,19 @@ body {
 }
 
 .case-wrapper {
-  background-color: #fff;
+  background-color: #f8f8f8;
   width: 100%;
   height: 40%;
   display: flex;
   padding: 2.5rem;
 }
+
+@media (max-width: 425px) {
+  .case-wrapper {
+    padding: 1.5rem
+  }
+}
+
 
 .case-info{
   width: 33%;
@@ -906,6 +952,12 @@ body {
 @media (max-width: 768px) {
   .case-info {
     width: 40vw;
+  }
+}
+
+@media (max-width: 425px) {
+  .case-info {
+    width: 75vw;
   }
 }
 
@@ -958,6 +1010,7 @@ body {
 }
 @media( max-width: 1024px) {
   .span-caseDescription{
+    display: none;
     width: 30vw;
   }
 }
@@ -989,7 +1042,7 @@ body {
 }
 @media( max-width: 1024px) {
   .case-list{
-    width: 35vw;
+    width: 100vw;
   }
 }
 /* Time */
