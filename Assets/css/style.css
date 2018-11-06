@@ -892,54 +892,75 @@ body {
 }
 
 /* Cases */
-.case {
+.case-container {
   width: 100vw;
   height: 100vh;
  
 }
 @media (max-width: 768px) {
-  .case {
+  .case-container {
     display: flex;
     justify-content: flex-end;
   }
 }
 
-.case-alt {
-  display: none;
-}
-.case-alt--is-showing {
-  display: flex;
-  background-color: tomato;
-}
-
-.case-StartuIN {
+.case-container.k360 {
   width: 100vw;
   height: 100vh;
   display: flex;    
   flex-direction: column;
   align-items: flex-end;
-   background-image: url(../img/Case-Capa-Mypolis@2x.jpg);
-  background-size: cover;
-  background-position: center;
-}
-@media (max-width: 768px) {
-  .case-StartuIN {
-    width: 90vw;
-  }
+  background-color: blue;
 }
 
-.case-robo {
+.case-container.startupin {
   width: 100vw;
   height: 100vh;
   display: flex;    
   flex-direction: column;
   align-items: flex-end;
-   background-image: url(../img/Case-Capa-Robo@2x.jpg);
+  background-color: orange;
+}
+
+.case-container.mypolis {
+  width: 100vw;
+  height: 100vh;
+  display: flex;    
+  flex-direction: column;
+  align-items: flex-end;
+  background-image: url(../img/Case-Capa-Mypolis@2x.jpg);
   background-size: cover;
   background-position: center;
 }
 
+.case-container.robo {
+  width: 100vw;
+  height: 100vh;
+  display: flex;    
+  flex-direction: column;
+  align-items: flex-end;
+  background-image: url(../img/Case-Capa-Robo@2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
+.case-container.furnas {
+  width: 100vw;
+  height: 100vh;
+  display: flex;    
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: pink;
+}
+
+.case-container.vainaweb {
+  width: 100vw;
+  height: 100vh;
+  display: flex;    
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: navy;
+}
 
 .case-content {
   width: 85%;
@@ -1008,6 +1029,11 @@ body {
   color: #fff;
   font-family: Introdução, Black Caps;
   font-weight: 900;
+  display: none;
+}
+
+.case-description.-show {
+  display: block;
 }
 
 .more-case {
@@ -1028,13 +1054,18 @@ body {
   font-size: 1.25rem;
   font-family: 'Source Sans Pro', sans-serif;
   width: 30%;
-  margin-top: 13px
+  margin-top: 13px;
+  display: none;
 }
 @media( max-width: 1024px) {
   .span-caseDescription{
     display: none;
     width: 30vw;
   }
+}
+
+.span-caseDescription.-show{
+  display: block;
 }
 
 .case-itemNumber{
