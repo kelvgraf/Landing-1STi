@@ -298,7 +298,7 @@ body {
 }
 
 .home-wrapper {
-  width: 94vw;
+  width: 93vw;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -403,8 +403,8 @@ body {
 }
 
 .home-content-eco .isShow {
-  width:  100%;
-  height: 40%;
+  width:  31vw;
+  height: 40vh;
   position: absolute;
   top: 0;
   background-color: #FFDD00;
@@ -469,7 +469,9 @@ body {
 .work {
  max-width: 100vw;
   height: 100vh;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 @media (max-width: 768px) {
   .work{
@@ -481,8 +483,8 @@ body {
 }
 
 .work-box {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -533,9 +535,9 @@ body {
 .wrapper-topic {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
-  height: 75vh;
+  height: 80vh;
   width: 40vw;
 }
 @media (max-width: 768px) {
@@ -667,7 +669,7 @@ body {
   font-size: 1.85rem;
   font-family: Introdução, Black Caps;
   cursor: pointer;
-  margin-top: 65px;
+  margin-top: 67px;
 
 }
 .work-topic--is-selected .topic-titleIntelligent{
@@ -678,7 +680,7 @@ body {
   color: #00C8DB;
 }
 
-.work-topic--is-selected .topic-purpose{
+.work-topic--is-selected .topic-titlePurpose{
   color: #742698;
 }
 
@@ -750,12 +752,10 @@ body {
 }
 
 
-
 /* approach */
 .approach {
   width: 100vw;
   height: 100vh;
-  background-color: #fff;
 }
 @media (max-width: 768px) {
   .approach {
@@ -895,9 +895,7 @@ body {
 .case {
   width: 100vw;
   height: 100vh;
-  background-image: url(../img/Case-Capa-Mypolis@2x.jpg);
-  background-size: cover;
-  background-position: center;
+ 
 }
 @media (max-width: 768px) {
   .case {
@@ -906,18 +904,42 @@ body {
   }
 }
 
-.case-box {
+.case-alt {
+  display: none;
+}
+.case-alt--is-showing {
+  display: flex;
+  background-color: tomato;
+}
+
+.case-StartuIN {
   width: 100vw;
   height: 100vh;
   display: flex;    
   flex-direction: column;
   align-items: flex-end;
+   background-image: url(../img/Case-Capa-Mypolis@2x.jpg);
+  background-size: cover;
+  background-position: center;
 }
 @media (max-width: 768px) {
-  .case-box {
+  .case-StartuIN {
     width: 90vw;
   }
 }
+
+.case-robo {
+  width: 100vw;
+  height: 100vh;
+  display: flex;    
+  flex-direction: column;
+  align-items: flex-end;
+   background-image: url(../img/Case-Capa-Robo@2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
 
 .case-content {
   width: 85%;
@@ -1031,6 +1053,10 @@ body {
 
 .case-item, a{
    text-decoration: none;
+}
+
+.case-item--is-selected {
+  font-weight: 900;
 }
 
 .case-list {
