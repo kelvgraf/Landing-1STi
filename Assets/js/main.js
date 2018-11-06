@@ -183,6 +183,27 @@
     });
   }
 
+  
+const target = document.querySelectorAll('[data-anime]');
+const animationClass = 'animate';
+ 
+function animeScroll() {
+  const windowTop = window.pageYOffset + (window.innerHeight * 0.75);
+  target.forEach( function(element) {
+    if((windowTop) > element.offsetTop) {
+      element.classList.add(animationClass);
+    } else {
+      element.classList.remove(animationClass);
+    }
+  })
+}
+ 
+animeScroll();
+ 
+
+  window.addEventListener('scroll', function() {
+    animeScroll();
+  }
   // window.addEventListener('scroll', function(){
   //   let section1, section2, section3, animate;
   //   let section1Ofset, section2Ofset, section3Ofset;
