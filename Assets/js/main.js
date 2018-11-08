@@ -46,22 +46,22 @@
   document.getElementById("menu-item3").addEventListener("click", myFunction2);
   document.getElementById("menu-item4").addEventListener("click", myFunction2);
   document.getElementById("menu-item5").addEventListener("click", myFunction2);
-  // // document.getElementById("menu-item6").addEventListener("click", myFunction2);
+  // document.getElementById("menu-item6").addEventListener("click", myFunction2);
   // document.getElementById("menu-item7").addEventListener("click", myFunction2);
 
-  const home = document.getElementsByClassName("home-content")
+  const home = document.getElementsByClassName("home-content");
  
   function myFunction() {
-    menuList.classList.toggle('--drop-menu')
-    socialIcon.classList.toggle('--drop-social')
+    menuList.classList.toggle('--drop-menu');
+    socialIcon.classList.toggle('--drop-social');
     menuItem.forEach((element) => {
-      element.classList.add('--drop-item')
+      element.classList.add('--drop-item');
     });
   }
 
   function myFunction2() {
-    menuList.classList.remove('--drop-menu')
-    socialIcon.classList.toggle('--drop-social')
+    menuList.classList.remove('--drop-menu');
+    socialIcon.classList.toggle('--drop-social');
   }
 };
 
@@ -152,7 +152,7 @@
   }
 
   function showHome() {
-    var showEco = document.querySelectorAll('.home-content-eco');
+    var showEco = document.querySelector('.home-content-eco');
     for(var x=0; x<showEco.length; x++){
       showEco[x].onmouseenter = function(){
         this.querySelector('isShow').style.display = 'inline-block';
@@ -222,13 +222,12 @@
     });
   }
 
-  
+function animeScroll() {
 const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
- 
-function animeScroll() {
-  const windowTop = window.pageYOffset + (window.innerHeight * 0.75);
-  target.forEach( function(element) {
+
+  const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+  target.forEach(function(element) {
     if((windowTop) > element.offsetTop) {
       element.classList.add(animationClass);
     } else {
@@ -236,13 +235,19 @@ function animeScroll() {
     }
   })
 }
- 
-animeScroll();
- 
+
+  animeScroll();
 
   window.addEventListener('scroll', function() {
     animeScroll();
-  }
+  }) 
+
+  
+  
+
+
+
+
   // window.addEventListener('scroll', function(){
   //   let section1, section2, section3, animate;
   //   let section1Ofset, section2Ofset, section3Ofset;

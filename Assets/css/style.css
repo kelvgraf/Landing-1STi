@@ -910,19 +910,12 @@ body {
   display: flex;    
   flex-direction: column;
   align-items: flex-end;
-  background-color: blue;
+  background-image: url("../img/Case-Capa-K360@2x.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .case-container.startupin {
-  width: 100vw;
-  height: 100vh;
-  display: flex;    
-  flex-direction: column;
-  align-items: flex-end;
-  background-color: orange;
-}
-
-.case-container.mypolis {
   width: 100vw;
   height: 100vh;
   display: flex;    
@@ -950,7 +943,9 @@ body {
   display: flex;    
   flex-direction: column;
   align-items: flex-end;
-  background-color: pink;
+  background-image: url(../img/Case-Capa-Furnas@2x.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .case-container.vainaweb {
@@ -959,7 +954,9 @@ body {
   display: flex;    
   flex-direction: column;
   align-items: flex-end;
-  background-color: navy;
+  background-image: url(../img/Case-Capa-VnW@2x.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .case-content {
@@ -1368,15 +1365,15 @@ body {
 }
  
 [data-anime="left"] {
-  transform: translate3d(-50px, 0, 0);
+  transform: translate3d(-650px, 0, 0);
 }
  
 [data-anime="right"] {
-  transform: translate3d(50px, 0, 0);
+  transform: translate3d(500px, 0, 0);
 }
  
 [data-anime="top"] {
-  transform: translate3d(0, -50px, 0);
+  transform: translate3d(0, -650px, 0);
 }
  
 [data-anime].animate {
