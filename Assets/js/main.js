@@ -46,22 +46,22 @@
   document.getElementById("menu-item3").addEventListener("click", myFunction2);
   document.getElementById("menu-item4").addEventListener("click", myFunction2);
   document.getElementById("menu-item5").addEventListener("click", myFunction2);
-  // // document.getElementById("menu-item6").addEventListener("click", myFunction2);
+  // document.getElementById("menu-item6").addEventListener("click", myFunction2);
   // document.getElementById("menu-item7").addEventListener("click", myFunction2);
 
-  const home = document.getElementsByClassName("home-content")
+  const home = document.getElementsByClassName("home-content");
  
   function myFunction() {
-    menuList.classList.toggle('--drop-menu')
-    socialIcon.classList.toggle('--drop-social')
+    menuList.classList.toggle('--drop-menu');
+    socialIcon.classList.toggle('--drop-social');
     menuItem.forEach((element) => {
-      element.classList.add('--drop-item')
+      element.classList.add('--drop-item');
     });
   }
 
   function myFunction2() {
-    menuList.classList.remove('--drop-menu')
-    socialIcon.classList.toggle('--drop-social')
+    menuList.classList.remove('--drop-menu');
+    socialIcon.classList.toggle('--drop-social');
   }
 };
 
@@ -136,11 +136,15 @@
     var services = [].slice.call(document.querySelectorAll('.work-alt'));
     buttons.map(function(button, index) {
       button.addEventListener('click', function() {
+
         var buttonSelected = document.querySelector('.work-topic--is-selected');
         var serviceShowing = document.querySelector('.work-alt--is-showing');
+
         console.log("serviceShowing", serviceShowing);
+
         buttonSelected.classList.remove('work-topic--is-selected');
         button.classList.add('work-topic--is-selected');
+
         serviceShowing.classList.remove('work-alt--is-showing');
         services[index].classList.add('work-alt--is-showing');
       });
@@ -148,7 +152,7 @@
   }
 
   function showHome() {
-    var showEco = document.querySelectorAll('.home-content-eco');
+    var showEco = document.querySelector('.home-content-eco');
     for(var x=0; x<showEco.length; x++){
       showEco[x].onmouseenter = function(){
         this.querySelector('isShow').style.display = 'inline-block';
@@ -159,8 +163,143 @@
     }
   }
 
+  function toggleCases() {
+    var caseItem = [].slice.call(document.querySelectorAll('.case-item'));
+    var spanDescription = [].slice.call(document.querySelectorAll('.span-caseDescription'));
+    var caseDescription = [].slice.call(document.querySelectorAll('.case-description'));
+    var caseContainer = document.querySelector('.case-container');
+
+
+    caseItem.map((caseItem, caseIndex) => {
+      caseItem.addEventListener('click', () => {
+
+        var caseSelected = document.querySelector('.case-item--is-selected');
+
+        spanDescription.map((description, indexDescription) => {
+          description.classList.remove('-show');
+          if (caseIndex === indexDescription) {
+            description.classList.add('-show');
+          }
+        })
+
+        caseDescription.map((description, indexDescription) => {
+          description.classList.remove('-show');
+          if (caseIndex === indexDescription) {
+            description.classList.add('-show');
+          }
+        })
+
+        caseContainer.classList.remove('k360');
+        caseContainer.classList.remove('robo');
+        caseContainer.classList.remove('startupin');
+        caseContainer.classList.remove('furnas');
+        caseContainer.classList.remove('vainaweb');
+
+        if (caseIndex === 0) {
+          caseContainer.classList.add('k360');
+        }
+
+        if (caseIndex === 1) {
+          caseContainer.classList.add('robo');
+        }
+
+        if (caseIndex === 2) {
+          caseContainer.classList.add('startupin');
+        }
+
+        if (caseIndex === 3) {
+          caseContainer.classList.add('furnas');
+        }
+
+        if (caseIndex === 4) {
+          caseContainer.classList.add('vainaweb');
+        }
+
+        caseSelected.classList.remove('case-item--is-selected');
+        caseItem.classList.add('case-item--is-selected');
+
+      });
+    });
+  }
+
+function animeScroll() {
+const target = document.querySelectorAll('[data-anime]');
+const animationClass = 'animate';
+
+  const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+  target.forEach(function(element) {
+    if((windowTop) > element.offsetTop) {
+      element.classList.add(animationClass);
+    } else {
+      element.classList.remove(animationClass);
+    }
+  })
+}
+
+  animeScroll();
+
+  window.addEventListener('scroll', function() {
+    animeScroll();
+  }) 
+
+  
+  
+
+
+
+
+  // window.addEventListener('scroll', function(){
+  //   let section1, section2, section3, animate;
+  //   let section1Ofset, section2Ofset, section3Ofset;
+    
+  //   section1 = document.getElementById('approach-box1');
+    
+  //   section2 = document.getElementById('approach-box2');
+    
+  //   section3 = document.getElementById('approach-box3');
+
+  //   section1Offset = (section1.parentNode.parentNode.parentNode.offsetTop + section1.offsetTop);
+  //   section2Offset = (section2.parentNode.parentNode.parentNode.offsetTop + section2.offsetTop);
+  //   section3Offset = (section3.parentNode.parentNode.parentNode.offsetTop + section3.offsetTop);
+    
+    
+  //   if ((window.scrollY + 100) < section1Offset) {
+  //     animate = document.querySelector('.approach-box-animate');
+  //     if (animate) {
+  //       animate.classList.remove('approach-box-animate');
+  //     }
+  //   }
+        
+  //   if ((window.scrollY + 100) >= section1Offset
+  //      && (window.scrollY + 100) <= section2Offset) {
+  //     animate = document.querySelector('.approach-box-animate');
+  //     if (animate) {
+  //       animate.classList.remove('approach-box-animate');
+  //     }
+  //     section1.querySelector('.approach-box-span div').classList.add('approach-box-animate');
+  //   }
+    
+  //   if ((window.scrollY + 100) >= section2Offset
+  //      && (window.scrollY + 100) <= section3Offset) {
+  //     animate = document.querySelector('.approach-box-animate');
+  //     if (animate) {
+  //       animate.classList.remove('approach-box-animate');
+  //     }
+  //     section2.querySelector('.approach-box-span div').classList.add('approach-box-animate');
+  //   }
+    
+  //   if ((window.scrollY + 100)  >= section3Offset){
+  //     animate = document.querySelector('.approach-box-animate');
+  //     if (animate) {
+  //       animate.classList.remove('approach-box-animate');
+  //     }
+  //     section3.querySelector('.approach-box-span div').classList.add('approach-box-animate');
+  //   }
+  // });
+
+
   toggleServices();
   animateTitles();
   showHome();
+  toggleCases();
 })();
-
