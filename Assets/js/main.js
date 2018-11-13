@@ -1,5 +1,5 @@
-(function() {
-  let header = document.querySelector(".header-container");
+(function() { 
+  let header = document.querySelector(".wrapper-header");
   let isScrolling;
   let section = document.querySelectorAll('section');
   let sections = {};
@@ -11,7 +11,7 @@
 
     isScrolling = setTimeout(function() {
       header.classList.add('fade-in');
-    }, 66);
+    }, 50);
 
     if(isScrolling) {
       header.classList.remove('fade-in')
@@ -35,6 +35,8 @@
         }
       }
     }
+  };
+
 
   var menuItem = document.querySelectorAll('.menu-item');
   var menuList = document.querySelector('.menu-list');
@@ -49,21 +51,21 @@
   // document.getElementById("menu-item6").addEventListener("click", myFunction2);
   // document.getElementById("menu-item7").addEventListener("click", myFunction2);
 
-  const home = document.getElementsByClassName("home-content");
+
  
   function myFunction() {
-    menuList.classList.toggle('--drop-menu');
-    socialIcon.classList.toggle('--drop-social');
+    menuList.classList.toggle('--drop-menu')
+    socialIcon.classList.toggle('--drop-social')
     menuItem.forEach((element) => {
-      element.classList.add('--drop-item');
+      element.classList.add('--drop-item')
     });
   }
 
   function myFunction2() {
-    menuList.classList.remove('--drop-menu');
-    socialIcon.classList.toggle('--drop-social');
-  }
-};
+    menuList.classList.remove('--drop-menu')
+    socialIcon.classList.toggle('--drop-social')
+  };
+
 
   function animateTitles() {
     let counter = 0;
@@ -242,60 +244,7 @@ const animationClass = 'animate';
     animeScroll();
   }) 
 
-  
-  
 
-
-
-
-  // window.addEventListener('scroll', function(){
-  //   let section1, section2, section3, animate;
-  //   let section1Ofset, section2Ofset, section3Ofset;
-    
-  //   section1 = document.getElementById('approach-box1');
-    
-  //   section2 = document.getElementById('approach-box2');
-    
-  //   section3 = document.getElementById('approach-box3');
-
-  //   section1Offset = (section1.parentNode.parentNode.parentNode.offsetTop + section1.offsetTop);
-  //   section2Offset = (section2.parentNode.parentNode.parentNode.offsetTop + section2.offsetTop);
-  //   section3Offset = (section3.parentNode.parentNode.parentNode.offsetTop + section3.offsetTop);
-    
-    
-  //   if ((window.scrollY + 100) < section1Offset) {
-  //     animate = document.querySelector('.approach-box-animate');
-  //     if (animate) {
-  //       animate.classList.remove('approach-box-animate');
-  //     }
-  //   }
-        
-  //   if ((window.scrollY + 100) >= section1Offset
-  //      && (window.scrollY + 100) <= section2Offset) {
-  //     animate = document.querySelector('.approach-box-animate');
-  //     if (animate) {
-  //       animate.classList.remove('approach-box-animate');
-  //     }
-  //     section1.querySelector('.approach-box-span div').classList.add('approach-box-animate');
-  //   }
-    
-  //   if ((window.scrollY + 100) >= section2Offset
-  //      && (window.scrollY + 100) <= section3Offset) {
-  //     animate = document.querySelector('.approach-box-animate');
-  //     if (animate) {
-  //       animate.classList.remove('approach-box-animate');
-  //     }
-  //     section2.querySelector('.approach-box-span div').classList.add('approach-box-animate');
-  //   }
-    
-  //   if ((window.scrollY + 100)  >= section3Offset){
-  //     animate = document.querySelector('.approach-box-animate');
-  //     if (animate) {
-  //       animate.classList.remove('approach-box-animate');
-  //     }
-  //     section3.querySelector('.approach-box-span div').classList.add('approach-box-animate');
-  //   }
-  // });
 
 
   toggleServices();
