@@ -10,7 +10,7 @@ function isInViewport(element) {
   );
 }
 
-var allElements = document.querySelector(".l-container").querySelectorAll("h1, h2, h3, h4, h5, h6, p");
+var allElements = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p");
 var tl = new TimelineLite();
 
 function debounce(func, delay) {

@@ -1,0 +1,7 @@
+.drop_case {
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../img/case-bluetooth.jpg");
+	background-size: 30vh;
+	background-repeat: no-repeat;
+}
