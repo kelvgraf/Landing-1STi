@@ -139,104 +139,6 @@
   };
 
 
-  function animateTitles() {
-    let counter = 0;
-    const specialChars = ['$','%','#','@','&','(',')','=','*','/'];
-    const totalSpecialChars = specialChars.length;
-    const getRandom = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-
-    const work = document.querySelector('.container-title-work');
-    const approach = document.querySelector('.container-title-approach');
-    const cases = document.querySelector('.container-title-case');
-    const time = document.querySelector('.container-title-time');
-    const contact = document.querySelector('.container-title-contact');
-
-    generateLetters(work)
-    generateLetters(approach)
-    generateLetters(cases)
-    generateLetters(time)
-    generateLetters(contact)
-
-    const workLetters = document.querySelectorAll('.container-title-work .title__letter');
-    const approachLetters = document.querySelectorAll('.container-title-approach .title__letter');
-    const casesLetters = document.querySelectorAll('.container-title-case .title__letter');
-    const timeLetters = document.querySelectorAll('.container-title-time .title__letter');
-    const contactLetters = document.querySelectorAll('.container-title-contact .title__letter');
-    
-    function generateLetters (element) {
-      return element.innerHTML = element.innerHTML.split('').map(string => {
-        return `<span class="title__letter" data-letter="${string}">${string}</span>`
-      }).join('')
-    }
-
-    function writeLetters(letters) {
-      letters.forEach((letter, index) => {
-        let timeout = setTimeout(() => {
-          if (letter.innerHTML === ' ') {
-            letter.innerHTML = ' '
-          } else {
-            letter.innerHTML = specialChars[getRandom(0, totalSpecialChars - 1)]
-          }
-          
-          setTimeout(() => {
-            letter.innerHTML = letter.getAttribute('data-letter');
-          }, 100)
-        }, index * 250)
-      });
-    }
-
-    function loopLetters(letters, ms) {
-      setInterval(() => {
-        writeLetters(letters)
-      }, ms)
-    }
-
-    writeLetters(workLetters)
-    writeLetters(approachLetters)
-    writeLetters(casesLetters)
-    writeLetters(timeLetters)
-    writeLetters(contactLetters)
-
-    loopLetters(workLetters, 5000)
-    loopLetters(approachLetters, 5000)
-    loopLetters(casesLetters, 4000)
-    loopLetters(timeLetters, 4000)
-    loopLetters(contactLetters, 5000)
-    
-  }
-
-  function toggleServices() {
-    var buttons = [].slice.call(document.querySelectorAll('.work-topic'));
-    var services = [].slice.call(document.querySelectorAll('.work-alt'));
-    buttons.map(function(button, index) {
-      button.addEventListener('click', function() {
-
-        var buttonSelected = document.querySelector('.work-topic--is-selected');
-        var serviceShowing = document.querySelector('.work-alt--is-showing');
-
-        console.log("serviceShowing", serviceShowing);
-
-        buttonSelected.classList.remove('work-topic--is-selected');
-        button.classList.add('work-topic--is-selected');
-
-        serviceShowing.classList.remove('work-alt--is-showing');
-        services[index].classList.add('work-alt--is-showing');
-      });
-    });
-  }
-
-  function showHome() {
-    var showEco = document.querySelector('.home-content-eco');
-    for(var x=0; x<showEco.length; x++){
-      showEco[x].onmouseenter = function(){
-        this.querySelector('isShow').style.display = 'inline-block';
-      }
-      showEco[x].onmouseleave = function(){
-      this.querySelector('isShow').style.display = 'none'; 
-      }
-    }
-  }
-
   function toggleCases() {
     var caseItem = [].slice.call(document.querySelectorAll('.case-item'));
     var spanDescription = [].slice.call(document.querySelectorAll('.span-caseDescription'));
@@ -295,6 +197,11 @@
       });
     });
   }
+
+  
+
+
+
 
 function animeScroll() {
 const target = document.querySelectorAll('[data-anime]');

@@ -21,7 +21,6 @@ body {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  z-index: 99;
 }
 
 .container-time {
@@ -90,6 +89,7 @@ body {
   margin: 0;
   position: fixed;  
   font-family: SkyhookMonoRegular;
+  z-index: 99;
 }
   @media (max-width: 768px) {
   .wrapper-header {
@@ -412,7 +412,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%
+  width: 50%;
+  height: 100%;
 }
 
 @media (max-width: 768px) {
@@ -426,6 +427,14 @@ body {
   font-family: Introdução, sans-serif;
   font-size: 7.9375rem;
   color: rgb(255, 0, 112);
+  text-align: left;
+  margin: 0;
+}
+
+.home-titleIntro {
+  font-family: Introdução, sans-serif;
+  font-size: 2.12rem;
+  color: rgba(116, 38, 152, 1);
   text-align: left;
   margin: 0;
 }
@@ -449,12 +458,11 @@ body {
 
 .home-span {
   position: absolute;
-  bottom: 40px;
-  left: 14vw;
+  left: 0;
   animation: mymove 1s infinite;
   z-index: 1;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.125rem;
+  font-family: SkyhookMonoBold;
+  font-size: 1.85rem;
   color: black;
 }
 
@@ -510,7 +518,7 @@ body {
 }
 
 .hello-intro canvas {
-  width: 75%;
+  width: 85%;
   height: 100%;
   position: relative;
 }
@@ -572,7 +580,7 @@ body {
 }
 
 .box-seemore {
-  width: 71%;
+  width: 90%;
   height: 30vh;
   display: flex;
   flex-direction: column;
@@ -604,7 +612,7 @@ body {
 }
 
 /*  Cases   */
- .cases {
+ .interesse {
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -614,7 +622,7 @@ body {
 
 .container-span {
   width: 80vw;
-  height: 10vh;;
+  height: 10vh;
   display: flex;
 }
 
@@ -623,19 +631,19 @@ body {
   flex-direction: column;
 }
 
-.cases .container {
+.interesse .container {
   flex-direction: column;
   position: relative;
   padding-top: 60px;  
 }
 
 @media ( max-width: 768px) {
-  .cases .container{
+  .interesse .container{
     padding-bottom: 0
   }
 }
 
-.cases-span {
+.interesse-span {
   font-family: SkyhookMonoRegular, monospace;
   font-size: 1rem;
   position: absolute;
@@ -643,7 +651,7 @@ body {
   left: 40px;
 }
 
-.cases-title {
+.interesse-title {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.25rem;
   line-height: 32px;
@@ -653,7 +661,7 @@ body {
   margin: 55px 0px 75px 0px;
 }
 
-.cases-box {
+.interesse-box {
   display: flex;
   justify-content: space-between;
   width: 80vw;
@@ -662,7 +670,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .cases-box {
+  .interesse-box {
     flex-direction: column;
     margin-bottom: 0;
   }
@@ -671,12 +679,12 @@ body {
     margin-top: 0
   }
 
-  .cases-title {
+  .interesse-title {
     margin-bottom: 50px
   }
 }
 
-.cases-item {
+.interesse-item {
   width: 22vw;
   height: 60vh;
   overflow: hidden;
@@ -686,23 +694,23 @@ body {
 }
 
 @media (max-width: 768px) {
-  .cases-item {
+  .interesse-item {
     width: 80vw;
     margin: 20px 0;
   }
 }
 
-.cases-img {
-  width: 100%;
+.interesse-img {
+  width: 85%;
   transition: transform .5s;
   box-sizing: border-box; 
 }
 
-.cases-img:hover {
+.interesse-img:hover {
   transform: scale(1.1);
 }
 
-.cases-text {
+.interesse-text {
   width: 70%;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.56rem;
@@ -712,14 +720,14 @@ body {
 
 }
 
-.cases-hashtags {
+.interesse-hashtags {
   height: 5%;
   font-family: SkyhookMonoBold;
   font-size: .85rem;
   color: rgba(0, 200, 219, 1);
 }
 
-.cases-show {
+.interesse-show {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.125rem;
   position: absolute;
@@ -799,15 +807,36 @@ body {
 
 /* Inspiration */
 .inspiration {
-  width: 100vw;
+  width: 100%;
   height: 90vh;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   flex-direction: column;
 }
+.container-spanInspiration {
+  width: 80vw;
+  height: 10vh;
+  display: flex;
+  align-items: flex-end;
+}
 
-/* Cases */
+.container-inspiration {
+  width: 70vw;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.inspirtion-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+
+
+/* interesse */
 .case {
   max-width: 100vw;
   height: 100vh;
