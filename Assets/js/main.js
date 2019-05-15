@@ -37,16 +37,15 @@
     }
   };
 
-
   var menuItem = document.querySelectorAll('.menu-item');
   var menuList = document.querySelector('.menu-list');
+  var menuLang = document.querySelector('.menu-lang');
   var socialIcon = document.querySelector('.header-social');
   var cases2 = document.querySelector('.box2');
   // var casespan = document.querySelector('.cases-show')
   var modal = document.querySelector('.modal');  // Get the modal
   var modalCont = document.querySelector('.modal-content');
   var span = document.getElementsByClassName("close")[0]; // Get the <span> element that closes the modal
-
   
   document.getElementById("menu-icon-mobile").addEventListener("click", myFunction);
   document.getElementById("menu-item").addEventListener("click", myFunction2);
@@ -62,11 +61,10 @@
   document.getElementById("case4").addEventListener("click", case4);
   document.getElementById("case5").addEventListener("click", case5);
   document.getElementById("case6").addEventListener("click", case6);
-
-
  
   function myFunction() {
     menuList.classList.toggle('--drop-menu')
+    menuLang.classList.toggle('--drop-menu')
     socialIcon.classList.toggle('--drop-social')
     menuItem.forEach((element) => {
       element.classList.add('--drop-item')
@@ -75,6 +73,7 @@
 
   function myFunction2() {
     menuList.classList.remove('--drop-menu')
+    menuLang.classList.remove('--drop-menu')
     socialIcon.classList.toggle('--drop-social')
   };
 
@@ -138,71 +137,6 @@
       }
   };
 
-
-  function toggleCases() {
-    var caseItem = [].slice.call(document.querySelectorAll('.case-item'));
-    var spanDescription = [].slice.call(document.querySelectorAll('.span-caseDescription'));
-    var caseDescription = [].slice.call(document.querySelectorAll('.case-description'));
-    var caseContainer = document.querySelector('.case-container');
-
-
-    caseItem.map((caseItem, caseIndex) => {
-      caseItem.addEventListener('click', () => {
-
-        var caseSelected = document.querySelector('.case-item--is-selected');
-
-        spanDescription.map((description, indexDescription) => {
-          description.classList.remove('-show');
-          if (caseIndex === indexDescription) {
-            description.classList.add('-show');
-          }
-        })
-
-        caseDescription.map((description, indexDescription) => {
-          description.classList.remove('-show');
-          if (caseIndex === indexDescription) {
-            description.classList.add('-show');
-          }
-        })
-
-        caseContainer.classList.remove('k360');
-        caseContainer.classList.remove('robo');
-        caseContainer.classList.remove('startupin');
-        caseContainer.classList.remove('furnas');
-        caseContainer.classList.remove('vainaweb');
-
-        if (caseIndex === 0) {
-          caseContainer.classList.add('k360');
-        }
-
-        if (caseIndex === 1) {
-          caseContainer.classList.add('robo');
-        }
-
-        if (caseIndex === 2) {
-          caseContainer.classList.add('startupin');
-        }
-
-        if (caseIndex === 3) {
-          caseContainer.classList.add('furnas');
-        }
-
-        if (caseIndex === 4) {
-          caseContainer.classList.add('vainaweb');
-        }
-
-        caseSelected.classList.remove('case-item--is-selected');
-        caseItem.classList.add('case-item--is-selected');
-
-      });
-    });
-  }
-
-  
-
-
-
-
 function animeScroll() {
 const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
@@ -223,11 +157,4 @@ const animationClass = 'animate';
     animeScroll();
   }) 
 
-
-
-
-  toggleServices();
-  animateTitles();
-  showHome();
-  toggleCases();
 })();

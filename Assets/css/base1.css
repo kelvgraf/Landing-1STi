@@ -11,7 +11,7 @@
 	.content {
 		display: flex;
 		justify-content: center;
-		width: 70vw;
+		width: 95vw;
 	}	
 }
 
@@ -21,7 +21,7 @@
 		justify-content: center;
 		width: 100vw;
 		position: static;
-		height: 100vh;
+		height: 45vh;
 	}	
 }
 
