@@ -290,6 +290,11 @@ body {
   flex-direction: column;
   align-items: flex-end;
 }
+  @media (max-width: 768px) {
+    .case{
+      height: 93vh;
+    }
+  }
 
 .case-container {
   width: 100vw;
@@ -365,6 +370,11 @@ body {
   flex-direction: column;
   justify-content: flex-end;
 }
+  @media(max-width:668px) {
+    .case-content {
+      height: 80%;
+    }
+  }
 
 .case-wrapper {
   background-color: #f8f8f8;
@@ -376,13 +386,14 @@ body {
 
 @media (max-width: 425px) {
   .case-wrapper {
+    height: 45%;
     padding: 1.5rem
   }
 }
 
 
 .case-info{
-  width: 33%;
+  width: 35%;
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -390,7 +401,7 @@ body {
 
 @media (max-width: 768px) {
   .case-info {
-    width: 40vw;
+    width: 43vw;
   }
 }
 
@@ -401,30 +412,38 @@ body {
 }
 
 .container-title-case {
+  height: 25%;;
   font-size: 1.65rem;
   color: #fff;
   letter-spacing: 0.25rem;
-  opacity: .7;
+  line-height: .95rem;
   font-family: Introdução, Black Caps;
 }
 @media (max-width: 768px) {
   .container-description-case {
     width: 30vw;
+    line-height: 1.5rem;
   }
 }
 
 .container-description-case {
   font-size: 0.95rem;
-  font-family: SkyhookMonoRegular;
+  font-family: SkyhookMonoBold;
   margin-top: 5px;  
   color: #fff;
 }
+  @media (max-width: 768px) {
+    .container-description-case {
+      width: 65%;
+    }
+  }
 
 .case-description { 
   font-size: 2rem;
   color: #fff;
   font-family: Introdução, Black Caps;
   font-weight: 900;
+  line-height: 2.75rem;
   display: none;
 }
 
@@ -438,7 +457,14 @@ body {
   font-size: 1rem;
   padding: 20px 0 0 20px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
+  @media (max-width: 768px) {
+    .more-case {
+      display: none;
+    }
+  }
 
 .more-case-seta {
   color: #ffdd00;
@@ -458,6 +484,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   width: 55%;
   margin-top: 13px;
+  line-height: 2.15rem;  
   display: none;
 }
 @media( max-width: 1024px) {
@@ -499,10 +526,16 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   list-style: none;
 }
 @media( max-width: 1024px) {
   .case-list{
-    width: 100vw;
+    width: 50%;
+  }
+}
+@media( max-width: 768px) {
+  .case-list{
+    width: 80%;
   }
 }
