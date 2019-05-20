@@ -17,7 +17,7 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="../css/fonts.css">
   <link rel="stylesheet" href="../css/sobre.css">
-  <link rel="stylesheet" href="../css/base6.css">
+  <link rel="stylesheet" href="../css/demo6.css" />
 </head>
 <body class="l-container">
   <header class="header">
@@ -30,10 +30,10 @@
         <nav class="menu">
           <img src="../img/Mobile-Icon-Menu.png" class="menu-icon-mobile" id="menu-icon-mobile" alt="Icone Menu">
           <ul class="menu-list" id="menu-list">
-            <a href="#HELLO">
+            <a href="../../index.html">
               <li class="menu-item" id="menu-item">olá</li>
             </a>
-            <a href="#APPROACH">
+            <a href="./sobre.html">
               <li class="menu-item" id="menu-item2">sobre</li>
             </a>
             <a href="../pages/cases.html">
@@ -67,22 +67,22 @@
     </section>
   </header>
   <main>
-    <section class="weare" id="WEARE">
+    <section class="container" id="WEARE">
 			<div class="container">
-				<div class="container-time">
-					<h2 class="container-title-time">Quem somos</h2>
-					<p class="container-description-time">A 1STi é uma empresa de consultoria de Deep Tech Knowledge, composta por uma equipe descentralizada formada por inovadores, desenvolvedores, engenheiros, empreendedores, designers e cientistas de dados comprometidos com a crença de que o nosso trabalho é uma síntese de arte, humanidade e ciência.</p>
-				</div>
+				<span class="container-span">
+          <h2 class="container-title-time">Quem somos</h2>
+          <p class="container-description-time">A 1STi é uma empresa de consultoria de Deep Tech Knowledge, composta por uma equipe descentralizada formada por inovadores, desenvolvedores, engenheiros, empreendedores, designers e cientistas de dados comprometidos com a crença de que o nosso trabalho é uma síntese de arte, humanidade e ciência.</p>
+        </span>
 				<div class="content">
-					<canvas class="scene scene--full" id="scene"></canvas>
-				</div>
+          <canvas class="scene scene--full" id="scene"></canvas>
+        </div>
 			</div>
     </section>
-    <section class="believe">
+    <section class="container">
       <div class="container">
-        <div class="believe-description">
+        <span class="container-span">
             <h2 class="believe-title">nós acreditamos</h2>
-        </div>
+        </span>
         <div class="wrapper-believe">
           <div class="box-believe">
             <h2 class="box-title">Tecnologia é uma extensão da vida</h2>
@@ -96,53 +96,90 @@
             <h2 class="box-title">Mentalidade Ágil constrói mundos dinâmicos e eficientes</h2>
             <p class="box-description">Construímos trajetórias para líderes e times impulsionarem a mudança dentro das organizações. Promovemos meios de avanço rápidos, curtos e conscientes, priorizando, principalmente, a eficácia de recursos.</p>
           </div>
-          <div class="box-believe">
+          <div class="box-believe-last">
             <h2 class="box-title">Deep Tech Talks</h2>
             <p class="box-description">A ampliação da consciência muda negócios e sociedades. Sendo assim, conduzimos um diálogo destinado a executivos, especialistas, instituições sociais e sociedade que, conosco, desejam dirigir o futuro para uma direção viável.</p>
-            <img src="../img/Imagem-Deep_Tech_Talks.jpg" alt="">
+            <figure class="believe-img">
+              <img src="../img/Imagem-Deep_Tech_Talks.jpg" alt="" class="img">
+              <figcaption>Primeira edição realizada em novembro de 2018.</figcaption>
+            </figure>
+            
           </div>
-          <div>
-            <h2></h2>
-            <p></p>
-          </div>
-        </div>
       </div>
     </section>
-    <section class="approach" id="APPROACH">
+    <section class="container" id="APPROACH">
 			<div class="container">
-        <div class="believe-description">
+        <span class="container-span">
             <h2 class="believe-title">Abordagem</h2>
-        </div>
+        </span>
 				<div class="approach-wrapper">
 					<div class="box-info">					
 						<div class="approach-info" id="approach-box1">
-							<img class="approach-imgLead" src="../img/Icone-Lead.svg">
-							<div class="approach-box-span" data-anime="bottom">
-								<h2 class="approach-title"><span class="approach-span">⁰¹</span>lead</h2>
+              <!-- <figure> -->
+                  <img class="approach-imgLead" src="../img/Icone-Lead.svg">
+              <!-- </figure>							  
+							<div class="approach-box-span" data-anime="bottom"> -->
+								<h2 class="approach-title"><span class="approach-span">⁰¹</span>Lead</h2>
                 <p class="approach-item">Os nossos métodos e modelos de trabalho são focados em pessoas. Para isso, trabalhamos com equipes diversas que orientam um mergulho profundo e um estudo de campo para alcançar problemas das organizações e da sociedade.</p>
-							</div>
+							<!-- </div> -->
 						</div>
 						<div class="approach-info" id="approach-box2">
-							<img class="approach-imgLearn" src="../img/Icone-Learn.svg">
-							<div class="approach-box-span" data-anime="bottom">
-								<h2 class="approach-title"><span class="approach-span">⁰²</span>learn</h2>
+              <!-- <figure> -->
+                  <img class="approach-imgLearn" src="../img/Icone-Learn.svg">
+              <!-- </figure>							
+							<div class="approach-box-span" data-anime="bottom"> -->
+								<h2 class="approach-title"><span class="approach-span">⁰²</span>Learn</h2>
 								<p class="approach-item">Por meio de metodologias bem estruturadas, ampliamos a consciência para evoluir enquanto aprendemos e aprender enquanto evoluímos. É quando o conceito ganha vida. Nesta direção, exploramos insights e ferramentas para produzir prototipagens e feedbacks rápidos.</p>								
-							</div>
+							<!-- </div> -->
 						</div>
 						<div class="approach-info" id="approach-box3">
-							<img class="approach-imgScale" src="../img/Icone-Scale.svg">
-							<div class="approach-box-span"  data-anime="bottom">
-								<h2 class="approach-title"><span class="approach-span">⁰³</span>scale</h2>
+              <!-- <figure> -->
+                  <img class="approach-imgScale" src="../img/Icone-Scale.svg">
+              <!-- </figure>              
+							<div class="approach-box-span"  data-anime="bottom"> -->
+								<h2 class="approach-title"><span class="approach-span">⁰³</span>Scale</h2>
 								<p class="approach-item">Quando a solução está materializada é hora de expandir, agora apoiados em equipes maiores e velocidade superior. Escalamos o que aprendemos e, eventualmente, continuamos explorando novas áreas para manter os negócios relevantes e sustentáveis.</p>
-							</div>
+							<!-- </div> -->
 						</div>
 				</div>
 			</div>
 		</section>
   </main>	
-    <script src="../js/main.js"></script>
-    <script src="../js/demo6.js"></script>
+  <footer class="contact" id="contact">
+			<section class="container">
+					<div class="container">
+						<span class="contact-span">
+							<p class="span-title">contato</p>
+						</span>
+					<div class="contact-box">
+					<div class="contact-description">
+						<p class="contact-description-text">Quer descobrir<br> como a sua indústria está prestes a mudar?<br> Entre em contato e vamos conversar.</p>
+					</div>
+					<div class="contact-address">
+						<p class="contact-address-text">ola@1sti.com.br</p>
+						<p class="contact-address-text">Rio • São Paulo • Lisboa</p>
+					</div>
+					<ul class="contact-social">
+						<a href="https://web.facebook.com/ola1STi/" target="_blank">
+							<li class="contact-social-text"><img src="../img/Icone-Facebook.svg" alt=""></li></a>
+						<a href="https://medium.com/1sti" target="_blank">
+							<li class="contact-social-text"><img src="../img/Icone-Instagram.svg" alt=""></li></a>
+						<a href="https://www.linkedin.com/company/1sti" target="_blank">
+							<li class="contact-social-text"><img src="../img/Icone-Medium.svg" alt=""></li></a>
+						<a href="https://www.linkedin.com/company/1sti" target="_blank">
+							<li class="contact-social-text"><img src="../img/Icone-Linkedin.svg" alt=""></li></a>
+					</ul>
+					<form class="contact-form">
+						<label class="form-label">Assine nossa newsletter:
+						<input type="email" class="form-input">
+					</label>
+					<button>OK</button>
+					</form>
+				</div>
+			</section>
+		</footer>
 		<script src="../js/three.min.js"></script>
+		<script src="../js/demo6.js"></script>
   </body>
 </html>
 

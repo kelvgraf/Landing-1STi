@@ -8,7 +8,7 @@ var renderer = new THREE.WebGLRenderer({
 });
 renderer.setPixelRatio(window.devicePixelRatio > 1 ? 2 : 1);
 renderer.setSize(width, height);
-renderer.setClearColor(0xf8f8f8);
+renderer.setClearColor(0xfcfcfc);
 
 var scene = new THREE.Scene();
 
@@ -85,5 +85,3 @@ window.addEventListener("resize", function(){
     resizeTm = clearTimeout(resizeTm);
     resizeTm = setTimeout(onResize, 200);
 });
-
-
