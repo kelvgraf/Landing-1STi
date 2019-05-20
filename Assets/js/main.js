@@ -52,7 +52,7 @@
   document.getElementById("menu-item2").addEventListener("click", myFunction2);
   document.getElementById("menu-item3").addEventListener("click", myFunction2);
   document.getElementById("menu-item4").addEventListener("click", myFunction2);
-  document.getElementById("menu-item5").addEventListener("click", myFunction2);
+  // document.getElementById("menu-item5").addEventListener("click", myFunction2);
   // document.getElementById("menu-item6").addEventListener("click", myFunction2);
   // document.getElementById("menu-item7").addEventListener("click", myFunction2);
   document.getElementById("case1").addEventListener("click", case1);
