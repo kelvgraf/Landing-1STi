@@ -287,7 +287,6 @@ main {
 }
 main .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   width: 95%;
@@ -303,7 +302,6 @@ main .container {
 
 /* Time */
 .container{
-  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   width: 95%;
@@ -328,6 +326,20 @@ main .container {
 }
   @media (max-width: 768px) {
     .container-span {
+      width: 90%;
+    }
+  }
+
+.container-spanWe {
+  width: 80vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 99;
+}
+  @media (max-width: 768px) {
+    .container-spanWe {
       width: 90%;
     }
   }

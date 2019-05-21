@@ -26,17 +26,13 @@
 }
 
 /* Canvas positions */
-
-
 .scene {
 	position: relative;
 }
 
-
-
 .scene--full {
-	width: 70vw;
-	height: 90vh;
+	width: 60vw;
+	height: 80vh;
 }
 @media (max-width: 768px) {
 	.scene--full {

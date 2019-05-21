@@ -296,34 +296,55 @@ body {
 
 
 
-main{
+/* main{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-}
+} */
 
 /* HOME */
 .ecossistema {
-  width: 94vw;
-  height: 87vh;
+  width: 100%;
+  height: 90vh;
   display: flex;
   justify-content: flex-end;
 }
+  @media (max-width: 768px) {
+    .ecossistema {
+      justify-content: flex-start;
+    }
+  }
 
 .container-eco {
+  width: 95%;
   display: flex;
 }
+  @media (max-width: 768px) {
+    .container-eco {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 
 .wrapper-description {
-  width: 35%;
-  height: 100%;
+  width: 50%;
+  height: 35%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  align-content: flex-end;
   margin: 4rem 0 0 4rem;
 }
+  @media (max-width: 768px) {
+    .wrapper-description {
+      width: 90%;
+      margin: 0;
+      align-items: center;
+    }
+  }
 
 .eco-title {
-  width: 100%;
   margin-bottom: 1.5rem; 
   font-size: 1.625rem;
   color: rgb(0, 0, 0);
@@ -331,14 +352,22 @@ main{
   opacity: 0.7;
   font-family: Introdução, Black Caps;
 }
+  @media(max-width: 768px) {
+    width: 281px;
+  }
 
 .eco-description {
-  width: 75%;
+  width: 350px;
   line-height: 1.5rem;
   font-size: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
 }
+  @media (max-width: 768px) {
+    .eco-description {
+      width: 275px;
+    }
+  }
 
 figure {
   width: 65%;
@@ -355,15 +384,24 @@ figure {
   justify-content: center;
   flex-direction: column;
 }
+  @media(max-width: 768px) {
+    .vainaweb {
+      width: 100%;
+    }
+  }
 
 .container-enterprise {
-  width: 75%;
+  width: 70%;
   height: 100%;
   border-bottom: solid;
   border-color: #00C8DB;
   border-width: 1px;
-
 }
+  @media(max-width:768px) {
+    .container-enterprise {
+      width: 85%;
+    }
+  }
 
 .enterprise-description {
   width: 100%;
@@ -371,19 +409,24 @@ figure {
   display: flex;
   justify-content: space-between;
 }
+  @media(max-width: 768px) {
+    .enterprise-description {
+      justify-content: space-evenly;
+    }
+  }
 
 .box-img {
   width: 15%;
-  height: 20%;
+  height: 15%;
   display: flex;
   align-items: center;
 }
-.logo-vnw {
-  width: 80%;
+.logo-item {
+  width: 85%;
 }
 
 .vnw-description {
-  width: 32%;
+  width: 365px;
   font-size: 1rem;
   line-height: 1.5rem;
   font-family: 'Source Sans Pro', sans-serif;
@@ -409,21 +452,27 @@ figure {
   list-style: none;
 }
 .social-item {
-  width: 15%;
+  width: 13%;
 }
 
 .enterprise-video {
   width: 100%;
-  height: 70%;
+  height: 65%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
+  @media(max-width:768px) {
+    .enterprise-video {
+      height: 50%;
+    }
+  }
+
 
 .enterprise-midia {
   width: 100%;
-  height: 90%;
+  height: 100%;
   border: none;
 }
 
@@ -443,11 +492,14 @@ figure {
     align-items: center;
 
 }
-.box-arrow { 
+.seemore-item {
+  font-family: SkyhookMonoRegular;
+  font-size: .95rem;
   display: flex;
   align-items: center;
 }
-.arrow-back {
-  width: 5%;
-  height: 5%;
+.seemore-item span {
+  font-family: SkyhookMono;
+  font-size: 2rem;
+  color: #FF0070;
 }
