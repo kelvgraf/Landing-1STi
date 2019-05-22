@@ -331,12 +331,12 @@ main .container {
   }
 
 .container-spanWe {
-  width: 80vw;
+  width: 90vw;
   height: 30vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   z-index: 99;
+  padding: 7rem 0 0 4rem;
 }
   @media (max-width: 768px) {
     .container-spanWe {
@@ -368,17 +368,30 @@ main .container {
   font-family: Introdução, Black Caps;
 }
 
-.container-description-time {
+.container-description {
   width: 330px;
   line-height: 1.5rem;
   font-size: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 @media (max-width: 768px) {
   .container-description-time {
     width: 291px;
   }  
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.content canvas {
+  width: 50vw;
+  height: 40vw;
+  position: absolute;;
 }
 
 
@@ -431,11 +444,41 @@ main .container {
 .box-believe {
   width: 100%;
   border-bottom: solid;
-  border-color: blue;
+  border-color: #00C8DB;
   border-width: 1px;
   margin-top: 4rem;
   padding-bottom: 2rem;
 }
+
+.article-box-span{
+  padding: 0 4px;
+  position: relative;
+}
+
+.article-box-span div {
+  display: block;
+  width: 0px;
+  height: 25px;
+  background-image: linear-gradient(transparent 0%, rgb(252, 241, 19) 0px);
+  font-size: 28px;
+  font-weight: 600;
+  transition: width .4s ease;
+  margin-top: -27.5px;
+}
+
+/* .box-title div {
+  height: 60px;
+  margin-top: -60px;
+}
+
+.box-title:hover + div {
+  width: 40%;
+} */
+
+.article-box-animate {
+  width: 100% !important;
+}
+
 .box-believe-last {
   width: 100%;
   margin-top: 4rem;
@@ -478,6 +521,11 @@ figcaption {
   text-decoration: underline;
   cursor: default;
 }
+.box-title:hover {
+  background-color: #FFDD00;
+  box-shadow: 10px 0px 0px 4px #FFDD00, -10px 0px 0px 4px #FFDD00;
+}
+
   @media (max-width: 768px) {
     .box-title {
       width: 281px;
@@ -632,13 +680,13 @@ figcaption {
 .approach-imgLead:hover {
   z-index: 2;
   -webkit-transition: all 300ms ease-in;
-  -webkit-transform: scale(1.5) v;
+  -webkit-transform: scale(1.1) v;
   -ms-transition: all 300ms ease-in;
-  -ms-transform: scale(1.5) rotate(-360deg);   
+  -ms-transform: scale(1.1);   
   -moz-transition: all 300ms ease-in;
-  -moz-transform: scale(1.5) rotate(-360deg);
+  -moz-transform: scale(1.1);
   transition: all 300ms ease-in;
-  transform: scale(1.2) rotate(-360deg);
+  transform: scale(1.1);
 }
 .approach-imgLearn {
   width: 50%;
@@ -647,13 +695,13 @@ figcaption {
 .approach-imgLearn:hover {
   z-index: 2;
   -webkit-transition: all 300ms ease-in;
-  -webkit-transform: scale(1.5) v;
+  -webkit-transform: scale(1.1) v;
   -ms-transition: all 300ms ease-in;
-  -ms-transform: scale(1.5) rotate(180deg);   
+  -ms-transform: scale(1.1);   
   -moz-transition: all 300ms ease-in;
-  -moz-transform: scale(1.5) rotate(180deg);
+  -moz-transform: scale(1.1);
   transition: all 300ms ease-in;
-  transform: scale(1.2) rotate(180deg);
+  transform: scale(1.1);
 }
 
 .approach-imgScale {
@@ -709,26 +757,11 @@ figcaption {
   min-height: 100vh;
 }
 
-/*.contact canvas {
-  width: 100vw;
-  height: 100vh;
-}
-*/
-/*.contact::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgb(255, 221, 0);
-  opacity: 0.8;
-}*/
-
 .contact .container {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 95%;
   height: 100vh;
   background-image: url("../img/contato-ruido.gif");
 }
@@ -739,6 +772,7 @@ figcaption {
   display: flex;
   align-items: flex-end
 }
+
 .span-title {
   font-size: 1.625rem;
   color: rgb(0, 0, 0);
@@ -892,10 +926,14 @@ figcaption {
   width: 100%;
   height: 25%;
 }
+  @media (max-width: 768px) {
+    .contact-form {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
 
 .form-label {
-  width: 70%;
-  height: 50%;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.25rem;
   font-weight: 900;
@@ -903,18 +941,22 @@ figcaption {
 }
 
 .form-input {
-  width: 45%;
-  height: 60%;
-  border-style: none;
+  width: 75%;
+  height: 25%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #000;
+  padding: 1rem;
+  border: none;
 }
 
 button {
-  width: 5%;
-  height: 20%;
+  width: 1.87rem;
+  height: 1.87rem;
   border-radius: 50%;
   background-color: #FF0070;
   border: none;
   position: relative;
-  right: 4.75rem;
-  bottom: 0.95rem;
+  right: 1rem;
 }
