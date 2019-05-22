@@ -64,7 +64,7 @@
  
   function myFunction() {
     menuList.classList.toggle('--drop-menu')
-    menuLang.classList.toggle('--drop-menu')
+    menuLang.classList.toggle('--drop-lang')
     socialIcon.classList.toggle('--drop-social')
     menuItem.forEach((element) => {
       element.classList.add('--drop-item')
@@ -73,7 +73,7 @@
 
   function myFunction2() {
     menuList.classList.remove('--drop-menu')
-    menuLang.classList.remove('--drop-menu')
+    menuLang.classList.remove('--drop-lang')
     socialIcon.classList.toggle('--drop-social')
   };
 

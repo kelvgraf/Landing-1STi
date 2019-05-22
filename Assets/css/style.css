@@ -84,9 +84,10 @@ body {
   height: 100vh;
   width: 5vw;
   margin: 0;
+  background-color: #F2F2F2;
   position: fixed;  
   font-family: SkyhookMonoRegular;
-  z-index: 1;
+  z-index: 99;
 }
   @media (max-width: 768px) {
   .wrapper-header {
@@ -94,6 +95,7 @@ body {
     height: 8vh;
     display: flex;
     align-items: center;
+    background-color: transparent;
     opacity: 0;
     transition: all 0.25s ease-in;
   }
@@ -230,8 +232,6 @@ body {
   transform: scaleX(1);
 }
 
-
-
 .menu-item {
   font-size: 1rem;
   color: #000;
@@ -265,13 +265,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .menu-lang .--drop-menu {
-    display: flex;
-    height: 25vh;
-    z-index: 99;
-    transform: rotate(0deg);
-  }
-  .menu-lang  {
+  .menu-lang {
     right: 25px;
     display: none;
     flex-direction: column;
@@ -280,9 +274,17 @@ body {
     position: fixed;
     right: 20px;
     top: 63vh;
-    height: 10vh;
+  }
+
+  .menu-lang.--drop-lang {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
     transform: rotate(0deg);
-    z-index: 99;
+    height: 35vh;
+    width: 30vw;
+    z-index: 99; 
   }
 }
 
@@ -319,8 +321,6 @@ body {
   }
 }
 
-/* novo */
-
 /*  Home  */
 .home {
   display: flex;
@@ -352,7 +352,7 @@ body {
   .home-column {
     flex-direction: column;
     width: 100vw;
-    min-height: 55vh;
+    min-height: 60vh;
     position: initial;
     z-index: 2;
   }
@@ -371,7 +371,7 @@ body {
 @media (max-width: 768px) {
   .home-center {
     top: 0;
-    height: 90vh;
+    height: 80vh;
     padding-top: 17vh;
   }
 }
@@ -1220,7 +1220,7 @@ body {
 }
 
 .contact .container {
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   width: 95%;

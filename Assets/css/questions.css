@@ -31,19 +31,19 @@ body {
 .wrapper-header {
   height: 100vh;
   width: 5vw;
-  background-color: #F2F2F2;
   margin: 0;
+  background-color: #F2F2F2;
   position: fixed;  
   font-family: SkyhookMonoRegular;
+  z-index: 99;
 }
   @media (max-width: 768px) {
   .wrapper-header {
     width: 100%;
     height: 8vh;
-    position: relative;
     display: flex;
     align-items: center;
-    position: relative;
+    background-color: transparent;
     opacity: 0;
     transition: all 0.25s ease-in;
   }
@@ -145,6 +145,7 @@ body {
     width: 100vw;
     transform: rotate(0deg);
     z-index: 99;
+    padding: 2rem;
   }
 }
 
@@ -179,27 +180,6 @@ body {
   transform: scaleX(1);
 }
 
-/* .menu-lang a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: -2px;
-  font-size: 1rem;
-  background-color: #000;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.menu-lang a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-} */
-
 .menu-item {
   font-size: 1rem;
   color: #000;
@@ -207,8 +187,6 @@ body {
   position: relative;
   text-decoration: none;
 }
-
-
 
 @media (max-width: 768px) {
   .menu-item {
@@ -235,18 +213,26 @@ body {
 }
 
 @media (max-width: 768px) {
-  .menu-lang .--drop-menu {
+  .menu-lang {
+    right: 25px;
     display: none;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    background-color: rgba(0, 0, 0, 1);
+    height: 170px;
+    justify-content: space-between;
     position: fixed;
-    top: 55vh;
-    height: 45vh;
-    width: 100vw;
+    right: 20px;
+    top: 63vh;
+  }
+
+  .menu-lang.--drop-lang {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
     transform: rotate(0deg);
-    z-index: 99;
+    height: 35vh;
+    width: 30vw;
+    z-index: 99; 
   }
 }
 
@@ -315,6 +301,7 @@ main{
   @media (max-width: 768px) {
     .container-believe {
       width: 100vw;
+      margin-top: 4rem;
       justify-content: flex-start;
     }
   }
@@ -392,7 +379,7 @@ main{
   width: 35%;;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
-  line-height: 2.65rem;
+  line-height: 1.65rem;
   margin-top: 1rem;
 }
 
@@ -405,7 +392,7 @@ main{
   }
 }
 .wrapper-news {
-  width: 70vw;
+  width: 60vw;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -424,19 +411,29 @@ main{
 }
 
 .box-news {
+  width: 100%;
+  margin-bottom: 3rem;
   display: flex;
-  align-items: center;
-  height: 50vh;
 }
-  @media (max-width: 768px) {
+  @media(max-width: 768px) {
     .box-news {
-      width: 100%;
-      height: 100%;
       flex-direction: column;
     }
+  }
+.box-img {
+  width: 60%;
+}
+  @media(max-width:768px) {
     .box-img {
-      width: 100%;
+      width: 100%
     }
+  }
+
+.news-img {
+  width: 90%;
+}
+
+  @media(max-width:768px) {
     .news-img {
       width: 100%;
     }
@@ -444,41 +441,46 @@ main{
 
   
 .box-description {
-  height: 60%;
+  width: 100%;
+  height: 22vh;
   display: flex;
   flex-direction: column;
   margin-left: 1.5rem;
+  justify-content: space-between;
 }
   @media (max-width: 768px) {
     .box-description {
-      height: 35vh;
-      justify-content: center;
+      width: 80%;
+      height: 35%;
+      justify-content: space-evenly;
     }
   }
+/* 
+  @media(max-width: 429px) {
+    .box-description {
+      height: 35vh;
+    }
+  } */
 
 .news-social {
-  height: 15%;;
   color: #8B8B8B;
   font-size: .87rem;
   font-family: SkyhookMonoBold;
 }
 
 .news-title {
-  width: 40%;
-  height: 35%;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.75rem;
   line-height: 2rem;
 }
 
 .news-text {
-  width: 48%;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 .top-back {
-  font-family: SkyhookMonoBold;
+  font-family: SkyhookMonoRegular;
    font-size: .95rem;
    display: flex;
    align-items: center;
@@ -494,7 +496,7 @@ main{
 }
 
 .bottom-item {
-  font-family: SkyhookMonoBold;
+  font-family: SkyhookMonoRegular;
   font-size: .95rem;
   display: flex;
   align-items: center;
