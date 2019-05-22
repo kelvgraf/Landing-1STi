@@ -329,12 +329,10 @@ body {
 
 .wrapper-description {
   width: 50%;
-  height: 35%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-content: flex-end;
-  margin: 4rem 0 0 4rem;
+  padding: 7rem 0 0 4rem;
+  z-index: 1;
 }
   @media (max-width: 768px) {
     .wrapper-description {
@@ -357,17 +355,30 @@ body {
   }
 
 .eco-description {
-  width: 350px;
-  line-height: 1.5rem;
+  width: 50%;
+  line-height: 1.625rem;;
   font-size: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
 }
   @media (max-width: 768px) {
     .eco-description {
       width: 275px;
     }
   }
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.content canvas {
+  width: 50vw;
+  height: 40vw;
+  position: absolute;;
+}
 
 figure {
   width: 65%;
@@ -376,7 +387,7 @@ figure {
 
 /* Vai na Web */
 
-.vainaweb {
+.container {
   width: 95vw;
   height: 100vh;
   display: flex;
@@ -389,6 +400,20 @@ figure {
       width: 100%;
     }
   }
+
+  .presisaser{
+    border: none;
+  }
+.container-presisaser {
+  width: 70%;
+  height: 100%;
+}
+  @media(max-width:768px) {
+    .container-presisaser {
+      width: 85%;
+    }
+  }
+
 
 .container-enterprise {
   width: 70%;
@@ -416,13 +441,17 @@ figure {
   }
 
 .box-img {
-  width: 15%;
+  width: 20%;
   height: 15%;
   display: flex;
   align-items: center;
 }
 .logo-item {
-  width: 85%;
+  width: 80%;
+}
+
+.logo-vnw {
+  width: 70%;
 }
 
 .vnw-description {

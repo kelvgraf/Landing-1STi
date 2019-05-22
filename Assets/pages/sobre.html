@@ -17,7 +17,6 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="../css/fonts.css">
   <link rel="stylesheet" href="../css/sobre.css">
-  <link rel="stylesheet" href="../css/demo6.css" />
 </head>
 <body class="l-container">
   <header class="header">
@@ -71,7 +70,7 @@
 			<div class="container">
 				<span class="container-spanWe">
           <h2 class="container-title-time">Quem somos</h2>
-          <p class="container-description-time">A 1STi é uma empresa de consultoria de Deep Tech Knowledge, composta por uma equipe descentralizada formada por inovadores, desenvolvedores, engenheiros, empreendedores, designers e cientistas de dados comprometidos com a crença de que o nosso trabalho é uma síntese de arte, humanidade e ciência.</p>
+          <p class="container-description">A 1STi é uma empresa de consultoria de Deep Tech Knowledge, composta por uma equipe descentralizada formada por inovadores, desenvolvedores, engenheiros, empreendedores, designers e cientistas de dados comprometidos com a crença de que o nosso trabalho é uma síntese de arte, humanidade e ciência.</p>
         </span>
 				<div class="content">
           <canvas class="scene scene--full" id="scene"></canvas>
@@ -84,20 +83,32 @@
             <h2 class="believe-title">nós acreditamos</h2>
         </span>
         <div class="wrapper-believe">
-          <div class="box-believe">
-            <h2 class="box-title">Tecnologia é uma extensão da vida</h2>
+          <div class="box-believe" id="article-box1">
+            <span class="article-box-span">
+              <h2 class="box-title">Tecnologia é uma extensão da vida</h2>
+              <div class=""></div>
+            </span>
             <p class="box-description">A tecnologia expande os traços fundamentais do ser humano, potencializando conexões, diversidades, ideias, beleza e consciência. Ao conectar pessoas com tecnologias profundas podemos construir um propósito comum: evoluir com sabedoria e da forma mais saudável e sustentável.</p>
           </div>
-          <div class="box-believe">
-            <h2 class="box-title">Maturidade Digital amplia o potencial da Transformação Digital</h2>
+          <div class="box-believe"  id="article-box2">
+              <span class="article-box-span">
+                <h2 class="box-title">Maturidade Digital amplia o potencial da Transformação Digital</h2>
+                <div class=""></div>
+              </span>
             <p class="box-description">Organizações que desejam liderar no futuro devem conduzir as tecnologias, não ao contrário. Nesse sentido, orientamos empresas a alinharem sua estrutura organizacional e objetivos de negócios a ferramentas tecnológicas avançadas.</p>
           </div>
-          <div class="box-believe">
-            <h2 class="box-title">Mentalidade Ágil constrói mundos dinâmicos e eficientes</h2>
+          <div class="box-believe"  id="article-box3">
+            <span class="article-box-span">
+              <h2 class="box-title">Mentalidade Ágil constrói mundos dinâmicos e eficientes</h2>
+              <div class=""></div>
+            </span>
             <p class="box-description">Construímos trajetórias para líderes e times impulsionarem a mudança dentro das organizações. Promovemos meios de avanço rápidos, curtos e conscientes, priorizando, principalmente, a eficácia de recursos.</p>
           </div>
-          <div class="box-believe-last">
-            <h2 class="box-title">Deep Tech Talks</h2>
+          <div class="box-believe-last"  id="article-box4">
+            <span class="article-box-span">
+              <h2 class="box-title">Deep Tech Talks</h2>
+              <div class=""></div>
+            </span>
             <p class="box-description">A ampliação da consciência muda negócios e sociedades. Sendo assim, conduzimos um diálogo destinado a executivos, especialistas, instituições sociais e sociedade que, conosco, desejam dirigir o futuro para uma direção viável.</p>
             <figure class="believe-img">
               <img src="../img/Imagem-Deep_Tech_Talks.jpg" alt="" class="img">
@@ -161,25 +172,27 @@
 					</div>
 					<ul class="contact-social">
 						<a href="https://web.facebook.com/ola1STi/" target="_blank">
-							<li class="contact-social-text"><img src="../img/Icone-Facebook.svg" alt=""></li></a>
+							<li class="contact-social-text"><img src="./Assets/img/Icone-Facebook.svg" alt=""></li></a>
 						<a href="https://medium.com/1sti" target="_blank">
-							<li class="contact-social-text"><img src="../img/Icone-Instagram.svg" alt=""></li></a>
+							<li class="contact-social-text"><img src="./Assets/img/Icone-Instagram.svg" alt=""></li></a>
 						<a href="https://www.linkedin.com/company/1sti" target="_blank">
-							<li class="contact-social-text"><img src="../img/Icone-Medium.svg" alt=""></li></a>
+							<li class="contact-social-text"><img src="./Assets/img/Icone-Medium.svg" alt=""></li></a>
 						<a href="https://www.linkedin.com/company/1sti" target="_blank">
-							<li class="contact-social-text"><img src="../img/Icone-Linkedin.svg" alt=""></li></a>
+							<li class="contact-social-text"><img src="./Assets/img/Icone-Linkedin.svg" alt=""></li></a>
 					</ul>
 					<form class="contact-form">
-						<label class="form-label">Assine nossa newsletter:
-						<input type="email" class="form-input">
-					</label>
-					<button>OK</button>
+						<label class="form-label">Assine nossa newsletter:</label>
+						<span>
+							<input class="form-input" type="email" name="kelvin.f.almeida@gmail.com" placeholder="seu email">
+							<button type="submit" value="enviar">OK</button>
+						</span>
 					</form>
 				</div>
 			</section>
 		</footer>
-		<script src="../js/three.min.js"></script>
-		<script src="../js/demo6.js"></script>
+  <script src="../js/three.min.js"></script>
+  <script src="../js/demo6.js"></script>
+  <script src="../js/main.js"></script>
   </body>
 </html>
 
