@@ -202,6 +202,10 @@ body {
   }
 }
 
+.item-sobre {
+  font-weight: bold;
+}
+
 .menu-lang {
   width: 5vw;
   display: flex;
