@@ -50,6 +50,7 @@ body {
     height: 8vh;
     display: flex;
     align-items: center;
+    position: relative; 
     background-color: transparent;
     opacity: 0;
     transition: all 0.25s ease-in;
@@ -292,17 +293,23 @@ main {
 main .container {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  width: 95%;
+  flex-direction: row;
+  width: 85%;
   height: 100%;
 }
 
   @media (max-width: 768px) {
     main .container {
       width: 100%;
-      height: auto;
+      height: 100vh;
+      flex-direction: column;
     }
   }
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+}
 
 /* Time */
 .container{
@@ -335,8 +342,8 @@ main .container {
   }
 
 .container-spanWe {
-  width: 90vw;
-  height: 30vh;
+  width: 35vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   z-index: 99;
@@ -345,6 +352,8 @@ main .container {
   @media (max-width: 768px) {
     .container-spanWe {
       width: 90%;
+      height: auto;
+      padding: 0;
     }
   }
 
@@ -362,7 +371,7 @@ main .container {
   }
 }
 
-.container-title-time {
+.container-title-desktop {
   width: 100%;
   margin-bottom: 1.5rem;
   font-size: 1.625rem;
@@ -372,15 +381,36 @@ main .container {
   font-family: Introdução, Black Caps;
 }
 
+.container-title-mobile {
+  display: none;
+}
+  @media(max-width:768px) {
+    .container-title-desktop {
+      display: none;
+    }
+    
+    .container-title-mobile {
+      width: 100%;
+      margin-bottom: 1.5rem;
+      display: block;
+      font-size: 1.625rem;
+      color: rgb(0, 0, 0);
+      letter-spacing: 0.25rem;
+      opacity: 0.7;
+      font-family: Introdução, Black Caps;
+    }
+  }
+
+
 .container-description {
-  width: 330px;
+  width: 351px;
   line-height: 1.5rem;
   font-size: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 500;
 }
 @media (max-width: 768px) {
-  .container-description-time {
+  .container-description {
     width: 291px;
   }  
 }
@@ -390,13 +420,25 @@ main .container {
   justify-content: center;
   align-items: center;
   min-height: 50vh;
+  min-width: 65vw;
 }
+  @media(max-width:768px) {
+    .content {
+      min-height: 50vh;
+    }
+  }
 
 .content canvas {
   width: 50vw;
   height: 40vw;
-  position: absolute;;
-}
+  position: absolute;
+} 
+  @media(max-width: 768px) {
+    .content canvas {
+      width: 100vw;
+      height: 53vh;
+  }
+} 
 
 
 /* Believe */
@@ -430,6 +472,7 @@ main .container {
   letter-spacing: 0.25rem;
   opacity: 0.7;
   font-family: Introdução, Black Caps;
+  padding: 7rem 0 0 4rem;
 }
 
 .wrapper-believe {
