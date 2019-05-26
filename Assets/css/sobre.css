@@ -50,6 +50,7 @@ body {
     height: 8vh;
     display: flex;
     align-items: center;
+    position: relative; 
     background-color: transparent;
     opacity: 0;
     transition: all 0.25s ease-in;
@@ -292,8 +293,8 @@ main {
 main .container {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  width: 95%;
+  flex-direction: row;
+  width: 85%;
   height: 100%;
 }
 
@@ -301,6 +302,18 @@ main .container {
     main .container {
       width: 100%;
       height: auto;
+      margin-top: 1rem;
+      flex-direction: column;
+    }
+  }
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+}
+  @media(max-width:768px) {
+    .container-main {
+      align-items: center;
     }
   }
 
@@ -330,13 +343,14 @@ main .container {
 }
   @media (max-width: 768px) {
     .container-span {
-      width: 90%;
+      width: 80%;
+      height: 10vh;
     }
   }
 
 .container-spanWe {
-  width: 90vw;
-  height: 30vh;
+  width: 35vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   z-index: 99;
@@ -345,6 +359,9 @@ main .container {
   @media (max-width: 768px) {
     .container-spanWe {
       width: 90%;
+      height: auto;
+      padding: 0;
+      align-items: center;
     }
   }
 
@@ -362,7 +379,7 @@ main .container {
   }
 }
 
-.container-title-time {
+.container-title-desktop {
   width: 100%;
   margin-bottom: 1.5rem;
   font-size: 1.625rem;
@@ -372,15 +389,36 @@ main .container {
   font-family: Introdução, Black Caps;
 }
 
+.container-title-mobile {
+  display: none;
+}
+  @media(max-width:768px) {
+    .container-title-desktop {
+      display: none;
+    }
+    
+    .container-title-mobile {
+      width: 291px;
+      margin-bottom: 1.5rem;
+      display: block;
+      font-size: 1.625rem;
+      color: rgb(0, 0, 0);
+      letter-spacing: 0.25rem;
+      opacity: 0.7;
+      font-family: Introdução, Black Caps;
+    }
+  }
+
+
 .container-description {
-  width: 330px;
+  width: 351px;
   line-height: 1.5rem;
   font-size: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 500;
 }
 @media (max-width: 768px) {
-  .container-description-time {
+  .container-description {
     width: 291px;
   }  
 }
@@ -390,13 +428,26 @@ main .container {
   justify-content: center;
   align-items: center;
   min-height: 50vh;
+  min-width: 64vw;
 }
+  @media(max-width:768px) {
+    .content {
+      min-height: 50vh;
+      margin-bottom: 4rem;
+    }
+  }
 
 .content canvas {
   width: 50vw;
   height: 40vw;
-  position: absolute;;
-}
+  position: absolute;
+} 
+  @media(max-width: 768px) {
+    .content canvas {
+      width: 100vw;
+      height: 53vh;
+  }
+} 
 
 
 /* Believe */
@@ -430,7 +481,15 @@ main .container {
   letter-spacing: 0.25rem;
   opacity: 0.7;
   font-family: Introdução, Black Caps;
+  padding: 7rem 0 0 4rem;
 }
+
+  @media(max-width: 768px) {
+    .believe-title {
+      padding: 0;
+      margin: 0;
+    }
+  }
 
 .wrapper-believe {
   width: 70%;
@@ -453,6 +512,11 @@ main .container {
   margin-top: 4rem;
   padding-bottom: 2rem;
 }
+  @media(max-width:768px) {
+    .box-believe {
+      margin-top: 2rem;
+    }
+  }
 
 .article-box-span{
   padding: 0 4px;
@@ -587,7 +651,7 @@ figcaption {
 }
 
 .approach-wrapper {
-  width: 100vw;
+  width: 90vw;
   height: 85vh;
   display: flex;
   align-items: center;
@@ -623,10 +687,10 @@ figcaption {
 
 @media (max-width: 768px) {
   .box-info {
-    width: 100%;
+    width: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
   }
 }
 
@@ -663,7 +727,7 @@ figcaption {
 }
 .approach-span {
   color: #767676;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .approach-imgLead {
@@ -680,6 +744,11 @@ figcaption {
   transition: all 200ms ease-in;
   transform: scale(1); 
 }
+  @media(max-width:768px) {
+    .approach-imgLead {
+      align-self: center;
+    }
+  }
 
 .approach-imgLead:hover {
   z-index: 2;
@@ -693,7 +762,7 @@ figcaption {
   transform: scale(1.1);
 }
 .approach-imgLearn {
-  width: 50%;
+  width: 318px;
 }
 
 .approach-imgLearn:hover {
@@ -706,6 +775,13 @@ figcaption {
   -moz-transform: scale(1.1);
   transition: all 300ms ease-in;
   transform: scale(1.1);
+}
+
+@media(max-width:768px) {
+  .approach-imgLearn {
+    width: 318px;
+    align-self: center;
+  }
 }
 
 .approach-imgScale {
@@ -733,12 +809,13 @@ figcaption {
   transition: all 300ms ease-in;
   transform: scale(1.1) ;
 }
-@media (max-width: 768px) {
-  .approach-img {
-    width: 155px;
-    height: 155px;
+@media(max-width:768px) {
+  .approach-imgScale {
+    width: 195px;
+    align-self: center;
   }
 }
+
 
 .approach-item {
   list-style: none;
@@ -748,6 +825,11 @@ figcaption {
   line-height: 1.65rem;
   width: 310px;
 }
+  @media(max-width:768px) {
+    .approach-item {
+      width: 286px;
+    }
+  }
 
 
 /*  Contact  */

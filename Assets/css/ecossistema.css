@@ -14,6 +14,10 @@ body {
   background-color: #FCFCFC;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*  Menu  */
 .header-container {
   width: 6%;
@@ -41,6 +45,7 @@ body {
   .wrapper-header {
     width: 100%;
     height: 8vh;
+    position: relative;
     display: flex;
     align-items: center;
     background-color: transparent;
@@ -283,7 +288,9 @@ body {
 }
   @media (max-width: 768px) {
     .ecossistema {
-      height: auto;
+      width: 100vw;
+      height: 100vh;
+      margin-top: 3.25rem;
       justify-content: flex-start;
     }
   }
@@ -347,7 +354,7 @@ body {
   }
 
 .eco-description {
-  width: 50%;
+  width: 100%;
   line-height: 1.625rem;;
   font-size: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
@@ -363,13 +370,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  min-height: 100vh;
+  min-width: 65vw;
 }
+  @media(max-width:768px) {
+    .content {
+      min-height: 50vh;
+    }
+  }
 
 .content canvas {
   width: 50vw;
   height: 40vw;
-  position: absolute;;
+  position: absolute;
 } 
   @media(max-width: 768px) {
     .content canvas {
@@ -387,7 +400,7 @@ figure {
 
 .container {
   width: 100%;
-  /* height: 60vh; */
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -403,8 +416,12 @@ figure {
     border: none;
   }
 .container-presisaser {
-  width: 70%;
-  height: 100%;
+  width: 60%;
+  height: 85vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
   @media(max-width:768px) {
     .container-presisaser {
@@ -415,14 +432,14 @@ figure {
 
 .container-enterprise {
   width: 60%;
-  height: 70vh;
+  height: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
   flex-direction: column;
-  border-bottom: solid;
+  /* border-bottom: solid;
   border-color: #00C8DB;
-  border-width: 1px;
+  border-width: 1px; */
 }
   @media(max-width:768px) {
     .container-enterprise {
@@ -435,18 +452,22 @@ figure {
   height: 85vh;
   display: flex;
   align-items: flex-start;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   flex-direction: column;
-  border-bottom: solid;
-  border-color: #00C8DB;
-  border-width: 1px;
+}
+
+@media(max-width:768px) {
+  .container-enterprise-strytegy {
+    width: 85%;
+  }
 }
 
 .enterprise-description {
   width: 100%;
-  height: 12%;
+  height: auto;
   display: flex;
   justify-content: space-between;
+  padding:1rem 0 1rem 0rem;
 }
   @media(max-width: 768px) {
     .enterprise-description {
@@ -457,13 +478,25 @@ figure {
 
 .box-img {
   width: 20%;
-  height: 10%;
+  height: 20%;
   display: flex;
   align-items: center;
 }
   @media(max-width:768px) {
     .box-img {
       width: 50%;
+    }
+  }
+
+.box-logo-precisaser {
+  width: 20%;
+  height: 0;
+  display: flex;
+  align-items: center;
+}
+  @media(max-width:768px) {
+    .box-logo-precisaser {
+      width: auto;
     }
   }
 
@@ -516,23 +549,51 @@ figure {
   text-align: right;
 }
   @media(max-width:768px) {
-    .enterprise-cantact-desktop {
+    .enterprise-social-desktop {
       display: none;
     }
   }
 
-.enterprise-cantact-mobile {
+.enterprise-social-mobile {
   display: none;
 }
   @media(max-width:768px) {
-    .enterprise-cantact-mobile {
+    .enterprise-social-mobile {
       display: block;
       width: 100%;
       margin-top: 1rem;
       text-align: right;
+      border-bottom: solid;
+      border-color: #00C8DB;
+      border-width: .05rem;
     }
   }
 
+.precisaser-cantact-desktop {
+  width: 45%;
+  text-align: right;
+}
+  @media(max-width:768px) {
+    .precisaser-social-desktop {
+      display: none;
+    }
+  } 
+  
+.precisaser-social-mobile {
+  display: none;
+}
+  @media(max-width:768px) {
+    .precisaser-social-mobile {
+      display: block;
+      width: 100%;
+      margin-top: 1rem;
+      text-align: right;
+      border-bottom: solid;
+      border-color: #00C8DB;
+      border-width: .05rem;
+    }
+    }
+  
 
 .contact-text {
   width: 97%;
@@ -548,7 +609,7 @@ figure {
   list-style: none;
 }
 .social-item {
-  width: 13%;
+  width: 15%;
 }
 @media(max-width:768px) {
   .social-item {
@@ -558,35 +619,53 @@ figure {
 
 .enterprise-vnw {
   width: 100%;
-  height: 65%;
+  height: 65vh;
   display: flex;
   align-items: center;
   flex-direction: column;
+  border-bottom: solid;
+  border-color: #00C8DB;
+  border-width: .05rem;
 }
   @media(max-width:768px) {
     .enterprise-vnw {
      width: 100%;
-     height: 35%;
+     height: 35vh;
+     border: none;
     }
   }
 
 
 .vnw-video {
   width: 100%;
-  height: 40vh;
+  height: 100%;
   border: none;
 }
 .enterprise-strytegy {
   width: 100%;
-  height: 54%;
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
+  border-bottom: solid;
+  border-color: #00C8DB;
+  border-width: .05rem;
 }
+  @media(max-width:768px) {
+    .enterprise-strytegy {
+      height: auto;
+      border: none;
+    }
+  }
 
 .strytegy-img {
   width: 100%;
-  height: 100%;
+  height: 90%;
+}
+@media(max-width:768px) {
+  .strytegy-img {
+    height: auto;
+  }
 }
 
 .enterprise-precisaser {
@@ -596,8 +675,15 @@ figure {
   flex-direction: column;
 }
 
+@media(max-width:768px) {
+  .enterprise-precisaser {
+    display: block;
+  }
+}
+
 .precisaser-img {
   width: 100%;
+  height: 100%;
 }
 
 .contact {
