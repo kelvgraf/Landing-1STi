@@ -452,13 +452,13 @@ figure {
   height: 85vh;
   display: flex;
   align-items: flex-start;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   flex-direction: column;
 }
 
 @media(max-width:768px) {
   .container-enterprise-strytegy {
-    width: 85%
+    width: 85%;
   }
 }
 
