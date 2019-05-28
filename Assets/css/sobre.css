@@ -63,7 +63,8 @@ body {
 
 
 .header-logoBox {
-  height: 25vh;
+  height: 17%;
+  margin-bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -335,7 +336,7 @@ main .container {
 }
 
 .container-span {
-  width: 80vw;
+  width: 75vw;
   height: 15vh;
   display: flex;
   flex-direction: column;
@@ -349,22 +350,27 @@ main .container {
     }
   }
 
-.container-spanWe {
+.container-weare {
   width: 35vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   z-index: 99;
-  padding: 7rem 0 0 4rem;
+  padding-left: 5.5rem;
 }
   @media (max-width: 768px) {
-    .container-spanWe {
+    .container-weare {
       width: 90%;
       height: auto;
       padding: 0;
       align-items: center;
     }
   }
+
+.weare-span {
+  height: 92%;
+}
 
 .time-box {
   width: 100%;
@@ -429,7 +435,7 @@ main .container {
   justify-content: center;
   align-items: center;
   min-height: 50vh;
-  min-width: 85%;
+  min-width: 80%;
 }
   @media(max-width:768px) {
     .content {
@@ -481,7 +487,7 @@ main .container {
   letter-spacing: 0.25rem;
   opacity: 0.7;
   font-family: Introdução, Black Caps;
-  padding: 4rem 0 0 3rem;
+  /* padding: 4rem 0 0 3rem; */
 }
 
   @media(max-width: 768px) {
@@ -864,14 +870,6 @@ figcaption {
       margin-top: 3rem;
     }
   }
-
-.span-title {
-  font-size: 1.625rem;
-  color: rgb(0, 0, 0);
-  letter-spacing: 0.25rem;
-  opacity: 0.7;
-  font-family: Introdução, "Black Caps";
-}
 
 .contact-box {
   position: relative;
