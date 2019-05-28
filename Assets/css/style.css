@@ -398,7 +398,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 55%;
+  width: auto;
   height: 100%;
 }
 
@@ -1213,7 +1213,7 @@ body {
   }  
 }
 
-/*  Contact  */
+/*  Footer  */
 
 .contact {
   position: relative;
