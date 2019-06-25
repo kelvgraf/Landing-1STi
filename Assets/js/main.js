@@ -137,69 +137,24 @@
       }
   };
 
-  window.addEventListener('scroll', function(){
-    let section1, section2, section3, section4, animate;
-    let section1Ofset, section2Ofset, section3Ofset, section4Ofset;
-    
-    section1 = document.getElementById('article-box1');
-    
-    section2 = document.getElementById('article-box2');
-    
-    section3 = document.getElementById('article-box3');
-    
-    section4 = document.getElementById('article-box4');
-
-    section1Offset = (section1.parentNode.parentNode.parentNode.offsetTop + section1.offsetTop);
-    section2Offset = (section2.parentNode.parentNode.parentNode.offsetTop + section2.offsetTop);
-    section3Offset = (section3.parentNode.parentNode.parentNode.offsetTop + section3.offsetTop);
-    section4Offset = (section4.parentNode.parentNode.parentNode.offsetTop + section4.offsetTop);
-
-    
-    if ((window.scrollY + 100) < section1Offset) {
-      animate = document.querySelector('.article-box-animate');
-      if (animate) {
-        animate.classList.remove('article-box-animate');
-      }
+  var slideIndex = 1;
+		
+  showDivs(slideIndex);
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("acao-slide");
+    if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
     }
-        
-    if ((window.scrollY + 100) >= section1Offset
-       && (window.scrollY + 100) <= section2Offset) {
-      animate = document.querySelector('.article-box-animate');
-      if (animate) {
-        animate.classList.remove('article-box-animate');
-      }
-      section1.querySelector('.article-box-span div').classList.add('article-box-animate');
-    }
-    
-    if ((window.scrollY + 100) >= section2Offset
-       && (window.scrollY + 100) <= section3Offset) {
-      animate = document.querySelector('.article-box-animate');
-      if (animate) {
-        animate.classList.remove('article-box-animate');
-      }
-      section2.querySelector('.article-box-span div').classList.add('article-box-animate');
-    }
-    
-    if ((window.scrollY + 100) >= section3Offset
-       && (window.scrollY + 100) <= section4Offset) {
-      animate = document.querySelector('.article-box-animate');
-      if (animate) {
-        animate.classList.remove('article-box-animate');
-      }
-      section3.querySelector('.article-box-span div').classList.add('article-box-animate');
-    }
-    
-    if ((window.scrollY + 100) >= section4Offset) {
-      animate = document.querySelector('.article-box-animate');
-      if (animate) {
-        animate.classList.remove('article-box-animate');
-      }
-      section4.querySelector('.article-box-span div').classList.add('article-box-animate');
-    }
-  });
+    x[slideIndex-1].style.display = "block";  
+  }
 
-
-
+  
 function animeScroll() {
 const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
