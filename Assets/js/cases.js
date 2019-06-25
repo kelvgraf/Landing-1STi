@@ -3,6 +3,8 @@ function toggleCases() {
   var caseItem = [].slice.call(document.querySelectorAll('.case-item'));
   var spanDescription = [].slice.call(document.querySelectorAll('.span-caseDescription'));
   var caseDescription = [].slice.call(document.querySelectorAll('.case-description'));
+  var moreCase = [].slice.call(document.querySelectorAll('.more-case'));
+  var moreSeta = [].slice.call(document.querySelectorAll('more-case-seta'));
   var caseContainer = document.querySelector('.case-container');
 
 
@@ -19,6 +21,20 @@ function toggleCases() {
       })
 
       caseDescription.map((description, indexDescription) => {
+        description.classList.remove('-show');
+        if (caseIndex === indexDescription) {
+          description.classList.add('-show');
+        }
+      })
+
+      moreCase.map((description, indexDescription) => {
+        description.classList.remove('-show');
+        if (caseIndex === indexDescription) {
+          description.classList.add('-show');
+        }
+      })
+
+      moreSeta.map((description, indexDescription) => {
         description.classList.remove('-show');
         if (caseIndex === indexDescription) {
           description.classList.add('-show');

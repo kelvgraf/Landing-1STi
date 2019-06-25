@@ -92,7 +92,7 @@ body {
   @media (max-width: 768px) {
   .wrapper-header {
     width: 100%;
-    height: 8vh;
+    height: 15vh;
     display: flex;
     align-items: center;
     background-color: transparent;
@@ -107,13 +107,15 @@ body {
 
 
 .header-logoBox {
-  height: 25vh;
+  height: 17%;
+  margin-bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
 } 
 @media (max-width: 768px) {
   .header-logoBox{
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -590,7 +592,7 @@ body {
 
 .box-seemore {
   width: 90%;
-  height: 60vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -768,11 +770,11 @@ body {
   bottom:0;
   background-size:cover;
   z-index:1;
-  -webkit-filter: blur(10px);
-  -moz-filter: blur(10px);
-  -o-filter: blur(10px);
-  -ms-filter: blur(10px);
-  filter: blur(10px);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
 }
 
 .modal-case1 {background-image: url('../img/Interesses-05.jpg')}
@@ -797,6 +799,14 @@ body {
   background-color: rgba(256, 256, 256, .6);
   width: 40%;
   min-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    min-width: 260px;
+    left: auto;
+
+  } 
 }
 
 .modal-content p {
