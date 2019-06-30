@@ -337,7 +337,7 @@ main .container {
 
 .container-span {
   width: 75vw;
-  height: 15vh;
+  height: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -666,7 +666,6 @@ figcaption {
 }
 
 .approach-info {
-  height: 100%;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -687,7 +686,7 @@ figcaption {
   display: flex;
   align-items: baseline;
   justify-content: center;
-  width: 85%;
+  width: 90%;
   height: 85%;
 
 }
@@ -738,7 +737,7 @@ figcaption {
 }
 
 .approach-imgLead {
-  width: 175px;
+  width: 145px;
   display:inline-block;
   border:0;
   position: relative;
@@ -769,7 +768,7 @@ figcaption {
   transform: scale(1.1);
 }
 .approach-imgLearn {
-  width: 318px;
+  width: 265px;
 }
 
 .approach-imgLearn:hover {
@@ -826,11 +825,11 @@ figcaption {
 
 .approach-item {
   list-style: none;
-  font-size: 1rem;
+  font-size: 1.25rem;
   padding-top: 15px;
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.65rem;
-  width: 310px;
+  width: 390px;
 }
   @media(max-width:768px) {
     .approach-item {
