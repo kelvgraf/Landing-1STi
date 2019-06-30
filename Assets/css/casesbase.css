@@ -16,17 +16,17 @@ body {
 
 .container {
   width: 90vw;
-  margin-top: 4rem;
+  margin-top: 2rem;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
-  @media(max-width:768px) {
+  /* @media(max-width:768px) {
     .container {
-      height: 25%;;
+      height: 25%;
     }
-  }
+  } */
 
 /*  Menu  */
 .header-container {
@@ -54,7 +54,7 @@ body {
   @media (max-width: 768px) {
   .wrapper-header {
     width: 100%;
-    height: 15vh;
+    height: auto;
     display: flex;
     align-items: center;
     background-color: transparent;
@@ -296,7 +296,7 @@ body {
 }
   @media (max-width: 768px) {
     .case{
-      height: 101vh;
+      height: 100vh;
     }
   }
 
@@ -385,7 +385,7 @@ body {
   width: 100%;
   height: 40%;
   display: flex;
-  padding: 2.5rem;
+  padding: 1rem 2.5rem;
 }
 
 @media (max-width: 425px) {
@@ -419,7 +419,7 @@ body {
 
 @media (max-width: 425px) {
   .case-info {
-    width: 75vw;
+    width: 85vw;
   }
 }
 
@@ -446,7 +446,7 @@ body {
 }
   @media (max-width: 768px) {
     .container-description-case {
-      width: 65%;
+      width: 80%;
     }
   }
 
@@ -466,6 +466,15 @@ body {
   width: 80vh;
 }
 
+@media(max-width: 768px) {
+  .case-description-vaiNaWeb {
+    width: auto;
+  }
+  .case-description-startup { 
+    width: auto;
+  }
+}
+
 .case-description.-show {
   display: block;
 }
@@ -473,6 +482,11 @@ body {
 .more-list {
   list-style: none;
 }
+  @media(max-width: 768px) {
+    .more-list {
+      display: none;
+    }
+  }
 
 .more-case {
   color: #ffdd00;
@@ -527,10 +541,11 @@ body {
 .span-caseDescription{
   font-size: 1.25rem;
   font-family: 'Source Sans Pro', sans-serif;
-  width: 55%;
+  width: 18%;
   margin-top: 13px;
-  line-height: 2.15rem;  
+  line-height: 1.75rem;
   display: none;
+  position: fixed;
 }
 @media( max-width: 1024px) {
   .span-caseDescription{
@@ -567,11 +582,11 @@ body {
 }
 
 .case-list {
-  width: 40%;
+  width: 25vw;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   list-style: none;
 }
 @media( max-width: 1024px) {
@@ -581,6 +596,6 @@ body {
 }
 @media( max-width: 768px) {
   .case-list{
-    width: 80%;
+    width: 100%;
   }
 }
