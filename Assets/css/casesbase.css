@@ -16,6 +16,7 @@ body {
 
 .container {
   width: 90vw;
+  height: 13%;
   margin-top: 2rem;
   position: relative;
   display: flex;
@@ -401,6 +402,7 @@ body {
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .case-vaiNaWeb{
@@ -480,8 +482,22 @@ body {
 }
 
 .more-list {
+  width: 142px;
+  height: 40px;
   list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffdd00;
+  border: solid #ffdd00 1px;
+  border-radius: 20px;
 }
+
+.more-list:hover {
+  background-color: #ffdd00;
+  color: #000000;
+}
+
   @media(max-width: 768px) {
     .more-list {
       display: none;
@@ -489,16 +505,17 @@ body {
   }
 
 .more-case {
-  color: #ffdd00;
+  /* color: #ffdd00;
   font-family: SkyhookMonoRegular;
   font-size: 1rem;
   padding: 20px 0 0 20px;
   cursor: pointer;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; */
   display: none;
 }
 .more-case.-show {
+  width: 100%;
   display: block;
 }
 
@@ -510,13 +527,13 @@ body {
 
 .more-case a {
   text-decoration: none;
-  color: #ffdd00;
   font-family: SkyhookMonoRegular;
   font-size: 1rem;
-  padding: 20px 0 0 20px;
+  color: inherit;
+  /* padding: 20px 0 0 20px; */
   cursor: pointer;
   display: flex;
-  flex-direction: column;
+  justify-content:space-evenly;
 }
 
 
