@@ -335,6 +335,7 @@ main .container {
   }
 }
 
+
 .container-span {
   width: 75vw;
   height: 10vh;
@@ -388,10 +389,10 @@ main .container {
 
 .container-title-desktop {
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   font-size: 1.625rem;
   color: rgb(0, 0, 0);
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.2rem;
   opacity: 0.7;
   font-family: Introdução, Black Caps;
 }
@@ -410,7 +411,7 @@ main .container {
       display: block;
       font-size: 1.625rem;
       color: rgb(0, 0, 0);
-      letter-spacing: 0.25rem;
+      letter-spacing: 0.2rem;
       opacity: 0.7;
       font-family: Introdução, Black Caps;
     }
@@ -418,8 +419,8 @@ main .container {
 
 
 .container-description {
-  width: 351px;
-  line-height: 1.5rem;
+  width: 340px;
+  line-height: 1.65rem;
   font-size: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 500;
@@ -479,7 +480,7 @@ main .container {
   margin: 1.5rem 0;
   font-size: 1.625rem;
   color: rgb(0, 0, 0);
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.2rem;
   opacity: 0.7;
   font-family: Introdução, Black Caps;
 }
@@ -564,12 +565,12 @@ main .container {
 
 
 /* Believe */
-.believe{
+/* .believe{
   width: 100vw;
   margin-bottom: 3rem;
   display: flex;
   justify-content: flex-end;
-}
+} */
 
 .believe-description {
   width: 35%;
@@ -590,7 +591,7 @@ main .container {
   width: 100%;
   font-size: 1.625rem;
   color: rgb(0, 0, 0);
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.2rem;
   opacity: 0.7;
   font-family: Introdução, Black Caps;
   padding-bottom: 1.5rem;
@@ -618,10 +619,10 @@ main .container {
 
 .box-believe {
   width: 100%;
+  height: auto;
   border-bottom: solid;
   border-color: #00C8DB;
   border-width: 1px;
-  margin-top: 4rem;
   padding-bottom: 2rem;
 }
   @media(max-width:768px) {
@@ -631,6 +632,7 @@ main .container {
   }
 
 .article-box-span{
+  width: 40%;
   padding: 0 4px;
   position: relative;
 }
@@ -661,11 +663,62 @@ main .container {
 
 .box-believe-last {
   width: 100%;
+  margin-bottom: 4rem;
+}
+
+/* Deep Tech */
+
+.container-deeptalsk{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.wrapper-deeptalsk {
+  width: 90%;
+  height: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.deeptalsk-box-span{
+  width: 40%;
+  /* padding-left: 2rem; */
+  position: relative;
+}
+
+.deeptalsk-title {
+  font-size: 1.625rem;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.2rem;
+  opacity: 0.7;
+  font-family: Introdução, Black Caps;
+  padding-bottom: 1.5rem;
+}
+
+.deeptalsk-description {
+  width: 351px;
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  font-weight: 500;
+  font-family: 'Source Sans Pro', sans-serif;;
+}
+
+.deeptalsk-img {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.deeptalsk-imgItem {
+  width: 100%;
   margin-top: 4rem;
 }
 
 .believe-img {
-  width: 80%;
+  width: 50%;
   margin-top: 1rem;
   display: flex;
   flex-direction: column
@@ -685,7 +738,8 @@ figcaption {
   margin-top: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
   color: #000;
-  font-weight: lighter;
+  font-weight: 100;
+  opacity: .6;
 }
   @media (max-width: 769px) {
     figcaption {
@@ -699,6 +753,7 @@ figcaption {
   font-family: 'Source Sans Pro', sans-serif;
   color: #000;
   text-decoration: underline;
+  line-height: 3rem;
   cursor: default;
 }
 .box-title:hover {
@@ -713,7 +768,7 @@ figcaption {
   }
 
 .box-description {
-  width: 42%;
+  width: 40%;
   margin-top: 1rem;
   line-height: 1.65rem;
   font-size: 1rem;
@@ -826,7 +881,7 @@ figcaption {
   width: 100%;
   font-size: 1.65rem;
   color: #000;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.2rem;
   opacity: .7;
   font-family: Introdução, Black Caps;
 }
@@ -843,7 +898,7 @@ figcaption {
 }
 
 .approach-imgLead {
-  width: 55%;
+  width: 30%;
   display:inline-block;
   border:0;
   position: relative;
@@ -874,7 +929,7 @@ figcaption {
   transform: scale(1.1);
 }
 .approach-imgLearn {
-  width: 90%;
+  width: 55%;
 }
 
 .approach-imgLearn:hover {
@@ -897,7 +952,7 @@ figcaption {
 }
 
 .approach-imgScale {
-  width: 60%;
+  width: 38%;
   display:inline-block;
   border:0;
   position: relative;
