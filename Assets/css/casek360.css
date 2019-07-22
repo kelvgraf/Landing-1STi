@@ -97,12 +97,13 @@ body{
 }
 
 .home-description{
+  height: 80%;
   display: flex;
   flex-direction: column;
 }
 
 .home-title{
-  width: 50%;
+  width: 350px;
   height: 100%;
   font-size: 2rem;
   line-height: 3rem;
@@ -111,7 +112,7 @@ body{
 }
 
 .home-paragraph{
-  width: 50%; 
+  width: 366px; 
   height: 100%;
   display: flex;
   align-items: center;
@@ -167,14 +168,14 @@ body{
   }
 
 .description_infos-title {
+  height: 1.3rem;
   background-color: #ffde3b;
-  font-family: SkyhookMonoRegular;
+  font-family: SkyhookMonoBold;
 }
 
 .description-infos-paragraph {
-  width: 80%;
-  padding-top: 1rem;
-  line-height: 1.62rem;
+  width: 95%;
+  line-height: 1.75rem;
   font-size: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
   color: #000;

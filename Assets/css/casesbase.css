@@ -558,16 +558,15 @@ body {
 .span-caseDescription{
   font-size: 1.25rem;
   font-family: 'Source Sans Pro', sans-serif;
-  width: 18%;
+  width: 361px;
   margin-top: 13px;
-  line-height: 1.75rem;
+  line-height: 2.12rem;
   display: none;
   position: fixed;
 }
 @media( max-width: 1024px) {
   .span-caseDescription{
     display: none;
-    width: 30vw;
   }
 }
 
@@ -594,23 +593,24 @@ body {
    text-decoration: none;
 }
 
+.item-sobre {
+  font-weight: bold;
+}
+
+
 .case-item--is-selected {
   font-weight: 900;
 }
 
 .case-list {
-  width: 25vw;
+  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   list-style: none;
 }
-@media( max-width: 1024px) {
-  .case-list{
-    width: 50%;
-  }
-}
+
 @media( max-width: 768px) {
   .case-list{
     width: 100%;
