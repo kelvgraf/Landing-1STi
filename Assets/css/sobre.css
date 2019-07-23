@@ -594,7 +594,6 @@ main .container {
   letter-spacing: 0.2rem;
   opacity: 0.7;
   font-family: Introdução, Black Caps;
-  padding-bottom: 1.5rem;
 }
 
   @media(max-width: 768px) {
@@ -986,7 +985,7 @@ figcaption {
 
 .approach-item {
   list-style: none;
-  font-size: 1.25rem;
+  font-size: 1rem;
   padding-top: 15px;
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.65rem;

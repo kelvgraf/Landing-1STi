@@ -202,7 +202,7 @@ body{
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .box-logo {
@@ -214,12 +214,18 @@ body{
   align-items: center;
 }
 
+@media(max-width: 890px) {
+  .box-logo {
+    display: none;
+  }
+}
+ 
 .logo-mypolis {
   width: 25%;
 }
 
 .box-paragraphs_content{
-  width: 40%;
+  width: auto;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -234,7 +240,7 @@ body{
 .paragraphs_content{
   width: 552px;
   height: 100%;
-  padding: 2rem 0rem 2rem 0rem;
+  padding-top: 2.12rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -250,8 +256,12 @@ body{
 
 .box-phone {
   width: 65vw;
+  height: 55vh;
   position: relative;
-  right: 150px;
+  right: 100px;
+  display: flex;
+  align-items: center;
+  padding-top: 2.12rem;
 }
 
 .img-phone {
