@@ -3,3 +3,7 @@
 home-title = width 351px;
 
 home-paragraph = 366px;
+
+.paragraphs_content {
+	padng: 2rem 0;
+}

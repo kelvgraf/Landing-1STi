@@ -169,7 +169,7 @@ body{
 
 .description_infos-title {
   background-color: #ffde3b;
-  font-family: SkyhookMonoRegular;
+  font-family: SkyhookMonoBold;
 }
 
 .description-infos-paragraph {
@@ -235,7 +235,7 @@ body{
 .paragraphs_content{
   width: 552px;
   height: 100%;
-  padding: 2rem 0rem 2rem 0rem;
+  padding: 1rem 0rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
