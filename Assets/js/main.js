@@ -155,6 +155,58 @@
   //   x[slideIndex-1].style.display = "block";  
   // }
 
+  window.addEventListener('scroll', function(){
+    let article1, article2, section3, animate;
+    let article1Ofset, article2Ofset, section3Ofset, section4Ofset;
+    
+    article1 = document.getElementById('article-box1');
+    
+    article2 = document.getElementById('article-box2');
+    
+    section3 = document.getElementById('article-box3');
+    
+
+    article1Offset = (article1.parentNode.parentNode.parentNode.offsetTop + article1.offsetTop);
+    article2Offset = (article2.parentNode.parentNode.parentNode.offsetTop + article2.offsetTop);
+    section3Offset = (section3.parentNode.parentNode.parentNode.offsetTop + section3.offsetTop);
+    
+    
+    if ((window.scrollY + 400) < article1Offset) {
+      animate = document.querySelector('article-animate');
+      if (animate) {
+        animate.classList.remove('article-animate');
+      }
+    }
+        
+    if ((window.scrollY + 200) >= article1Offset
+       && (window.scrollY + 200) <= article2Offset) {
+      animate = document.querySelector('.article-animate');
+      if (animate) {
+        animate.classList.remove('article-animate');
+      }
+      article1.querySelector('.article-box-span div').classList.add('article-animate');
+    }
+    
+    if ((window.scrollY + 200) >= article2Offset
+       && (window.scrollY + 200) <= section3Offset) {
+      animate = document.querySelector('.article-animate');
+      if (animate) {
+        animate.classList.remove('article-animate');
+      }
+      article2.querySelector('.article-box-span div').classList.add('article-animate');
+    }
+    
+    if ((window.scrollY + 200) >= section3Offset
+       && (window.scrollY + 200) <= section4Offset) {
+      animate = document.querySelector('.article-animate');
+      if (animate) {
+        animate.classList.remove('article-animate');
+      }
+      section3.querySelector('.article-box-span div').classList.add('article-animate');
+    }
+  });
+
+
   
 function animeScroll() {
 const target = document.querySelectorAll('[data-anime]');

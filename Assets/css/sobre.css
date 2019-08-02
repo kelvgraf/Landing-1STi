@@ -420,10 +420,10 @@ main .container {
 
 .container-description {
   width: 340px;
-  line-height: 1.65rem;
+  line-height: 1.62rem;
   font-size: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
 }
 @media (max-width: 768px) {
   .container-description {
@@ -466,6 +466,11 @@ main .container {
   display: flex;
   position: relative;
 }
+@media(max-width: 768px) {
+  .container-vision {
+    flex-direction: column;
+  }
+}
 
 .vision-box {
   width: 50%;
@@ -490,6 +495,13 @@ main .container {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+@media(max-width: 768px) {
+  .wrapper-box {
+    justify-content: center;
+  }  
 }
 
 .box-teste {
@@ -504,6 +516,20 @@ main .container {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+
+  position: relative;
+}
+
+.vision-text {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 0 1rem 2rem;
+  font-family:  SkyhookMonoBold;
 }
 
 .line {
@@ -511,14 +537,50 @@ main .container {
   position: relative;
   left: 115px;
   border: .5px solid;
-  transform: rotate(140deg);
+  transform: rotate(-40deg);
   box-shadow: 0 0 6px;
+
+  display: flex;
+    justify-content: flex-end;
+}
+
+.text-line {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  padding: 0 0 1rem 1rem;
+  font-family:  SkyhookMonoBold;
+  line-height: 1.25rem;
+
+  transform: rotate(40deg);
+    top: -20px;
+    bottom: -450px;
 }
 
 .box-teste2 {
   width: 195px;
   height: 169px;
   box-shadow: -1px 0px 10px 2px rgba(0,0,0,0.16);
+  position: relative;
+}
+
+.vision-textIn {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  padding: 0 0 1rem 1rem;
+  font-family:  SkyhookMonoBold;
+  line-height: 1.25rem;
+}
+
+.container-service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: row; */
+  width: 85%;
+  height: 100%;
+
 }
 
 .container-circle {
@@ -531,8 +593,12 @@ main .container {
 }
 
 .circle-div {
-  width: 400px;
-  height: 400px;
+  width: 25%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
   background-color: #fff;
   background-image: radial-gradient(#ff0070 -100%, #fff 70%);
   border-radius: 50%;
@@ -542,17 +608,44 @@ main .container {
   left: 70px;
 }
 
+.circle-div::after {
+  content: "";
+	display: block;
+	width: 100%;
+	height:0;
+	padding-bottom: 100%;
+  background-color: #fff;
+  background-image: radial-gradient(#ff0070 -100%, #fff 70%);
+  border-radius: 50%;
+  background-position-x: 220px;
+  background-repeat: no-repeat;
+}
+
 .circle-div1 {
-  width: 400px;
-  height: 400px;
+  width: 25%;
   background-color: #00C8DB;
   background-image: linear-gradient(90deg, #00C8DB, #FF0070);
   border-radius: 50%;
 }
 
+.circle-div1::after {
+  content: "";
+	display: block;
+	width: 100%;
+	height:0;
+	padding-bottom: 100%;
+	background-color: #00C8DB;
+  background-image: linear-gradient(90deg, #00C8DB, #FF0070);
+  border-radius: 50%;
+}
+
 .circle-div2 {
-  width: 400px;
-  height: 400px;
+  width: 25%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
   background-color: #fff;
   background-image: radial-gradient(#ff0070, #fff 70%);
   border-radius: 50%;
@@ -560,9 +653,23 @@ main .container {
   background-repeat: no-repeat;
   position: relative;
   right: 70px;
-
+}
+.circle-div2::after {
+  content: "";
+	display: block;
+	width: 100%;
+	height:0;
+	padding-bottom: 100%;
+  background-image: radial-gradient(#ff0070, #fff 70%);
+  border-radius: 50%;
+  background-position-x: -220px;
+  background-repeat: no-repeat;
 }
 
+
+.circle-text {
+  position: absolute;
+}
 
 /* Believe */
 /* .believe{
@@ -622,7 +729,7 @@ main .container {
   border-bottom: solid;
   border-color: #00C8DB;
   border-width: 1px;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
   @media(max-width:768px) {
     .box-believe {
@@ -631,7 +738,6 @@ main .container {
   }
 
 .article-box-span{
-  width: 40%;
   padding: 0 4px;
   position: relative;
 }
@@ -647,14 +753,17 @@ main .container {
   margin-top: -27.5px;
 }
 
-/* .box-title div {
-  height: 60px;
-  margin-top: -60px;
+.box-title:hover {
+  width: 80%;
+  display: inline;
+  line-height: 4rem;
+  /* height: 45px; */
+  background-color: rgb(252, 241, 19);
+  box-shadow: 10px 0px 0px 4px rgb(252, 241, 19), 0px 0px 0px 4px rgb(252, 241, 19);
+  font-weight: 600;
+  text-decoration: none;
+  transition: box-shadow 0.4s ease, background-color 0.4s ease;
 }
-
-.box-title:hover + div {
-  width: 40%;
-} */
 
 .article-box-animate {
   width: 100% !important;
@@ -682,7 +791,7 @@ main .container {
 }
 
 .deeptalsk-box-span{
-  width: 40%;
+  width: auto;
   /* padding-left: 2rem; */
   position: relative;
 }
@@ -700,13 +809,14 @@ main .container {
   width: 351px;
   color: #000;
   font-size: 1rem;
-  line-height: 1.625rem;
-  font-weight: 500;
-  font-family: 'Source Sans Pro', sans-serif;;
+  line-height: 1.62rem;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-right: 1rem;
 }
 
 .deeptalsk-img {
-  width: 60%;
+  width: auto;
   display: flex;
   flex-direction: column;
 }
@@ -737,8 +847,7 @@ figcaption {
   margin-top: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
   color: #000;
-  font-weight: 100;
-  opacity: .6;
+  font-weight: 300;
 }
   @media (max-width: 769px) {
     figcaption {
@@ -747,7 +856,7 @@ figcaption {
   }
 
 .box-title {
-  width: 705px;
+  width: 80%;
   font-size: 2.40rem;
   font-family: 'Source Sans Pro', sans-serif;
   color: #000;
@@ -755,10 +864,10 @@ figcaption {
   line-height: 3rem;
   cursor: default;
 }
-.box-title:hover {
+/* .box-title:hover {
   background-color: #FFDD00;
   box-shadow: 10px 0px 0px 4px #FFDD00, -10px 0px 0px 4px #FFDD00;
-}
+} */
 
   @media (max-width: 768px) {
     .box-title {
@@ -767,9 +876,8 @@ figcaption {
   }
 
 .box-description {
-  width: 40%;
-  margin-top: 1rem;
-  line-height: 1.65rem;
+  width: 45%;
+  line-height: 1.62em;
   font-size: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
   color: #000;
@@ -898,6 +1006,7 @@ figcaption {
 
 .approach-imgLead {
   width: 30%;
+  min-width: 145px;
   display:inline-block;
   border:0;
   position: relative;
@@ -929,6 +1038,7 @@ figcaption {
 }
 .approach-imgLearn {
   width: 55%;
+  min-width: 240px;
 }
 
 .approach-imgLearn:hover {
@@ -952,6 +1062,7 @@ figcaption {
 
 .approach-imgScale {
   width: 38%;
+  min-width: 160px;
   display:inline-block;
   border:0;
   position: relative;
