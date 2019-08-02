@@ -97,13 +97,13 @@ body{
 }
 
 .home-description{
-  height: 75%;
+  height: 80%;
   display: flex;
   flex-direction: column;
 }
 
 .home-title{
-  width: 489px;
+  width: 40%;
   height: 100%;
   font-size: 2rem;
   line-height: 3rem;
@@ -112,7 +112,7 @@ body{
 }
 
 .home-paragraph{
-  width: 375px; 
+  width: 366px; 
   height: 100%;
   display: flex;
   align-items: center;
@@ -174,7 +174,7 @@ body{
 
 .description-infos-paragraph {
   width: 80%;
-  padding-top: 1rem;
+  padding-top: .5rem;
   line-height: 1.62rem;
   font-size: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
@@ -215,15 +215,12 @@ body{
   align-items: center;
 }
 
-.logo-mypolis {
-  width: 25%;
-}
-
 .box-paragraphs_content{
-  width: 40%;
+  width: auto;
   height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 @media(max-width:768px) {
@@ -233,7 +230,7 @@ body{
 }
 
 .paragraphs_content{
-  width: 552px;
+  width: 512px;
   height: 100%;
   padding: 1rem 0rem;
   display: flex;
@@ -261,13 +258,7 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.container_final_description{
-  width: 100%;
-  height: 100%;
-  padding: 70px 0;
-  display: flex;
-  align-items: flex-end;
-}
+
 
 .footer-box{
   width: 58vw;
