@@ -297,8 +297,9 @@ a {
   }
 
 .container-eco {
-  width: 95%;
+  width: 90%;
   display: flex;
+  align-items: center;
 }
   @media (max-width: 768px) {
     .container-eco {
@@ -309,24 +310,22 @@ a {
   }
 
 .wrapper-description {
-  width: 45%;
+  width: 35%;
+  height: 80%;
   display: flex;
   flex-direction: column;
-  padding: 4rem 0 0 4rem;
   z-index: 1;
 }
   @media (max-width: 768px) {
     .wrapper-description {
       width: 90%;
-      height: 60%;
-      padding: 0;
-      align-items: center;
-      
+      height: 45%;
+      padding: 0;      
     }
   }
 
 .eco-title-desktop {
-  margin-bottom: 1.5rem; 
+  margin-bottom: 1.18rem; 
   font-size: 1.625rem;
   color: rgb(0, 0, 0);
   letter-spacing: 0.25rem;
@@ -365,7 +364,7 @@ a {
 }
   @media (max-width: 768px) {
     .eco-description {
-      width: 290px !important;
+      width: 85% !important;
       font-weight: 400;
     }
   }
@@ -384,8 +383,8 @@ a {
   }
 
 .content canvas {
-  width: 50vw !important;
-  height: 40vw !important;
+  width: 54vw !important;
+  height: 44vw !important;
   position: absolute;
 } 
   @media(max-width: 768px) {
@@ -476,7 +475,6 @@ figure {
   height: auto;
   display: flex;
   justify-content: space-between;
-  padding-top:1rem;
 }
   @media(max-width: 768px) {
     .enterprise-description {
@@ -488,7 +486,7 @@ figure {
 .box-img {
   width: auto;
   height: 20%;
-  padding: 2.5rem 0;
+  padding-top: 2.5rem;
   display: flex;
   align-items: center;
 }
@@ -509,7 +507,7 @@ figure {
 .box-logo-precisaser {
   width: auto;
   height: 20%;
-  padding: 2.5rem 0;
+  padding-top: 2.5rem;
   display: flex;
   align-items: center;
   position: relative;
@@ -560,9 +558,10 @@ figure {
   display: block;
   width: 365px;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.62rem;
   font-family: 'Source Sans Pro', sans-serif;
-  padding-bottom: 2.3rem;
+  padding: 2rem 0;
+  font-weight: 400;
 }
   @media(max-width: 768px) {
     .vnw-description-desktop{
@@ -586,6 +585,9 @@ figure {
 .enterprise-cantact-desktop {
   width: 45%;
   text-align: right;
+}
+.enterprise-social-desktop {
+  padding: 2rem 0;
 }
   @media(max-width:768px) {
     .enterprise-social-desktop {
@@ -611,6 +613,9 @@ figure {
 .precisaser-cantact-desktop {
   width: 45%;
   text-align: right;
+}
+.precisaser-social-desktop {
+  padding: 2rem 0;
 }
   @media(max-width:768px) {
     .precisaser-social-desktop {
@@ -660,7 +665,7 @@ figure {
 }
 
 .social-itemTT {
-  width: 9%;
+  width: 10%;
   padding-top: .4rem;
 }
 @media(max-width:768px) {
