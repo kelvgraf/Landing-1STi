@@ -100,20 +100,20 @@ body{
 
 .container-home{
   width: 90%;
-  height: 50%;
+  height: 60vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
 .home-description{
-  height: 80%;
+  height: 85%;
   display: flex;
   flex-direction: column;
 }
 
 .home-title{
-  width: 40%;
+  width: 60%;
   height: 100%;
   font-size: 2rem;
   line-height: 3rem;
@@ -122,7 +122,9 @@ body{
 }
   @media(max-width: 768px){
     .home-title {
-      width: 90%;
+      width: 95%;
+      line-height: 2.25rem;
+      margin-top: 2rem;
     }
   }
 
@@ -140,8 +142,8 @@ body{
 }
 @media(max-width: 768px) {
   .home-paragraph{
-    width: 100%;
-    padding: 2rem 0;
+    width: auto;
+    padding:0;
   }
 }
 
@@ -222,7 +224,7 @@ body{
 }
 
 .wrap_box-paragraphs{
-  width: 40%;
+  width: 552px;
   height: 100%;
   display: flex;
   flex-direction: column;
