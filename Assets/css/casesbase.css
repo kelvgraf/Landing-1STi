@@ -387,7 +387,7 @@ body {
 
 .case-info{
   width: 404px;
-  height: 50%;
+  height: 55%;
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
@@ -405,6 +405,7 @@ body {
 @media (max-width: 768px) {
   .case-info {
     width: 43vw;
+    margin: 0;
   }
 }
 
@@ -449,6 +450,13 @@ body {
   line-height: 2.75rem;
   display: none;
 }
+  @media(max-width: 768px) {
+    .case-description {
+      font-size: 1.75rem;
+      line-height: 2.25rem;
+    }
+  }
+
 .case-description-vaiNaWeb { 
   width: 70vh;
 }
@@ -482,14 +490,15 @@ body {
   border-radius: 20px;
 }
 
+
 .more-list:hover {
   background-color: #ffdd00;
   color: #000000;
 }
-
   @media(max-width: 768px) {
     .more-list {
-      display: none;
+      background-color: #ffdd00;
+      color: #000000;
     }
   }
 
