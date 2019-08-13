@@ -570,10 +570,8 @@ body {
 }
 
 .case-item {
-  margin-left: 3rem;
   font-size: 1.15rem;
   font-family: 'Source Sans Pro', sans-serif;
-  margin: 18px 5px  0 0;
   color: #000;
   cursor: pointer;
 }

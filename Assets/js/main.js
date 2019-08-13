@@ -136,28 +136,10 @@
           modal.classList.remove('modal-case6')
       }
   };
-
-
-  // var slideIndex = 1;
-		
-  // showDivs(slideIndex);
-  // function plusDivs(n) {
-  //   showDivs(slideIndex += n);
-  // }
-  // function showDivs(n) {
-  //   var i;
-  //   var x = document.getElementsByClassName("acao-slide");
-  //   if (n > x.length) {slideIndex = 1}    
-  //   if (n < 1) {slideIndex = x.length}
-  //   for (i = 0; i < x.length; i++) {
-  //       x[i].style.display = "none";  
-  //   }
-  //   x[slideIndex-1].style.display = "block";  
-  // }
-
+  
   window.addEventListener('scroll', function(){
     let article1, article2, section3, animate;
-    let article1Ofset, article2Ofset, section3Ofset, section4Ofset;
+    let article1Ofset, article2Ofset, article3Ofset;
     
     article1 = document.getElementById('article-box1');
     
@@ -168,7 +150,7 @@
 
     article1Offset = (article1.parentNode.parentNode.parentNode.offsetTop + article1.offsetTop);
     article2Offset = (article2.parentNode.parentNode.parentNode.offsetTop + article2.offsetTop);
-    section3Offset = (section3.parentNode.parentNode.parentNode.offsetTop + section3.offsetTop);
+    article3Offset = (article3.parentNode.parentNode.parentNode.offsetTop + article3.offsetTop);
     
     
     if ((window.scrollY + 400) < article1Offset) {
