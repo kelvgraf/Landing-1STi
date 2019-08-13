@@ -190,12 +190,12 @@ body {
   .menu-list.--drop-menu {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-start;
     background-color: rgba(0, 0, 0, 1);
     position: fixed;
-    top: 60vh;
-    height: 40vh;
+    top: 50vh;
+    height: 50vh;
     width: 100vw;
     transform: rotate(0deg);
     z-index: 99;
@@ -288,7 +288,7 @@ body {
     justify-content: center;
     align-items: flex-end;
     transform: rotate(0deg);
-    height: 35vh;
+    height: 32vh;
     width: 30vw;
     z-index: 99; 
   }
@@ -321,11 +321,11 @@ body {
   width: 45px;
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .social-icon {
-    width: 25px;
+    width: 45px;
   }
-}
+} */
 
 /*  Home  */
 .home {
@@ -606,13 +606,19 @@ body {
   }
 
 .seemore-item {
-  width: 100%;
+  width: 70%;
   font-family: SkyhookMonoRegular;
   font-size: .95rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  cursor: pointer;
 }
+  @media(max-width: 768px) {
+    .seemore-item {
+      height: 15vh;
+    }
+  }
 .seemore-item span {
   font-family: SkyhookMono;
   font-size: 2rem;
@@ -834,7 +840,7 @@ body {
 /* Inspiration */
 .inspiration {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -847,13 +853,13 @@ body {
 
 .container-spanInspiration {
   width: 80vw;
-  height: 10vh;
+  height: 20vh;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
   @media (max-width:768px) {
     .container-spanInspiration {
-      height: 25vh;
+      height: 20vh;
       align-items: center;
     }
   }
@@ -872,28 +878,36 @@ body {
   }
 
 .inspiration-description {
-  width: 100%;
+  width: 70%;
+  height: auto;
   display: flex;
   flex-direction: column;
+  /* justify-content: flex-end; */
+  align-items: center;
 }
 @media (max-width: 768px) {
   .inspiration-description {
     align-items: center;
+    width: 100%;
+    height: 100%;
   }
 }
 
 .inspiration-text {
   width: 100%;
+  height: auto;
   font-size: 2.12rem;
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 3.18rem;
   font-weight: bold;
   color: #000;
+  padding-bottom: 1.5rem;
 }
   @media (max-width: 768px) {
     .inspiration-text {
-      width: 75%;
+      width: 100%;
       font-size: 1.68rem;
+      padding-bottom: 2rem;
     }
   }
   
@@ -902,19 +916,19 @@ body {
   }
 
 .seemore-inspiration {
-  height: 10vh;
+  width: 95%;
   margin-top:   .95rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
 }
   @media (max-width: 768px) {
     .seemore-inspiration {
       width: 85vw;
-      height: 30vh;
+      height: 100%;
       flex-direction: column;
       align-items: flex-end;
-      justify-content: space-evenly;
+      justify-content: center;
     }
   }
 
@@ -936,18 +950,26 @@ body {
 }
 
 .seemore-text {
+  width: 100%;
   font-family: SkyhookMonoRegular;
   color: #767676;
   font-size: 1rem;
 }
   @media (max-width: 768px) {
     .seemore-text {
-      width: 90%;
+      width: 100%;
     }
   }
 
 .seemore-text span {
   font-weight: 900;
+}
+
+.inspirate-seemore {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
