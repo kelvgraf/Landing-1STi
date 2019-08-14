@@ -517,10 +517,6 @@ main {
 /*  Serviços */
 
 .container-wrapper-service {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
   width: 100%;
   height: 100%;
 }
@@ -550,7 +546,7 @@ z-index: 99;
   @media (max-width: 768px) {
     .container-title-service {
       width: 90%;
-      height: auto;
+      height: 20%;
       padding: 0;
     }
   }
@@ -568,7 +564,6 @@ z-index: 99;
 }
   @media(max-width: 768px) {
     .figure-service {
-      height: 100%;
       justify-content: flex-start;
     }
   }
@@ -591,6 +586,8 @@ z-index: 99;
 
   .img-grafic-serviceDesktop {  
     display: none;
+    /* transform: rotate(90deg);
+    width: 100%; */
   }
 }
 
@@ -600,12 +597,12 @@ z-index: 99;
 @media(max-width: 768px) {
   .img-grafic-serviceMobile {
     display: flex;
-    transform: rotate(90deg)
+    transform: rotate(180deg);
   }
 }
 
 .box-description-grafic {
-  width: 755px;
+  width: 840px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -617,8 +614,10 @@ z-index: 99;
   .box-description-grafic {
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: flex-start;
     width: 100%;
-    /* height: 85%; */
+    height: 445px;
+    padding-left: 5rem;
   }
 }
 
