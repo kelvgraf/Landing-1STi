@@ -105,17 +105,25 @@ body{
   justify-content: center;
   flex-direction: column;
 }
-
+  
 .home-description{
-  height: 85%;
+  height: 65%;
   display: flex;
   flex-direction: column;
 }
-  @media (max-width: 768px) {
-    .home-description {
-      height: auto;
-    }
+@media(max-width: 768px) {
+  .home-description {
+    height: 60%;
+    width: 65%;
   }
+}
+
+@media(max-width: 425px) {
+  .home-description {
+    height: 85%;
+    width: 100%;
+  }
+}
 
 .home-title{
   width: 489px;
@@ -146,7 +154,6 @@ body{
   @media (max-width: 768px){
     .home-paragraph {
       width: 95%;
-      padding: 2rem 0;
     }
   }
 
@@ -241,9 +248,9 @@ body{
 
 .box-figure {
   width: 30%;
-  height: 30vh;
-  align-self: flex-start;
   display: flex;
+  flex-direction: column;
+  align-self: flex-start;
   justify-content: center;
   align-items: center;
 }
@@ -254,23 +261,22 @@ body{
   }
 
 .box-logoVnw {
-  height: 6%;
-  align-self: flex-start;
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
     
 .box-logoEVnw {
-  height: 67%;
-  align-self: flex-start;
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
 
 .logo-vainaweb {
-  width: 30%;
+  width: 70%;
+  padding-top: 4rem;
   display: flex;
-  align-self: flex-end;
+  align-self: flex-start;
 }
   @media(max-width: 768px) {
     .logo-vainaweb {
@@ -319,9 +325,9 @@ body{
   }
 
 .box-phone {
-  width: 65vw;
+  width: auto;
   position: relative;
-  right: 50px;
+  
 }
 @media(max-width: 768px) {
   .box-phone {
