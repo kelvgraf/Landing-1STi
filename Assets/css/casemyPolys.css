@@ -136,6 +136,7 @@ body{
   @media(max-width: 768px) {
     .home-title {
       width: 100%;
+      font-size: 1.75rem;
       line-height: 2.25rem;
     }
   }
@@ -160,7 +161,7 @@ body{
 
 .box-info {
   width: 90%;
-  height: 37%;
+  height: 40%;
 }
   @media(max-width:768px) {
     .box-info {
@@ -198,7 +199,7 @@ body{
   @media(max-width:768px) {
     .wrap_description-infos {
       width: 90%;
-      padding: 3.85rem 0 0 1.5rem;
+      padding: 2rem 0 0 1.5rem;
     }
   }
 
@@ -208,7 +209,7 @@ body{
 }
 
 .description-infos-paragraph {
-  width: 80%;
+  width: 100%;
   padding-top: 1rem;
   line-height: 1.62rem;
   font-size: 1rem;
@@ -294,9 +295,9 @@ body{
 .box-phone {
   width: auto;
   position: relative;
-  right: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   padding-top: 2.12rem;
 }
   @media(max-width: 768px) {
@@ -307,7 +308,7 @@ body{
 
 .img-phone {
   height: 100%;
-  padding-left: 4rem;
+  padding-right: 2rem;
 }
 
 .box_content-phrase{
@@ -350,6 +351,7 @@ body{
 
 .container_final_description-items{
   display: flex;
+  flex-wrap: wrap;
   padding: 10px 0;
   font-size: 13px;
 }
