@@ -105,6 +105,11 @@ body{
   justify-content: center;
   flex-direction: column;
 }
+  @media(max-width: 425px) {
+    .container-home {
+      justify-content: flex-end;
+    }
+  }
   
 .home-description{
   height: 65%;
@@ -199,7 +204,7 @@ body{
   @media(max-width:768px) {
     .wrap_description-infos {
       width: 100%;
-      padding: 3.85rem 0 0 1.5rem;
+      padding: 2rem 0 0 1.5rem;
     }
   }
 
@@ -219,7 +224,8 @@ body{
 
   @media(max-width:768px) {
     .description-infos-paragraph {
-      width: 100%;
+      width: 85%;
+      line-height: 1.75rem;
     }
   }
 

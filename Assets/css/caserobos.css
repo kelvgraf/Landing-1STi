@@ -107,7 +107,7 @@ body{
 }
 
 .home-description{
-  height: 65%;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -126,7 +126,7 @@ body{
   }
 
 .home-title{
-  width: 60%;
+  width: 50%;
   height: 100%;
   font-size: 2rem;
   line-height: 3rem;
@@ -135,7 +135,8 @@ body{
 }
   @media(max-width: 768px){
     .home-title {
-      width: 95%;
+      width: 100%;
+      font-size: 1.74rem;
       line-height: 2.25rem;
     }
   }
@@ -154,7 +155,7 @@ body{
 }
 @media(max-width: 768px) {
   .home-paragraph{
-    width: 95%;
+    width: 100%;
     padding:0;
   }
 }
@@ -199,7 +200,7 @@ body{
   @media(max-width:768px) {
     .wrap_description-infos {
       width: 90%;
-      padding: 3.85rem 0 0 1.5rem;
+      padding: 2rem 0 0 1.5rem;
     }
   }
 

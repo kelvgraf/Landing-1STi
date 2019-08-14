@@ -136,6 +136,7 @@ body{
   @media (max-width: 768px) {
     .home-title {
         width: 95%;
+        font-size: 1.75rem;
         line-height: 2.25rem;
     }
   }
@@ -198,7 +199,7 @@ body{
   @media(max-width:768px) {
     .wrap_description-infos {
       width: 100%;
-      padding: 3.85rem 0 0 1.5rem;
+      padding: 2rem 0 0 1.5rem;
     }
   }
 
@@ -267,9 +268,10 @@ body{
 }
     
 .box-logoEVnw {
-  height: 100vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
 }
 
 .logo-vainaweb {
@@ -280,6 +282,17 @@ body{
 }
   @media(max-width: 768px) {
     .logo-vainaweb {
+      display: none;
+    }
+  }
+
+.logo-evainaweb {
+  width: 70%;
+  padding-top: 4rem;
+  display: flex;
+}
+  @media(max-width: 768px) {
+    .logo-evainaweb {
       display: none;
     }
   }
