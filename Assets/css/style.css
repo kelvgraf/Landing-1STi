@@ -407,7 +407,7 @@ body {
 @media (max-width: 768px) {
   .home-description {
     width: 232px;
-    height: auto;
+    height: 85%;
     align-items: flex-start;
     justify-content: flex-end;
   }
