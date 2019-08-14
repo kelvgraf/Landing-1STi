@@ -328,7 +328,7 @@ body{
   justify-content: flex-end;
   align-items: center;
   line-height: 1.75rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
 }
   @media(max-width: 768px) {
@@ -347,7 +347,7 @@ body{
     width: 100%;
     height: auto;
     padding: .1rem 0;
-    position: static;
+    position: initial;
   }
 }
 

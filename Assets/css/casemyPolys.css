@@ -283,7 +283,7 @@ body{
   justify-content: flex-end;
   align-items: center;
   line-height: 1.75rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
 }
   @media(max-width: 768px) {
@@ -311,6 +311,11 @@ body{
   height: 100%;
   padding-right: 2rem;
 }
+  @media(max-width: 768px) {
+    .img-phone{
+      display: none;
+    }
+  }
 
 .box_content-phrase{
   margin: 6px 0;

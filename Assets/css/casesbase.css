@@ -23,11 +23,11 @@ body {
   flex-direction: column;
   justify-content: flex-end;
 }
-  /* @media(max-width:768px) {
+  @media(max-width:768px) {
     .container {
-      height: 25%;
+      margin: 0;
     }
-  } */
+  }
 
 /*  Menu  */
 .header-container {
@@ -366,7 +366,7 @@ body {
 }
   @media(max-width:668px) {
     .case-content {
-      height: 75%;
+      height: 80%;
     }
   }
 
@@ -380,7 +380,7 @@ body {
 
 @media (max-width: 425px) {
   .case-wrapper {
-    height: 45%;
+    height: 40%;
   }
 }
 
@@ -392,15 +392,6 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
 }
-
-.case-vaiNaWeb{
-  width: 55%;
-}
-
-.home-vaiNaWeb {
-  width: 50%;
-}
-
 @media (max-width: 768px) {
   .case-info {
     width: 43vw;
@@ -411,8 +402,18 @@ body {
 @media (max-width: 425px) {
   .case-info {
     width: 85vw;
+    height: 60%;;
   }
 }
+
+.case-vaiNaWeb{
+  width: 55%;
+}
+
+.home-vaiNaWeb {
+  width: 50%;
+}
+
 
 .container-title-case {
   height: 25%;;
@@ -422,12 +423,6 @@ body {
   line-height: .95rem;
   font-family: Introdução, Black Caps;
 }
-@media (max-width: 768px) {
-  .container-description-case {
-    width: 30vw;
-    line-height: 1.5rem;
-  }
-}
 
 .container-description-case {
   margin-top: 1rem;
@@ -435,11 +430,18 @@ body {
   font-family: SkyhookMonoBold;
   color: #fff;
 }
-  @media (max-width: 768px) {
-    .container-description-case {
-      width: 80%;
-    }
+@media (max-width: 768px) {
+  .container-description-case {
+    width: 80%;
+
   }
+}
+/* @media (max-width: 768px) {
+  .container-description-case {
+    width: 30vw;
+    line-height: 1.5rem;
+  }
+} */
 
 .case-description { 
   font-size: 2rem;
