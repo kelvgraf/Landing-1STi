@@ -303,6 +303,7 @@ body{
   @media(max-width: 768px) {
     .box-phone {
       display: none;
+      position: static;
     }
   }
 
