@@ -290,7 +290,7 @@ a {
   @media (max-width: 768px) {
     .ecossistema {
       width: 100vw;
-      height: 100vh;
+      height: auto;
       margin-top: 1rem;
       justify-content: flex-start;
     }

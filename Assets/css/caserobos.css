@@ -120,7 +120,7 @@ body{
 
   @media(max-width: 425px) {
     .home-description {
-      height: 85%;
+      height: 95%;
       width: 100%;
     }
   }

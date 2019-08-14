@@ -120,7 +120,7 @@ body{
 
 @media(max-width: 425px) {
   .home-description {
-    height: 85%;
+    height: 95%;
     width: 100%;
   }
 }
@@ -135,7 +135,7 @@ body{
 }
   @media (max-width: 768px) {
     .home-title {
-        width: 95%;
+        width: 100%;
         font-size: 1.75rem;
         line-height: 2.25rem;
     }
@@ -154,7 +154,7 @@ body{
 }
   @media (max-width: 768px){
     .home-paragraph {
-      width: 95%;
+      width: 100%;
     }
   }
 
@@ -242,7 +242,7 @@ body{
 }
   @media (max-width: 768px){
     .wrap_box-paragraphs {
-      width: 80%;
+      width: 85%;
     }
   }
 
@@ -345,7 +345,8 @@ body{
 @media(max-width: 768px) {
   .box-phone {
     width: 100%;
-    position: static;
+    height: auto;
+    padding: .1rem 0;;
   }
 }
 
@@ -400,7 +401,7 @@ body{
 }
   @media(max-width:768px) {
     .container_final_description-items {
-      height: 30%;
+      height: 50%;
       flex-wrap: wrap;
     }
   }
