@@ -94,7 +94,7 @@ body {
   @media (max-width: 768px) {
   .wrapper-header {
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     background-color: transparent;
@@ -622,9 +622,18 @@ body {
       width: 20%;
     }
   }
+  
 .seemore-item span {
   font-family: SkyhookMono;
   font-size: 2rem;
+  margin-left: 1rem;
+}
+  
+.seemore-link {
+  display: flex; 
+  color: #000;
+}
+.seemore-link span{
   margin-left: 1rem;
 }
 
@@ -905,7 +914,7 @@ body {
   }
 
 .inspiration-description {
-  width: 70%;
+  width: 60%;
   height: 45vh;
   display: flex;
   flex-direction: column;
@@ -1000,9 +1009,9 @@ body {
 }
 
 .inspirate-seemore {
-  width: 100%;
+  width: 60%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
   @media(max-width: 768px) {
@@ -1311,7 +1320,7 @@ body {
 
 .contact-span {
   width: 80vw;
-  height: 12vh;
+  height: 10vh;
   display: flex;
   align-items: flex-end
 }
@@ -1352,7 +1361,8 @@ body {
     width: auto;
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    justify-content: space-evenly;
   }
 }
 
@@ -1382,6 +1392,7 @@ body {
   @media (max-width: 768px) {
     .contact-address {
       width: 252px;
+      margin-top: 1rem;
     }
   }
 
@@ -1406,6 +1417,7 @@ body {
   .contact-address-text {
     font-size: 1.125rem;
     line-height: 34px;
+    margin: 2px 0;
   }
 
 }
@@ -1419,6 +1431,7 @@ body {
 
 @media (max-width: 768px) {
   .contact-social{
+    width: 280px;
     justify-content: space-between;
     flex-flow: row wrap;
   }
@@ -1427,6 +1440,7 @@ body {
 @media (max-width: 425px) {
     .contact-social{
     width: 272px;
+    height: auto;
     margin-bottom: 0;
     }
 }
