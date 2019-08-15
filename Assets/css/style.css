@@ -914,7 +914,7 @@ body {
   }
 
 .inspiration-description {
-  width: 70%;
+  width: 60%;
   height: 45vh;
   display: flex;
   flex-direction: column;
@@ -1009,7 +1009,7 @@ body {
 }
 
 .inspirate-seemore {
-  width: 70%;
+  width: 60%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
