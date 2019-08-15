@@ -509,6 +509,7 @@ body {
   letter-spacing: 0.25rem;
   opacity: 0.7;
   font-family: Introdução, "Black Caps";
+  z-index: 99;
 }
 .wrapper-hello {
   width: 90%;
