@@ -26,6 +26,7 @@ body {
   @media(max-width:768px) {
     .container {
       margin: 0;
+      /* justify-content: flex-start; */
     }
   }
 
@@ -364,11 +365,11 @@ body {
   flex-direction: column;
   justify-content: flex-end;
 }
-  @media(max-width:668px) {
+  /* @media(max-width:668px) {
     .case-content {
       height: 80%;
     }
-  }
+  } */
 
 .case-wrapper {
   background-color: #f8f8f8;
@@ -433,6 +434,7 @@ body {
 @media (max-width: 768px) {
   .container-description-case {
     width: 80%;
+    display: none;
 
   }
 }
