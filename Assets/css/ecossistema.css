@@ -356,7 +356,7 @@ a {
 
 .eco-description {
   width: 350px;
-  line-height: 1.625rem;;
+  line-height: 1.62rem;;
   font-size: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
@@ -429,7 +429,7 @@ figure {
   @media(max-width:768px) {
     .container-presisaser {
       width: 85%;
-      height: 90vh;
+      height: auto;
     }
   }
 
@@ -448,7 +448,7 @@ figure {
   @media(max-width:768px) {
     .container-enterprise {
       width: 85%;
-      height: 90vh;
+      height: auto;
       z-index: 2;
     }
   }
@@ -465,7 +465,7 @@ figure {
 @media(max-width:768px) {
   .container-enterprise-strytegy {
     width: 85%;
-    height: 90vh;
+    height: auto;
   }
 }
 
@@ -529,29 +529,16 @@ figure {
   width: 65%;
   padding-top: 2.5rem;
 }
-  /* @media(max-width:768px) {
-    .box-logo-precisaser {
-      width: 50%;
-    }
-  } */
+ 
 
 .logo-item {
-  width: 100%;
+  width: 209px;
 }
-  @media(max-width:768px) {
-    .logo-item {
-      width: 209px;
-    }
-  }
+ 
 
 .logo-vnw {
-  width: 70%;
+  width: 131px;
 }
-  @media(max-width:768px) {
-    .logo-vnw{
-      width: 131px;
-    }
-  }
 
 .vnw-description-desktop {
   display: block;
@@ -575,6 +562,7 @@ figure {
     .vnw-description-mobile{
       display: block;
       width: 285px;
+      padding: 1rem 0;
       font-size: 1rem;
       line-height: 1.5rem;
       font-family: 'Source Sans Pro', sans-serif;
@@ -642,6 +630,7 @@ figure {
   font-size: 1.12rem;
   text-align: right;
   font-family: SkyhookMonoBold;
+  padding-bottom: .5rem;
 }
 
 .social-list{
@@ -651,7 +640,7 @@ figure {
   height: 10vh;
 }
 .social-item {
-  width: 20px;
+  width: 20%;
 }
 @media(max-width:768px) {
   .social-item {
@@ -665,7 +654,7 @@ figure {
 }
 
 .social-itemTT {
-  width: 10%;
+  width: 12%;
   padding-top: .4rem;
 }
 @media(max-width:768px) {
@@ -723,7 +712,7 @@ figure {
 .box-img-vainaweb {
   width: 100%;
   height: 100%;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
 }
   @media(max-width:768px) {
     .box-img-vainaweb {
@@ -734,6 +723,7 @@ figure {
 
 .vnw-video {
   width: 100%;
+  height: 45vh;
   border: none;
 }
 .enterprise-strytegy {

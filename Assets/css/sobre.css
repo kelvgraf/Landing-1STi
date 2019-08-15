@@ -329,7 +329,7 @@ main {
 }
   @media (max-width: 768px) {
     .container-wrapper {
-      height: 90%;
+      /* height: 90%; */
       flex-direction: column;
     }
   }
@@ -393,7 +393,6 @@ main {
   @media (max-width: 768px) {
     .container-weare {
       width: 90%;
-      height: auto;
       padding: 0;
     }
   }
@@ -513,10 +512,11 @@ main {
   justify-content: center;
   align-items: center;
 }
+
 @media(max-width: 768px) {
   .wrapper-grafic-vision {
-    width: 100%;
-    padding-top: 2rem; 
+    width: auto;
+    padding-top: 2.5rem; 
   }
 }
 @media(max-width: 768px){
@@ -536,7 +536,7 @@ main {
     width: 100%;
     display: flex;
   }
-
+}
 /*  Serviços */
 
 .container-wrapper-service {

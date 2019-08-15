@@ -304,7 +304,7 @@ body{
   @media(max-width: 768px) {
     .box-phone {
       /* display: none; */
-      padding-top: 0;
+      padding: .5rem 0;
     }
   }
 
@@ -314,7 +314,7 @@ body{
 }
   @media(max-width: 768px) {
     .img-phone{
-      width: 30vw;
+      width: 30%;
       padding-right: .5rem;
     }
   }
