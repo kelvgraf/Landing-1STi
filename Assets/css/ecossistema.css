@@ -365,6 +365,7 @@ a {
     .eco-description {
       width: 85% !important;
       font-weight: 400;
+      line-height: 1.8rem;
     }
   }
 
@@ -428,8 +429,7 @@ figure {
   @media(max-width:768px) {
     .container-presisaser {
       width: 85%;
-      height: auto;
-      padding-top: 2rem;
+      height: 90vh;
     }
   }
 
@@ -448,6 +448,7 @@ figure {
   @media(max-width:768px) {
     .container-enterprise {
       width: 85%;
+      height: 90vh;
       z-index: 2;
     }
   }
@@ -457,15 +458,14 @@ figure {
   height: auto;
   display: flex;
   align-items: flex-start;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
   flex-direction: column;
 }
 
 @media(max-width:768px) {
   .container-enterprise-strytegy {
     width: 85%;
-    height: auto;
-    padding-top: 2rem;
+    height: 90vh;
   }
 }
 
@@ -540,7 +540,7 @@ figure {
 }
   @media(max-width:768px) {
     .logo-item {
-      width: 60%;
+      width: 209px;
     }
   }
 
@@ -549,7 +549,7 @@ figure {
 }
   @media(max-width:768px) {
     .logo-vnw{
-      width: 40%;
+      width: 131px;
     }
   }
 
@@ -648,9 +648,10 @@ figure {
   display: flex;
   justify-content: flex-end;
   list-style: none;
+  height: 10vh;
 }
 .social-item {
-  width: 17%;
+  width: 20px;
 }
 @media(max-width:768px) {
   .social-item {
@@ -692,7 +693,7 @@ figure {
 }
 @media(max-width:425px) {
   .social-itemT {
-    width: 9%;
+    width: 20px;
   }
 }
 
@@ -788,6 +789,7 @@ figure {
 
 @media(max-width:768px) {
   .enterprise-precisaser {
+    height: auto;
     display: block;
     border: none;
   }
