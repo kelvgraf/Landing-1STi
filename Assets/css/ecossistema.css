@@ -150,10 +150,10 @@ a {
 
     .menu-list.--drop-menu {
       width: 100vw;
-      height: 50vh;
-      padding: 2rem;
+      height: 52vh;
+      padding: 2.5rem;
       position: fixed;
-      top: 50vh;
+      top: 48vh;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -204,8 +204,7 @@ a {
 }
 
   @media (max-width: 768px) {
-    .menu-item {
-      margin-right: 25px; 
+    .menu-item { 
       display: none;
     }
 
@@ -244,11 +243,11 @@ a {
     }
 
     .menu-lang.--drop-lang {
-      height: 35vh;
-      width: 30vw;
+      height: 30vh;
+      width: 85px;
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
       align-items: flex-end;
       transform: rotate(0deg);
       z-index: 99; 
@@ -265,7 +264,7 @@ a {
       right: 25px;
       position: fixed;
       right: 20px;
-      top: 63vh;
+      top: 60vh;
       display: none;
       flex-direction: column;
       justify-content: space-between;
