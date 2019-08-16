@@ -622,6 +622,7 @@ a {
   @media(max-width: 768px) {
     .paragraphs_content {
       width: 100%;
+      height: auto;
     }
   }
 
@@ -633,8 +634,8 @@ a {
 
   @media(max-width: 768px) {
     .box-phone {
-      width: 100%;
       height: auto;
+      padding: .5rem 0;
     }
   }
 
