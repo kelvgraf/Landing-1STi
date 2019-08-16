@@ -119,6 +119,12 @@ a {
   justify-content: center;
   flex-direction: column;
 }
+  
+  @media(max-width: 768px) {
+    .container-home {
+      justify-content: flex-end;
+    }
+  }
 
 .home-description {
   height: auto;
