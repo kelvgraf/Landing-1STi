@@ -52,9 +52,6 @@
   document.getElementById("menu-item2").addEventListener("click", myFunction2);
   document.getElementById("menu-item3").addEventListener("click", myFunction2);
   document.getElementById("menu-item4").addEventListener("click", myFunction2);
-  // document.getElementById("menu-item5").addEventListener("click", myFunction2);
-  // document.getElementById("menu-item6").addEventListener("click", myFunction2);
-  // document.getElementById("menu-item7").addEventListener("click", myFunction2);
   document.getElementById("case1").addEventListener("click", case1);
   document.getElementById("case2").addEventListener("click", case2);
   document.getElementById("case3").addEventListener("click", case3);
@@ -136,58 +133,6 @@
           modal.classList.remove('modal-case6')
       }
   };
-  
-  window.addEventListener('scroll', function(){
-    let article1, article2, section3, animate;
-    let article1Ofset, article2Ofset, article3Ofset;
-    
-    article1 = document.getElementById('article-box1');
-    
-    article2 = document.getElementById('article-box2');
-    
-    section3 = document.getElementById('article-box3');
-    
-
-    article1Offset = (article1.parentNode.parentNode.parentNode.offsetTop + article1.offsetTop);
-    article2Offset = (article2.parentNode.parentNode.parentNode.offsetTop + article2.offsetTop);
-    article3Offset = (article3.parentNode.parentNode.parentNode.offsetTop + article3.offsetTop);
-    
-    
-    if ((window.scrollY + 400) < article1Offset) {
-      animate = document.querySelector('article-animate');
-      if (animate) {
-        animate.classList.remove('article-animate');
-      }
-    }
-        
-    if ((window.scrollY + 200) >= article1Offset
-       && (window.scrollY + 200) <= article2Offset) {
-      animate = document.querySelector('.article-animate');
-      if (animate) {
-        animate.classList.remove('article-animate');
-      }
-      article1.querySelector('.article-box-span div').classList.add('article-animate');
-    }
-    
-    if ((window.scrollY + 200) >= article2Offset
-       && (window.scrollY + 200) <= section3Offset) {
-      animate = document.querySelector('.article-animate');
-      if (animate) {
-        animate.classList.remove('article-animate');
-      }
-      article2.querySelector('.article-box-span div').classList.add('article-animate');
-    }
-    
-    if ((window.scrollY + 200) >= section3Offset
-       && (window.scrollY + 200) <= section4Offset) {
-      animate = document.querySelector('.article-animate');
-      if (animate) {
-        animate.classList.remove('article-animate');
-      }
-      section3.querySelector('.article-box-span div').classList.add('article-animate');
-    }
-  });
-
 
   
 function animeScroll() {

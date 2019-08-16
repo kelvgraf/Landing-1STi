@@ -18,205 +18,197 @@
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/ecossistema.css">
   </head>
-<body class="l-container">
-  <header class="header">
-    <section class="header-container">
-      <div class="wrapper-header">	
-        <div class="header-logoBox ">
-          <img class="header-logo" src="../img/Logo-1sti.svg">
-          <img class="header-logo-hover" src="../img/1STi-Transformacao.svg">
+  <body class="l-container">
+    <header class="header">
+      <section class="header-container">
+        <div class="wrapper-header">	
+          <div class="header-logoBox ">
+            <a href="../../index.html"  class="link-header">
+              <img class="header-logo" src="../img/Logo-1sti.svg">
+            </a>
+            <a href="../../index.html"  class="link-header">
+              <img class="header-logo-hover" src="../img/1STi-Transformacao.svg">
+            </a>
+          </div>
+          <nav class="menu">
+            <img src="../img/Mobile-Icon-Menu.png" class="menu-icon-mobile" id="menu-icon-mobile" alt="Icone Menu">
+            <ul class="menu-list" id="menu-list">
+              <a href="../../index.html">
+                <li class="menu-item" id="menu-item">olá</li>
+              </a>
+              <a href="../pages/sobre.html">
+                <li class="menu-item item-sobre" id="menu-item2">sobre</li>
+              </a>
+              <a href="../pages/cases.html">
+                <li class="menu-item" id="menu-item3">cases</li>
+              </a>
+              <a href="../pages/ecossitema.html">
+                <li class="menu-item" id="menu-item4">ecossistema</li>
+              </a>
+            </ul>
+            <ul class="menu-lang menu-list" id="menu-lang">
+              <a href="">
+                <li class="menu-item">EN</li>
+              </a>
+              <a href="">
+                <li class="menu-item">PT</li>
+              </a>
+            </ul>
+          </nav>
+          <div class="header-social">
+          <a href="https://web.facebook.com/ola1STi/" target="_blank">
+            <img src="../img/GoDeeper-Landing-Facebookd.svg" alt="Facebook 1STi" class="social-icon">
+          </a>
+          <a href="https://medium.com/1sti" target="_blank">
+            <img src="../img/GoDeeper-Landing-Medium.svg" alt="Medium 1STi" class="social-icon">
+          </a>
+          <a href="https://www.linkedin.com/company/1sti" target="_blank">
+            <img src="../img/GoDeeper-Landing-Linkedin.svg" alt="Linkedin 1STi" class="social-icon">
+          </a>
         </div>
-        <nav class="menu">
-          <img src="../img/Mobile-Icon-Menu.png" class="menu-icon-mobile" id="menu-icon-mobile" alt="Icone Menu">
-          <ul class="menu-list" id="menu-list">
-            <a href="../../index.html">
-              <li class="menu-item" id="menu-item">olá</li>
-            </a>
-            <a href="../pages/sobre.html">
-              <li class="menu-item item-sobre" id="menu-item2">sobre</li>
-            </a>
-            <a href="../pages/cases.html">
-              <li class="menu-item" id="menu-item3">cases</li>
-            </a>
-            <a href="../pages/ecossitema.html">
-              <li class="menu-item" id="menu-item4">ecossistema</li>
-            </a>
-          </ul>
-          <ul class="menu-lang menu-list" id="menu-lang">
-            <a href="">
-              <li class="menu-item">EN</li>
-            </a>
-            <a href="">
-              <li class="menu-item">PT</li>
-            </a>
-          </ul>
-        </nav>
-        <div class="header-social">
-        <a href="https://web.facebook.com/ola1STi/" target="_blank">
-          <img src="../img/GoDeeper-Landing-Facebookd.svg" alt="Facebook 1STi" class="social-icon">
-        </a>
-        <a href="https://medium.com/1sti" target="_blank">
-          <img src="../img/GoDeeper-Landing-Medium.svg" alt="Medium 1STi" class="social-icon">
-        </a>
-        <a href="https://www.linkedin.com/company/1sti" target="_blank">
-          <img src="../img/GoDeeper-Landing-Linkedin.svg" alt="Linkedin 1STi" class="social-icon">
-        </a>
-      </div>
-      </div>
-    </section>
-  </header>
-	<main >
-		<section class="ecossistema" id="ecossitema">
-			<div class="container-eco">
-        <div class="wrapper-description">
-          <h2 class="eco-title-desktop">Ecossistema</h2>
-          <h2 class="eco-title-mobile">nós acreditamos</h2>
-          <p class="eco-description">Nos últimos 8 anos, a 1STi tem se tornado o núcleo de um ecossistema regenerativo que irradia desafios de inovação com base em dois propósitos interdependentes: tecnologia profunda e impacto social. A partir dessa supersoma desejamos expandir as fronteiras de negócios e sociedade, substituindo ciclos viciosos de desigualdade extrema por desenvolvimento econômico e bem-estar coletivo em escala.</p>
         </div>
-        <div class="content">
-					<canvas class="scene scene--full" id="scene"></canvas>
-				<script type="x-shader/x-vertex" id="wrapVertexShader">
-					attribute float size;
-					attribute vec3 color;
-					varying vec3 vColor;
-					void main() {
-						vColor = color;
-						vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
-						gl_PointSize = size * ( 350.0 / - mvPosition.z );
-						gl_Position = projectionMatrix * mvPosition;
-					}
-				</script>
-				<script type="x-shader/x-fragment" id="wrapFragmentShader">
-					varying vec3 vColor;
-					uniform sampler2D texture;
-					void main(){
-						vec4 textureColor = texture2D( texture, gl_PointCoord );
-						if ( textureColor.a < 0.3 ) discard;
-						vec4 color = vec4(vColor.xyz, 1.0) * textureColor;
-						gl_FragColor = color;
-					}
-				</script>
-				</div>
-      </div>
-    </section>
-    
-    <!-- VAI NA WEB -->
-		<section class="container" id="VNW">
-      <div class="container-enterprise">
-        <figure class="box-img">
-          <img src="../img/VnW-Logo.svg" alt="Logo Vain na Web" class="logo-item logo-vnw">
-        </figure>
-        <div class="enterprise-description">
-          <p class="vnw-description-desktop">É um movimento que tem como propósito programar o mundo positivamente, democratizando o acesso às tecnologias avançadas em territórios de conflito, exclusão e minorias de direito.</p>
-          <p class="vnw-description-mobile">Vai na Web é um movimento de alta tecnologia e impacto social que amplia as capacidades humanas e requalifica a força de trabalho para encarar os desafios da Indústria 4.0.</p>
-          <span class="enterprise-social-desktop">
-              <a href="https://www.vainaweb.com.br/"><p class="contact-text">www.vainaweb.com.br</p></a>
-              <ul class="social-list">
-                <li class="social-item">
-                  <a href="https://www.facebook.com/vainaweb/"><img src="../img/GoDeeper-Landing-Facebookd-Pink.svg" alt="" ></a></li>
-                <li class="social-item">
-                  <a href="https://medium.com/vainaweb"><img src="../img/GoDeeper-Landing-Medium-Pink.svg" alt="logo-medium" ></a></li>
-                <li class="social-item">
-                  <a href="https://www.linkedin.com/company/vainaweb/"><img src="../img/GoDeeper-Landing-Linkedin-Pink.svg" alt="logo-linkedin" ></a>
-                </li>
-                <li class="social-itemTT">
-                  <a href="https://twitter.com/vainaweb>"></a><img src="../img/Icone-Twitter_rosa.svg" alt="logo-twitter" ></a>
-                </li>
-              </ul>
-          </span>
+      </section>
+    </header>
+    <main>
+      <section class="ecossistema" id="ecossitema">
+        <div class="container-eco">
+          <div class="wrapper-description">
+            <h2 class="eco-title-desktop">Ecossistema</h2>
+            <h2 class="eco-title-mobile">nós acreditamos</h2>
+            <p class="eco-description">Nos últimos 8 anos, a 1STi tem se tornado o núcleo de um ecossistema regenerativo que irradia desafios de inovação com base em dois propósitos interdependentes: tecnologia profunda e impacto social. A partir dessa supersoma desejamos expandir as fronteiras de negócios e sociedade, substituindo ciclos viciosos de desigualdade extrema por desenvolvimento econômico e bem-estar coletivo em escala.</p>
+          </div>
+          <div class="content">
+            <canvas class="scene scene--full" id="scene"></canvas>
+          <script type="x-shader/x-vertex" id="wrapVertexShader">
+            attribute float size;
+            attribute vec3 color;
+            varying vec3 vColor;
+            void main() {
+              vColor = color;
+              vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+              gl_PointSize = size * ( 350.0 / - mvPosition.z );
+              gl_Position = projectionMatrix * mvPosition;
+            }
+          </script>
+          <script type="x-shader/x-fragment" id="wrapFragmentShader">
+            varying vec3 vColor;
+            uniform sampler2D texture;
+            void main(){
+              vec4 textureColor = texture2D( texture, gl_PointCoord );
+              if ( textureColor.a < 0.3 ) discard;
+              vec4 color = vec4(vColor.xyz, 1.0) * textureColor;
+              gl_FragColor = color;
+            }
+          </script>
+          </div>
         </div>
-        <div class="enterprise-vnw">
-          <figure class="box-img-vainaweb">
-           <!-- <iframe class="vnw-video" width="560" height="530  " src="https://www.youtube.com/embed/s5gBmUbO3Fo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-
-           <iframe class="vnw-video" src="https://www.youtube.com/embed/s5gBmUbO3Fo" frameborder="3" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </figure>          
-        </div>
-        <div class="enterprise-social-mobile">
-          <a href="https://www.vainaweb.com.br/"><p class="contact-text">www.vainaweb.com.br</p></a>
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="https://www.facebook.com/vainaweb/"><img src="../img/GoDeeper-Landing-Facebookd-Pink.svg" alt="" ></a></li>
-            <li class="social-item">
-              <a href="https://medium.com/vainaweb"><img src="../img/GoDeeper-Landing-Medium-Pink.svg" alt="logo-medium" ></a></li>
-            <li class="social-item">
-              <a href="https://www.linkedin.com/company/vainaweb/"><img src="../img/GoDeeper-Landing-Linkedin-Pink.svg" alt="logo-linkedin"></a>
-            </li>
-            <li class="social-itemT">
-              <a href="https://www.linkedin.com/company/vainaweb/"><img src="../img/Icone-Twitter_rosa.svg" alt="logo-linkedin"></a>
-            </li>
-          </ul>
-        </div>
-          <!-- <div class="line">oi</div> -->
-        <!-- <video src="s"></video> -->
-      </div>
+      </section>
       
-    <!-- </section> -->
+      <!-- VAI NA WEB -->
+      <section class="container" id="VNW">
+        <div class="container-enterprise">
+          <figure class="box-img">
+            <img src="../img/VnW-Logo.svg" alt="Logo Vain na Web" class="logo-item logo-vnw">
+          </figure>
+          <div class="enterprise-description">
+            <p class="vnw-description-desktop">É um movimento que tem como propósito programar o mundo positivamente, democratizando o acesso às tecnologias avançadas em territórios de conflito, exclusão e minorias de direito.</p>
+            <p class="vnw-description-mobile">Vai na Web é um movimento de alta tecnologia e impacto social que amplia as capacidades humanas e requalifica a força de trabalho para encarar os desafios da Indústria 4.0.</p>
+            <span class="enterprise-social-desktop">
+                <a href="https://www.vainaweb.com.br/"><p class="contact-text">www.vainaweb.com.br</p></a>
+                <ul class="social-list">
+                  <li class="social-item">
+                    <a href="https://www.facebook.com/vainaweb/"><img src="../img/GoDeeper-Landing-Facebookd-Pink.svg" alt="" ></a></li>
+                  <li class="social-item">
+                    <a href="https://medium.com/vainaweb"><img src="../img/GoDeeper-Landing-Medium-Pink.svg" alt="logo-medium" ></a></li>
+                  <li class="social-item">
+                    <a href="https://www.linkedin.com/company/vainaweb/"><img src="../img/GoDeeper-Landing-Linkedin-Pink.svg" alt="logo-linkedin" ></a>
+                  </li>
+                  <li class="social-itemTT">
+                    <a href="https://twitter.com/vainaweb>"></a><img src="../img/Icone-Twitter_rosa.svg" alt="logo-twitter" ></a>
+                  </li>
+                </ul>
+            </span>
+          </div>
+          <div class="enterprise-vnw">
+            <figure class="box-img-vainaweb">
+            <!-- <iframe class="vnw-video" width="560" height="530  " src="https://www.youtube.com/embed/s5gBmUbO3Fo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
-    <!-- STRYTEGY -->
-    <!-- <section class="container" id="strytegy"> -->
-      <div class="container-enterprise-strytegy">
-        <figure class="box-img">
-          <img src="../img/Logo-Strytegy.svg" alt="Logo Vain na Web" class="logo-item">
-        </figure>
-        <div class="enterprise-description">
-          <p class="vnw-description-desktop">É um ambiente digital para pensar, explorar e dimensionar o conhecimento nas organizações.</p>
-          <p class="vnw-description-mobile">Strytegy é ambiente digital para pensar, explorar e dimensionar o conhecimento nas organizações.</p>
-          <span class="enterprise-social-desktop">
-            <a href="https://go.strytegy.com/login"><p class="contact-text">www.strytegy.com.br</p></a>
+            <iframe class="vnw-video" src="https://www.youtube.com/embed/s5gBmUbO3Fo" frameborder="3" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </figure>          
+          </div>
+          <div class="enterprise-social-mobile">
+            <a href="https://www.vainaweb.com.br/"><p class="contact-text">www.vainaweb.com.br</p></a>
             <ul class="social-list">
-                <li class="social-item"><a href="https://www.facebook.com/go.strytegy/"><img src="../img/GoDeeper-Landing-Facebookd-Pink.svg" alt="logo-facebook"></a>
+              <li class="social-item">
+                <a href="https://www.facebook.com/vainaweb/"><img src="../img/GoDeeper-Landing-Facebookd-Pink.svg" alt="" ></a></li>
+              <li class="social-item">
+                <a href="https://medium.com/vainaweb"><img src="../img/GoDeeper-Landing-Medium-Pink.svg" alt="logo-medium" ></a></li>
+              <li class="social-item">
+                <a href="https://www.linkedin.com/company/vainaweb/"><img src="../img/GoDeeper-Landing-Linkedin-Pink.svg" alt="logo-linkedin"></a>
+              </li>
+              <li class="social-itemT">
+                <a href="https://www.linkedin.com/company/vainaweb/"><img src="../img/Icone-Twitter_rosa.svg" alt="logo-linkedin"></a>
               </li>
             </ul>
-          </span>
+          </div>
         </div>
-        <div class="enterprise-strytegy">
-          <figure class="box-img-strytegy">
-            <img src="../img/Imagem-Strytegy.png" alt="" class="strytegy-img">
+      <!-- STRYTEGY -->
+        <div class="container-enterprise-strytegy">
+          <figure class="box-img">
+            <img src="../img/Logo-Strytegy.svg" alt="Logo Vain na Web" class="logo-item">
           </figure>
-        </div>
-        <div class="enterprise-social-mobile">
-          <p class="contact-text">www.precisaser.com.br</p>
-          <ul class="social-list">
-            <li class="social-item"><a href="https://www.facebook.com/go.strytegy/"><img src="../img/GoDeeper-Landing-Facebookd-Pink.svg" alt="logo-facebook" ></a></li>
-          </ul>
-        </div>
-        <!-- <video src="s"></video> -->   
-        </div>      
-    <!-- </section> -->
-
-    <!-- PRECISA SER -->
-    <!-- <section class="container" id="presisaser"> -->
-      <div class="container-presisaser">
-        <figure class="box-logo-precisaser">
-          <img src="../img/Logo_Instituto.svg" alt="Logo Vain na Web" class="logo-item">
-        </figure>
-        <div class="enterprise-description">
-          <p class="vnw-description-desktop">É uma plataforma de inovação social para conscientização, diálogo e ação coletiva destinada para o terceiro setor.</p>
-          <p class="vnw-description-mobile">Uma plataforma de inovação social para conscientização, diálogo e ação coletiva destinada ao Terceiro Setor</p>
-          <span class="precisaser-social-desktop">
-           <a href="https://www.precisaser.com.br"/><p class="contact-text">www.precisaser.com.br</p></a>
+          <div class="enterprise-description">
+            <p class="vnw-description-desktop">É um ambiente digital para pensar, explorar e dimensionar o conhecimento nas organizações.</p>
+            <p class="vnw-description-mobile">Strytegy é ambiente digital para pensar, explorar e dimensionar o conhecimento nas organizações.</p>
+            <span class="enterprise-social-desktop">
+              <a href="https://go.strytegy.com/login"><p class="contact-text">www.strytegy.com.br</p></a>
+              <ul class="social-list">
+                  <li class="social-item"><a href="https://www.facebook.com/go.strytegy/"><img src="../img/GoDeeper-Landing-Facebookd-Pink.svg" alt="logo-facebook"></a>
+                </li>
+              </ul>
+            </span>
+          </div>
+          <div class="enterprise-strytegy">
+            <figure class="box-img-strytegy">
+              <img src="../img/Imagem-Strytegy.png" alt="" class="strytegy-img">
+            </figure>
+          </div>
+          <div class="enterprise-social-mobile">
+            <p class="contact-text">www.precisaser.com.br</p>
             <ul class="social-list">
-              <li class="social-item"> <a href="https://www.facebook.com/precisaser/"><img src="../img/GoDeeper-Landing-Facebookd-Pink.svg" alt="logo facebook" > </a></li>
+              <li class="social-item"><a href="https://www.facebook.com/go.strytegy/"><img src="../img/GoDeeper-Landing-Facebookd-Pink.svg" alt="logo-facebook" ></a></li>
             </ul>
-          </span>
+          </div>  
+          </div>      
+      <!-- PRECISA SER -->
+        <div class="container-presisaser">
+          <figure class="box-logo-precisaser">
+            <img src="../img/Logo_Instituto.svg" alt="Logo Vain na Web" class="logo-item">
+          </figure>
+          <div class="enterprise-description">
+            <p class="vnw-description-desktop">É uma plataforma de inovação social para conscientização, diálogo e ação coletiva destinada para o terceiro setor.</p>
+            <p class="vnw-description-mobile">Uma plataforma de inovação social para conscientização, diálogo e ação coletiva destinada ao Terceiro Setor</p>
+            <span class="precisaser-social-desktop">
+            <a href="https://www.precisaser.com.br"/><p class="contact-text">www.precisaser.com.br</p></a>
+              <ul class="social-list">
+                <li class="social-item"> <a href="https://www.facebook.com/precisaser/"><img src="../img/GoDeeper-Landing-Facebookd-Pink.svg" alt="logo facebook" > </a></li>
+              </ul>
+            </span>
+          </div>
+          <div class="enterprise-precisaser">
+            <figure class="box-img-strytegy">
+              <img src="../img/Imagem-Ecossistema-Startupin_Favelas.jpg" alt="" class="precisaser-img">
+            </figure>         
+          </div>
+          <div class="precisaser-social-mobile">
+            <p class="contact-text">www.precisaser.com.br</p>
+            <ul class="social-list">
+              <li class="social-item"><img src="../img/GoDeeper-Landing-Facebookd-Pink.svg" alt="logo-facebook"></li>
+            </ul>
+          </div>
         </div>
-        <div class="enterprise-precisaser">
-          <figure class="box-img-strytegy">
-            <img src="../img/Imagem-Ecossistema-Startupin_Favelas.jpg" alt="" class="precisaser-img">
-          </figure>         
-        </div>
-        <div class="precisaser-social-mobile">
-          <p class="contact-text">www.precisaser.com.br</p>
-          <ul class="social-list">
-            <li class="social-item"><img src="../img/GoDeeper-Landing-Facebookd-Pink.svg" alt="logo-facebook"></li>
-          </ul>
-        </div>
-        <!-- <video src="s"></video> -->
-      </div>
-      </section>
-    
-	</main>
+      </section>      
+    </main>
   <script src="../js/main.js"></script>
   <script src="../js/three.min.js"></script>
   <script src="../js/TweenMax.min.js"></script>
