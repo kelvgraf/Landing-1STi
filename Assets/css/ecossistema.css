@@ -19,6 +19,13 @@ a {
 }
 
 /*  Menu  */
+  @media (max-width: 768px) {
+    .header {
+      width: 100%;
+      height: 10vh;
+    }
+  } 
+
 .header-container {
   width: 6%;
   height: 100%;
@@ -45,12 +52,12 @@ a {
     .wrapper-header {
       width: 100%;
       height: 10vh;
-      position: relative;
       display: flex;
       align-items: center;
-      background-color: transparent;
+      background-color: rgba( 256, 256, 256, .9);
       opacity: 0;
       transition: all 0.25s ease-in;
+      z-index: 100;
     }
   }
 
@@ -399,8 +406,16 @@ a {
     .content canvas {
       width: 80vw !important;
       height: 60vh !important;
-  }
-} 
+    }
+  } 
+
+  @media(max-width: 425px) {
+    .content canvas {
+      width: 100vw !important;
+      height: 75vh !important;
+      margin-top: 1rem; 
+    }
+  } 
 
 figure {
   width: 65%;
