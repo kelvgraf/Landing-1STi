@@ -385,7 +385,7 @@ a {
 
   @media(max-width: 768px) {
     .container-home {
-      justify-content: flex-end;
+      margin-top: 4rem;
     }
   }
   

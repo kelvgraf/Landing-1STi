@@ -24,7 +24,7 @@ a {
 }
 
   @media(max-width: 768px) {
-    .header {
+    .header { 
       display: block;
     }
   }
@@ -388,7 +388,7 @@ a {
 
   @media(max-width: 425px) {
     .container-home {
-      justify-content: flex-end;
+      margin-top: 4rem;
     }
   }
   
