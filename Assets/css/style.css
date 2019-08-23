@@ -1519,7 +1519,6 @@ body {
 
   @media (max-width: 768px) {
     .contact-form {
-      width: 90%;
       flex-direction: column;
       align-items: flex-start;
     }

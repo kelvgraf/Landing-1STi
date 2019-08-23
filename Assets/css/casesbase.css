@@ -460,6 +460,7 @@ a {
 
   @media(max-width: 768px) {
     .case-description {
+      width: 100%;
       font-size: 1.75rem;
       line-height: 2.25rem;
     }

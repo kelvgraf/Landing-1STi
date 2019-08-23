@@ -141,7 +141,7 @@ a {
 
   @media(max-width: 425px) {
     .home-description {
-      height: 75%;
+      height: 80%;
       width: 100%;
     }
   }
